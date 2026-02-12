@@ -10,3 +10,9 @@
 ![alt text](image-2.png)<br>
 ![alt text](image-3.png)
 
+### 4. Struktur Folder
+![alt text](image-4.png)
+
+### 5. Modifikasi Halaman Utama
+![alt text](image-5.png) <br>
+![alt text](image-6.png)
