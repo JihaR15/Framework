@@ -45,7 +45,10 @@
 - Tambahkan minimal 1 link navigasi dari halaman utama ke halaman about. <br>
 ![alt text](image-14.png)
 <br>
-![alt text](msedge_BKnrVxo4H0.gif)
+> [!WARNING]
+> Mohon ditunggu jika gambar belum muncul.
+
+![Screenshot Pengayaan](pengayaan.webp)<br>
 
 
 ## Pertanyaan
