@@ -21,3 +21,7 @@
 ![alt text](image-7.png) <br>
 ![alt text](image-8.png) <br>
 ![alt text](image-9.png)
+
+### 7. Modifikasi Background
+![alt text](image-10.png) <br>
+![alt text](image-11.png)
