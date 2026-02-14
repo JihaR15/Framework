@@ -16,3 +16,8 @@
 ### 5. Modifikasi Halaman Utama
 ![alt text](image-5.png) <br>
 ![alt text](image-6.png)
+
+### 6. Modifikasi API
+![alt text](image-7.png) <br>
+![alt text](image-8.png) <br>
+![alt text](image-9.png)
