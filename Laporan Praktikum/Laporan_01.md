@@ -1,30 +1,30 @@
 ## Praktikum 01 - My-app  
 
 ### 1. Pengecekan Lingkungan
-![alt text](img/image.png)
+![alt text](../Praktikum_01/img/image.png)
 
 ### 2. Membuat Project Next.JS
-![alt text](img/image-1.png)
+![alt text](../Praktikum_01/img/image-1.png)
 
 ### 3. Menjalankan Server Development
-![alt text](img/image-2.png)<br>
-![alt text](img/image-3.png)
+![alt text](../Praktikum_01/img/image-2.png)<br>
+![alt text](../Praktikum_01/img/image-3.png)
 
 ### 4. Struktur Folder
-![alt text](img/image-4.png)
+![alt text](../Praktikum_01/img/image-4.png)
 
 ### 5. Modifikasi Halaman Utama
-![alt text](img/image-5.png) <br>
-![alt text](img/image-6.png)
+![alt text](../Praktikum_01/img/image-5.png) <br>
+![alt text](../Praktikum_01/img/image-6.png)
 
 ### 6. Modifikasi API
-![alt text](img/image-7.png) <br>
-![alt text](img/image-8.png) <br>
-![alt text](img/image-9.png)
+![alt text](../Praktikum_01/img/image-7.png) <br>
+![alt text](../Praktikum_01/img/image-8.png) <br>
+![alt text](../Praktikum_01/img/image-9.png)
 
 ### 7. Modifikasi Background
-![alt text](img/image-10.png) <br>
-![alt text](img/image-11.png)
+![alt text](../Praktikum_01/img/image-10.png) <br>
+![alt text](../Praktikum_01/img/image-11.png)
 
 ## Tugas Praktikum
 
@@ -36,19 +36,19 @@
   - NIM
   - Prodi
   <br>
-![alt text](img/image-12.png)
+![alt text](../Praktikum_01/img/image-12.png)
 <br>
-![alt text](img/image-13.png)
+![alt text](../Praktikum_01/img/image-13.png)
 
 
 ### 2. Pengayaan
 - Tambahkan minimal 1 link navigasi dari halaman utama ke halaman about. <br>
-![alt text](img/image-14.png)
+![alt text](../Praktikum_01/img/image-14.png)
 <br>
 > [!WARNING]
 > Mohon ditunggu jika gambar belum muncul.
 
-![Screenshot Pengayaan](img/pengayaan.webp)<br>
+![Screenshot Pengayaan](../Praktikum_01/img/pengayaan.webp)<br>
 
 
 ## Pertanyaan
