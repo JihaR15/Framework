@@ -34,5 +34,21 @@ dipindah ke folder user dan mengubah file user.tsx menjadi index.tsx <br>
 ![alt text](image-14.png) <br>
 ![alt text](image-15.png) <br>
 
+### 4. Dynamic Routing
+- membuat folder produk di dalam folder pages, lalu tambahkan file index.tsx dan [id].tsx <br>
+![alt text](image-16.png)<br>
+- index.tsx <br>
+![alt text](image-17.png)<br>
+- [id].tsx bersama console.log menggunakan extension Console Ninja<br>
+![alt text](image-18.png) <br>
+![alt text](image-19.png)
+![alt text](image-21.png)
 
-
+- modifikasi [id].tsx agar dapat mengambil nilai dari id
+![alt text](image-20.png) <br>
+- produk/sepatu <br>
+![alt text](image-22.png) <br>
+- produk/baju <br>
+![alt text](image-23.png) <br>
+- produk/helm-baru <br>
+![alt text](image-24.png) <br>
