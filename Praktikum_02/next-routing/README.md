@@ -90,6 +90,23 @@
 #### Sesudah 
 ![alt text](setelahappshell.webp) <br>
 
+## Tugas Praktikum
+
+### Tugas 1 - Routing
+1. buat Routing: <br>
+![alt text](image-40.png) <br>
+    - /profile <br>
+    ![alt text](image-41.png) <br>
+    - /profile/edit <br>
+    ![alt text](image-42.png)
+
+output: <br>
+![alt text](image-43.png) <br>
+![alt text](image-44.png) <br>
+
+### Tugas 2 - Dynamic Routing
+
+
 
 
 
