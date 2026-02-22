@@ -77,4 +77,19 @@
 ![alt text](image-35.png)
 ![alt text](image-36.png)
 
+### 6. Membuat Layout Global (App Shell)
+- buat folder appshell di dalam folder component/layouts <br>
+![alt text](image-37.png) <br>
+- component/layouts/appshell/index.tsx <br>
+![alt text](image-38.png) <br>
+- pages/_app.tsx <br>
+![alt text](image-39.png) <br>
+
+#### Sebelum
+![alt text](sebelumappshell.webp) <br>
+#### Sesudah 
+![alt text](setelahappshell.webp) <br>
+
+
+
 
