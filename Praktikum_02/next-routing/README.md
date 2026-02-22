@@ -126,5 +126,15 @@ output: <br>
 Output: <br>
 ![alt text](image-50.png) <br>
 
+## Pertanyaan Refleksi
+1. **Apa perbedaan routing berbasis file dan routing manual?**
+    > Routing berbasis file secara otomatis memetakan struktur folder dan file menjadi jalur URL (contohnya seperti yang sudah dilakukan pada praktikum ini dengan Next.js), sedangkan routing manual memerlukan pendefinisian setiap rute secara eksplisit di dalam kode (seperti di React Router, atau saat menggunakan laravel).
+
+2. **Mengapa dynamic routing penting dalam aplikasi web?**
+    > Karena memungkinkan aplikasi untuk menangani konten yang bersifat variabel atau berjumlah banyak (seperti ID produk atau slug blog) hanya dengan satu template file, sehingga lebih efisien dan skalabel.
+
+3. **Apa keuntungan menggunakan layout global dibanding memanggil komponen satu per satu?**
+    > Menjamin agar UI di seluruh halaman konsisten, dan  mempermudah pemeliharaan kode karena perubahan cukup dilakukan di satu file (App Shell), terus juga mencegah render ulang komponen yang sama (seperti Navbar/Footer) saat navigasi.
+
 
 
