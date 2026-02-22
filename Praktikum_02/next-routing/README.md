@@ -82,12 +82,14 @@
 ![alt text](image-37.png) <br>
 - component/layouts/appshell/index.tsx <br>
 ![alt text](image-38.png) <br>
+
+### 7. Implementasi Layout di _app.tsx
 - pages/_app.tsx <br>
 ![alt text](image-39.png) <br>
 
-#### Sebelum
+#### Sebelum AppShell
 ![alt text](sebelumappshell.webp) <br>
-#### Sesudah 
+#### Sesudah AppShell
 ![alt text](setelahappshell.webp) <br>
 
 ## Tugas Praktikum
@@ -112,6 +114,17 @@ output: <br>
 output: <br>
 ![alt text](image-47.png) <br>
 
+### Tugas 3 - Layout
+1. Tambahkan Footer pada AppShell dan tampil di semua halaman. <br>
+
+- Sudah dilakukan pada Langkah ke 7, disini saya hanya mengubah style nya saja.
+- style/globals.css <br>
+![alt text](image-48.png) <br>
+- component/layouts/Appshell/index.tsx <br>
+![alt text](image-49.png) <br>
+
+Output: <br>
+![alt text](image-50.png) <br>
 
 
 
