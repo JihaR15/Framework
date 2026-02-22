@@ -105,7 +105,12 @@ output: <br>
 ![alt text](image-44.png) <br>
 
 ### Tugas 2 - Dynamic Routing
+1. buat routing /blog/[slug] <br>
+![alt text](image-45.png) <br>
+![alt text](image-46.png) <br>
 
+output: <br>
+![alt text](image-47.png) <br>
 
 
 
