@@ -45,8 +45,13 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 
 ### 6. Membuat Halaman Login & Register
 - pada folder pages, buat folder auth, lalu buat file login.jsx dan register.jsx<br>
+![alt text](image-18.png) <br>
 - login.jsx <br>
+![alt text](image-19.png)<br>
 - register.jsx <br>
+![alt text](image-20.png)<br>
+- hasil
+![alt text](auth.webp) <br>
 
 ### 7. Navigasi Imperatif (router.push) 
 - tambah button login:
