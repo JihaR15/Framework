@@ -114,13 +114,13 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 
 ## Pertanyaan Refleksi
 1. **Apa perbedaan [id].js dan [...slug].js?**
-    >
+    > `[id].js` adalah dynamic route untuk satu segmen URL saja, sedangkan `[...slug].js` adalah catch-all route yang dapat menangkap banyak segmen URL sekaligus ke dalam satu parameter.
 2. **Mengapa slug berbentuk array?**
-    >
+    > Karena catch-all route dapat menangkap lebih dari satu segmen URL, sehingga setiap bagian path tersebut disimpan sebagai elemen dalam sebuah array agar lebih fleksibel.
 3. **Kapan sebaiknya menggunakan Link dan router.push()?** 
-    >
+    > Gunakan komponen `<Link>` untuk navigasi antar halaman standar (deklaratif). Gunakan `router.push()` untuk navigasi yang dipicu oleh logika program atau event tertentu, seperti setelah berhasil submit form (imperatif).
 4. **Mengapa navigasi Next.js tidak me-refresh halaman?**
-    >
+    > Karena Next.js menggunakan *Client-side Navigation*, di mana hanya data dan komponen yang diperlukan saja yang dimuat ulang tanpa melakukan request penuh ke server untuk seluruh dokumen HTML.
 
 
 
