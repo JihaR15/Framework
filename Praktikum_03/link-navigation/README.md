@@ -17,10 +17,17 @@
 
 ### 3.  Pengujian Catch-All Route
 - /shop/clothes<br>
+![alt text](image-7.png) <br>
 - /shop/clothes/tops <br>
+![alt text](image-8.png)<br>
 - /shop/clothes/tops/t-shirt <br>
+![alt text](image-9.png)<br>
 ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan array[1]. 
 - Modifikasi […slug].tsx <br>
+![alt text](image-10.png) <br>
+- Berapapun banyaknya segment tetap terbaca  
+![alt text](image-11.png) <br>
+![alt text](image-12.png) <br>
 
 ### 4. Optional Catch-All Route 
 -  Rename file: [...slug].js → [[...slug]].js agar tidak error saat hanya mengakses /shop<br>
