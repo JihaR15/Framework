@@ -14,14 +14,14 @@ const produk = () => {
     return (
         <div>
             Produk User Page <br />
-            <button
+            {/* <button
                 onClick={() => {
                     localStorage.removeItem("isLogin");
                     push("/auth/login");
                 }}
             >
                 Logout
-            </button>
+            </button> */}
         </div>
     );
 };

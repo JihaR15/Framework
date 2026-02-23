@@ -97,7 +97,20 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
     sudah diterapkan pada praktikum langkah 6.
 
 ### Tugas 3 (Pengayaan)
-- Terapkan redirect otomatis ke login jika user belum login
+- Terapkan redirect otomatis ke login jika user belum login. 
+> sebenarnya sudah diterapkan juga, namun disini saya akan ubah agar tidak hanya pada /produk, tapi page lain harus ke page login dulu.
+- modifikasi _app.tsx, index.tsx pada pages/produk, dan login.tsx pada pages/auth/login.
+- _app.tsx
+![alt text](image-29.png) <br>
+![alt text](image-30.png) <br>
+- index.tsx pada pages/produk <br>
+![alt text](image-31.png) <br>
+- login.tsx pada pages/auth/login <br>
+![alt text](image-32.png)<br>
+
+- hasil <br>
+![alt text](tugas3.webp)<br>
+
 
 ## Pertanyaan Refleksi
 1. **Apa perbedaan [id].js dan [...slug].js?**
