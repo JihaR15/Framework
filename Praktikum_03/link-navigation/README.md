@@ -67,8 +67,10 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 | `onClick={handlerLogin()}` | Fungsi langsung dieksekusi | Saat render | - | ❌ Bug: tidak menunggu klik | 🚫 Tidak direkomendasikan |
 
 ### 8. Simulasi Redirect (Belum Login)
-- pada index.tsx tambahkan beberapa code
-- Jika Akses /product → otomatis diarahkan ke login.
+- pada index.tsx tambahkan beberapa code <br>
+![alt text](image-22.png) <br>
+- Jika Akses /product → otomatis diarahkan ke login. <br>
+![alt text](redirectlogin.webp)<br>
 
 ## Tugas Praktikum
 
