@@ -7,12 +7,12 @@
 ### 2. Membuat Catch-All Route
 - pada folder pages, Buat folder shop dan file […slug].tsx <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-3.png) <br>
-- Isi file  […slug].tsx
+- Isi file  […slug].tsx <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-5.png) <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-4.png) <br>
-- Cek menggunakan console.log 
+- Cek menggunakan console.log <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-2.png) <br>
-- Modifikasi [...slug].tsx untuk menampilkan nilai query 
+- Modifikasi [...slug].tsx untuk menampilkan nilai query <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-6.png) <br>
 
 ### 3.  Pengujian Catch-All Route
@@ -22,19 +22,19 @@
 ![alt text](../Praktikum_03/link-navigation/img/image-8.png)<br>
 - /shop/clothes/tops/t-shirt <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-9.png)<br>
-ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan array[1]. 
+ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan array[1]. <br>
 - Modifikasi […slug].tsx <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-10.png) <br>
-- Berapapun banyaknya segment tetap terbaca  
+- Berapapun banyaknya segment tetap terbaca  <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-11.png) <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-12.png) <br>
 
 ### 4. Optional Catch-All Route 
-- jika mengakses /shop saja maka akan terjadi error
+- jika mengakses /shop saja maka akan terjadi error <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-13.png) <br>
 -  Rename file: [...slug].js → [[...slug]].js agar tidak error saat hanya mengakses /shop<br>
 ![alt text](../Praktikum_03/link-navigation/img/image-15.png) <br>
-- hasil
+- hasil <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-14.png) <br>
 
 
@@ -50,7 +50,7 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 ![alt text](../Praktikum_03/link-navigation/img/image-19.png)<br>
 - register.tsx <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-20.png)<br>
-- hasil
+- hasil <br>
 ![alt text](../Praktikum_03/link-navigation/img/auth.webp) <br>
 
 ### 7. Navigasi Imperatif (router.push) 
@@ -85,22 +85,22 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 ### Tugas 2 (Wajib)
 - Buat navigasi: 
     - Login → Product (imperatif). 
-    > sebenarnya sudah diterapkan pada praktikum langkah 7. namun dikarenakan ada redirect pada langkah 8, membuat button login ketika di klik dia membuka /produk sekejap, lalu langsung redirect ke login, jadi login yang sudah dibuat tidak mau masuk ke produk, cara mengatasi adalah dengan menghapus redirect pada langkah 8. maka login yang sudah dibuat berhasil masuk ke produk. 
+    > sebenarnya sudah diterapkan pada praktikum langkah 7. namun dikarenakan ada redirect pada langkah 8, membuat button login ketika di klik dia membuka /produk sekejap, lalu langsung redirect ke login, jadi login yang sudah dibuat tidak mau masuk ke produk, cara mengatasi adalah dengan menghapus redirect pada langkah 8. maka login yang sudah dibuat berhasil masuk ke produk. <br>
     ![alt text](../Praktikum_03/link-navigation/img/image-26.png)<br>
-    > tapi ada juga cara lain yaitu dengan menyimpan sesi login di local storage, sehingga redirect tetap ada dan perlu ditambahkan button logout untuk menghapus sesi login.
+    > tapi ada juga cara lain yaitu dengan menyimpan sesi login di local storage, sehingga redirect tetap ada dan perlu ditambahkan button logout untuk menghapus sesi login. <br>
     ![alt text](../Praktikum_03/link-navigation/img/image-27.png) <br>
     ![alt text](../Praktikum_03/link-navigation/img/image-28.png) <br>
-    karena hanya ditambahkan di handlerLogin, jadi login yang bagian tengah tidak berhasil masuk ke produk. karena langsung pakai push("/produk") dan tidak menyimpan sesi di localStorage.
+    karena hanya ditambahkan di handlerLogin, jadi login yang bagian tengah tidak berhasil masuk ke produk. karena langsung pakai push("/produk") dan tidak menyimpan sesi di localStorage. <br>
     ![alt text](../Praktikum_03/link-navigation/img/tugas2.webp) <br>
 
-    - Login ↔ Register (Link) 
+    - Login ↔ Register (Link) <br>
     sudah diterapkan pada praktikum langkah 6.
 
 ### Tugas 3 (Pengayaan)
 - Terapkan redirect otomatis ke login jika user belum login. 
-> sebenarnya sudah diterapkan juga, namun disini saya akan ubah agar tidak hanya pada /produk, tapi page lain harus ke page login dulu.
+> sebenarnya sudah diterapkan juga, namun disini saya akan ubah agar tidak hanya pada /produk, tapi page lain harus ke page login dulu. <br>
 - modifikasi _app.tsx, index.tsx pada pages/produk, dan login.tsx pada pages/auth/login.
-- _app.tsx
+- _app.tsx <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-29.png) <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-30.png) <br>
 - index.tsx pada pages/produk <br>
