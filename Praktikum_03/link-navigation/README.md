@@ -54,7 +54,17 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 ![alt text](auth.webp) <br>
 
 ### 7. Navigasi Imperatif (router.push) 
-- tambah button login:
+- tambah button login: mengarah ke /produk <br>
+![alt text](image-21.png) <br>
+- Hasil <br>
+![alt text](buttonlogin.webp) <br>
+#### Perbandingan Penggunaan onClick di React
+| Kode | Cara Kerja | Dipanggil Saat | Kelebihan | Kekurangan | Rekomendasi |
+|------|------------|---------------|-----------|------------|-------------|
+| `onClick={handlerLogin}` | Mengirim referensi fungsi | Tombol diklik | Bersih, efisien, best practice | Tidak bisa kirim parameter langsung | ✅ Sangat direkomendasikan |
+| `onClick={() => push('/produk')}` | Arrow function memanggil fungsi | Tombol diklik | Praktis untuk navigasi sederhana | Kurang reusable jika logika bertambah | ✅ Cocok untuk navigasi sederhana |
+| `onClick={() => handlerLogin()}` | Arrow function membungkus fungsi | Tombol diklik | Fleksibel kirim parameter | Redundant jika tanpa parameter | ⚠ Gunakan jika perlu argumen |
+| `onClick={handlerLogin()}` | Fungsi langsung dieksekusi | Saat render | - | ❌ Bug: tidak menunggu klik | 🚫 Tidak direkomendasikan |
 
 ### 8. Simulasi Redirect (Belum Login)
 - pada index.tsx tambahkan beberapa code
