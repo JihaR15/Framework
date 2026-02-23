@@ -30,7 +30,12 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 ![alt text](image-12.png) <br>
 
 ### 4. Optional Catch-All Route 
+- jika mengakses /shop saja maka akan terjadi error
+![alt text](image-13.png) <br>
 -  Rename file: [...slug].js → [[...slug]].js agar tidak error saat hanya mengakses /shop<br>
+![alt text](image-15.png) <br>
+- hasil
+![alt text](image-14.png) <br>
 
 
 ### 5. Validasi Parameter
