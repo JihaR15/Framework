@@ -6,9 +6,14 @@
 
 ### 2. Membuat Catch-All Route
 - pada folder pages, Buat folder shop dan file […slug].tsx <br>
+![alt text](image-3.png) <br>
 - Isi file  […slug].tsx
+![alt text](image-5.png) <br>
+![alt text](image-4.png) <br>
 - Cek menggunakan console.log 
+![alt text](image-2.png) <br>
 - Modifikasi [...slug].tsx untuk menampilkan nilai query 
+![alt text](image-6.png) <br>
 
 ### 3.  Pengujian Catch-All Route
 - /shop/clothes<br>
