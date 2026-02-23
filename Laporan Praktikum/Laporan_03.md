@@ -1,63 +1,63 @@
 ## Praktikum 03 - Link Navigation  
 
 ### 1. Test Run Project
-![alt text](img/image.png) <br>
-![alt text](img/image-1.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-1.png) <br>
 
 ### 2. Membuat Catch-All Route
 - pada folder pages, Buat folder shop dan file […slug].tsx <br>
-![alt text](img/image-3.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-3.png) <br>
 - Isi file  […slug].tsx
-![alt text](img/image-5.png) <br>
-![alt text](img/image-4.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-5.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-4.png) <br>
 - Cek menggunakan console.log 
-![alt text](img/image-2.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-2.png) <br>
 - Modifikasi [...slug].tsx untuk menampilkan nilai query 
-![alt text](img/image-6.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-6.png) <br>
 
 ### 3.  Pengujian Catch-All Route
 - /shop/clothes<br>
-![alt text](img/image-7.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-7.png) <br>
 - /shop/clothes/tops <br>
-![alt text](img/image-8.png)<br>
+![alt text](../Praktikum_03/link-navigation/img/image-8.png)<br>
 - /shop/clothes/tops/t-shirt <br>
-![alt text](img/image-9.png)<br>
+![alt text](../Praktikum_03/link-navigation/img/image-9.png)<br>
 ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan array[1]. 
 - Modifikasi […slug].tsx <br>
-![alt text](img/image-10.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-10.png) <br>
 - Berapapun banyaknya segment tetap terbaca  
-![alt text](img/image-11.png) <br>
-![alt text](img/image-12.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-11.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-12.png) <br>
 
 ### 4. Optional Catch-All Route 
 - jika mengakses /shop saja maka akan terjadi error
-![alt text](img/image-13.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-13.png) <br>
 -  Rename file: [...slug].js → [[...slug]].js agar tidak error saat hanya mengakses /shop<br>
-![alt text](img/image-15.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-15.png) <br>
 - hasil
-![alt text](img/image-14.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-14.png) <br>
 
 
 ### 5. Validasi Parameter
 - Menambah validasi agar tidak error saat slug kosong <br>
-![alt text](img/image-16.png) <br>
-![alt text](img/image-17.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-16.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-17.png) <br>
 
 ### 6. Membuat Halaman Login & Register
 - pada folder pages, buat folder auth, lalu buat file login.tsx dan register.tsx<br>
-![alt text](img/image-18.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-18.png) <br>
 - login.tsx <br>
-![alt text](img/image-19.png)<br>
+![alt text](../Praktikum_03/link-navigation/img/image-19.png)<br>
 - register.tsx <br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_03/link-navigation/img/image-20.png)<br>
 - hasil
-![alt text](img/auth.webp) <br>
+![alt text](../Praktikum_03/link-navigation/img/auth.webp) <br>
 
 ### 7. Navigasi Imperatif (router.push) 
 - tambah button login: mengarah ke /produk <br>
-![alt text](img/image-21.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-21.png) <br>
 - Hasil <br>
-![alt text](img/buttonlogin.webp) <br>
+![alt text](../Praktikum_03/link-navigation/img/buttonlogin.webp) <br>
 #### Perbandingan Penggunaan onClick di React
 | Kode | Cara Kerja | Dipanggil Saat | Kelebihan | Kekurangan | Rekomendasi |
 |------|------------|---------------|-----------|------------|-------------|
@@ -68,30 +68,30 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 
 ### 8. Simulasi Redirect (Belum Login)
 - pada index.tsx tambahkan beberapa code <br>
-![alt text](img/image-22.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-22.png) <br>
 - Jika Akses /product → otomatis diarahkan ke login. <br>
-![alt text](img/redirectlogin.webp)<br>
+![alt text](../Praktikum_03/link-navigation/img/redirectlogin.webp)<br>
 
 ## Tugas Praktikum
 
 ### Tugas 1 (Wajib)
 - Buat catch-all route: 
     - /category/[...slug].jsx <br>
-    ![alt text](img/image-23.png) <br>
+    ![alt text](../Praktikum_03/link-navigation/img/image-23.png) <br>
     - Tampilkan seluruh parameter URL dalam bentuk list. <br>
-    ![alt text](img/image-24.png) <br>
-    ![alt text](img/image-25.png) <br>
+    ![alt text](../Praktikum_03/link-navigation/img/image-24.png) <br>
+    ![alt text](../Praktikum_03/link-navigation/img/image-25.png) <br>
 
 ### Tugas 2 (Wajib)
 - Buat navigasi: 
     - Login → Product (imperatif). 
     > sebenarnya sudah diterapkan pada praktikum langkah 7. namun dikarenakan ada redirect pada langkah 8, membuat button login ketika di klik dia membuka /produk sekejap, lalu langsung redirect ke login, jadi login yang sudah dibuat tidak mau masuk ke produk, cara mengatasi adalah dengan menghapus redirect pada langkah 8. maka login yang sudah dibuat berhasil masuk ke produk. 
-    ![alt text](img/image-26.png)<br>
+    ![alt text](../Praktikum_03/link-navigation/img/image-26.png)<br>
     > tapi ada juga cara lain yaitu dengan menyimpan sesi login di local storage, sehingga redirect tetap ada dan perlu ditambahkan button logout untuk menghapus sesi login.
-    ![alt text](img/image-27.png) <br>
-    ![alt text](img/image-28.png) <br>
+    ![alt text](../Praktikum_03/link-navigation/img/image-27.png) <br>
+    ![alt text](../Praktikum_03/link-navigation/img/image-28.png) <br>
     karena hanya ditambahkan di handlerLogin, jadi login yang bagian tengah tidak berhasil masuk ke produk. karena langsung pakai push("/produk") dan tidak menyimpan sesi di localStorage.
-    ![alt text](img/tugas2.webp) <br>
+    ![alt text](../Praktikum_03/link-navigation/img/tugas2.webp) <br>
 
     - Login ↔ Register (Link) 
     sudah diterapkan pada praktikum langkah 6.
@@ -101,15 +101,15 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 > sebenarnya sudah diterapkan juga, namun disini saya akan ubah agar tidak hanya pada /produk, tapi page lain harus ke page login dulu.
 - modifikasi _app.tsx, index.tsx pada pages/produk, dan login.tsx pada pages/auth/login.
 - _app.tsx
-![alt text](img/image-29.png) <br>
-![alt text](img/image-30.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-29.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-30.png) <br>
 - index.tsx pada pages/produk <br>
-![alt text](img/image-31.png) <br>
+![alt text](../Praktikum_03/link-navigation/img/image-31.png) <br>
 - login.tsx pada pages/auth/login <br>
-![alt text](img/image-32.png)<br>
+![alt text](../Praktikum_03/link-navigation/img/image-32.png)<br>
 
 - hasil <br>
-![alt text](img/tugas3.webp)<br>
+![alt text](../Praktikum_03/link-navigation/img/tugas3.webp)<br>
 
 
 ## Pertanyaan Refleksi
