@@ -76,9 +76,11 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 
 ### Tugas 1 (Wajib)
 - Buat catch-all route: 
-    - /category/[...slug].js 
-    - Tampilkan seluruh parameter URL dalam bentuk list. 
-
+    - /category/[...slug].jsx <br>
+    ![alt text](image-23.png) <br>
+    - Tampilkan seluruh parameter URL dalam bentuk list. <br>
+    ![alt text](image-24.png) <br>
+    ![alt text](image-25.png) <br>
 
 ### Tugas 2 (Wajib)
 - Buat navigasi: 
