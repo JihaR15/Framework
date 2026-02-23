@@ -40,6 +40,8 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 
 ### 5. Validasi Parameter
 - Menambah validasi agar tidak error saat slug kosong <br>
+![alt text](image-16.png) <br>
+![alt text](image-17.png) <br>
 
 ### 6. Membuat Halaman Login & Register
 - pada folder pages, buat folder auth, lalu buat file login.jsx dan register.jsx<br>
