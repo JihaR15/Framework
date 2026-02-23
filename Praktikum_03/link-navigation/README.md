@@ -44,11 +44,11 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 ![alt text](image-17.png) <br>
 
 ### 6. Membuat Halaman Login & Register
-- pada folder pages, buat folder auth, lalu buat file login.jsx dan register.jsx<br>
+- pada folder pages, buat folder auth, lalu buat file login.tsx dan register.tsx<br>
 ![alt text](image-18.png) <br>
-- login.jsx <br>
+- login.tsx <br>
 ![alt text](image-19.png)<br>
-- register.jsx <br>
+- register.tsx <br>
 ![alt text](image-20.png)<br>
 - hasil
 ![alt text](auth.webp) <br>
@@ -84,8 +84,17 @@ ada yang tidak terbaca ini dikarenakan segmennya dibatasi Cuma array[0] dan arra
 
 ### Tugas 2 (Wajib)
 - Buat navigasi: 
-    - Login → Product (imperatif) 
+    - Login → Product (imperatif). 
+    > sebenarnya sudah diterapkan pada praktikum langkah 7. namun dikarenakan ada redirect pada langkah 8, membuat button login ketika di klik dia membuka /produk sekejap, lalu langsung redirect ke login, jadi login yang sudah dibuat tidak mau masuk ke produk, cara mengatasi adalah dengan menghapus redirect pada langkah 8. maka login yang sudah dibuat berhasil masuk ke produk. 
+    ![alt text](image-26.png)<br>
+    > tapi ada juga cara lain yaitu dengan menyimpan sesi login di local storage, sehingga redirect tetap ada dan perlu ditambahkan button logout untuk menghapus sesi login.
+    ![alt text](image-27.png) <br>
+    ![alt text](image-28.png) <br>
+    karena hanya ditambahkan di handlerLogin, jadi login yang bagian tengah tidak berhasil masuk ke produk. karena langsung pakai push("/produk") dan tidak menyimpan sesi di localStorage.
+    ![alt text](tugas2.webp) <br>
+
     - Login ↔ Register (Link) 
+    sudah diterapkan pada praktikum langkah 6.
 
 ### Tugas 3 (Pengayaan)
 - Terapkan redirect otomatis ke login jika user belum login

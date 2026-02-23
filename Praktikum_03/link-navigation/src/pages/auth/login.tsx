@@ -4,6 +4,7 @@
     const halamanLogin = () => {
         const {push} = useRouter();
         const handlerLogin = () => {
+            localStorage.setItem("isLogin", "true");
             push("/produk");
         }
       return (
