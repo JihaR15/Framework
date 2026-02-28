@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div>Katalog Produk</div>
+    <div className="text-center text-4xl font-bold mt-8">Katalog Produk</div>
   )
 }
 

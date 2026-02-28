@@ -183,7 +183,14 @@
 
 ### Tugas 3
 - Terapkan Tailwind CSS
-- Gunakan minimal 5 utility class
+- Gunakan minimal 5 utility class <br>
+![alt text](image-44.png)<br>
+![alt text](image-45.png)<br>
+![alt text](image-46.png)<br>
+![alt text](image-47.png)<br>
+![alt text](image-53.png)<br>
+- Tampilan Browser
+![alt text](image-54.png)<br>   
 
 ## F. Pertanyaan Refleksi
 1. **Kapan sebaiknya menggunakan CSS Module dibanding Global CSS?**

@@ -14,7 +14,7 @@ const AppShell = (props:AppShellProps) => {
         <main>
             {!disableNavbar.includes(pathname) && <Navbar />}
             {children}
-            <div className="footer">
+            <div className="footer text-center text-4xl font-bold ">
                 <h1>Footer</h1>
             </div>
         </main>

@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
       ) : ( */}
         <AppShell>
           <Component {...pageProps} />
-          <button
+          <button className="m-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
             onClick={() => {
               localStorage.removeItem("isLogin");
               router.push("/auth/login");
