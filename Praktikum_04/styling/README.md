@@ -46,6 +46,28 @@
 ![alt text](image-12.png)<br>
 
 ### 5. Refactoring Struktur Project (Best Practice)
+**a. Struktur Awal (Kurang Rapi)** <br>
+![alt text](image-13.png)<br>
+**b. Struktur Refactor (Disarankan)** <br>
+`src/views/auth/Login/` <br>
+├── `index.tsx` <br>
+└── `Login.module.css` <br>
+![alt text](image-14.png)<br>
+**c. Langkah-langkah Refactoring** <br>
+- Modifikasi `Login.module.css` pada folder `src/views/auth/Login/` <br>
+![alt text](image-15.png)<br>
+- Hapus `login.module.css` pada folder `pages/auth/` <br>
+![alt text](image-16.png)<br>
+- Modifikasi `login.tsx` pada folder `pages/auth/` <br>
+![alt text](image-17.png)<br>
+- Modifikasi `index.tsx` pada folder `views/auth/login` <br>
+![alt text](image-18.png)<br>
+- Jalankan browser <br>
+![alt text](image-19.png)<br>
+    > • Routing tetap bersih <br>
+    > • Logic & UI terpisah <br>
+    > • Mudah dikembangkan <br>
+
 ### 6. Inline Styling (CSS-in-JS)
 ### 7. Kombinasi Global CSS + CSS Module
 ### 8. SCSS (SASS)
