@@ -158,6 +158,13 @@
 ### Tugas 1
 - Buat halaman Register
 - Gunakan CSS Module
+![alt text](image-39.png) <br>
+`index.tsx` di folder `views/auth/register`<br>
+![alt text](image-40.png) <br>
+`register.module.css` di folder `views/auth/register`<br>
+![alt text](image-41.png)<br>
+`register.tsx` di folder `pages/auth`<br>
+![alt text](image-42.png)<br>
 
 ### Tugas 2
 - Refactor halaman Produk ke folder views
