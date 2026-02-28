@@ -23,15 +23,15 @@ export default function App({ Component, pageProps }: AppProps) {
 
   if (loading) return null;
 
-  const isAuthPage =
-    router.pathname === "/auth/login" ||
-    router.pathname === "/auth/register";
+  // const isAuthPage =
+  //   router.pathname === "/auth/login" ||
+  //   router.pathname === "/auth/register";
 
   return (
     <>
-      {isAuthPage ? (
+      {/* {isAuthPage ? (
         <Component {...pageProps} />
-      ) : (
+      ) : ( */}
         <AppShell>
           <Component {...pageProps} />
           <button
@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }: AppProps) {
             Logout
           </button>
         </AppShell>
-      )}
+      {/* )} */}
     </>
   );
 }

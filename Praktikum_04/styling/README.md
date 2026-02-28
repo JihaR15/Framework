@@ -36,6 +36,15 @@
 ![alt text](image-10.png)<br>
 
 ### 4. Conditional Rendering Navbar (Tanpa Navbar di Login)
+- Modifikasi `index.tsx` pada folder `AppShell` <br>
+    - `import { useRouter } from "next/router";` <br>
+    - `const disableNavbar = ["/auth/login", "/auth/register"];` <br>
+    - `const { pathname } = useRouter();` <br>
+    - `{!disableNavbar.includes(pathname) && <Navbar />}` <br>
+![alt text](image-11.png)<br>
+- Jalankan browser <br>
+![alt text](image-12.png)<br>
+
 ### 5. Refactoring Struktur Project (Best Practice)
 ### 6. Inline Styling (CSS-in-JS)
 ### 7. Kombinasi Global CSS + CSS Module
