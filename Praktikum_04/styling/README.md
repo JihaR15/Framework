@@ -1,7 +1,14 @@
 ## Praktikum 04 - Styling  
 
 ### 1. Global CSS
+- styles/globals.css <br>
+![alt text](image.png) <br>
+- pages/_app.tsx <br>
+![alt text](image-1.png)<br>
+
 ### 2. CSS Module (Local Scope)
+
+
 ### 3. Styling Untuk Pages (CSS Module)
 ### 4. Conditional Rendering Navbar (Tanpa Navbar di Login)
 ### 5. Refactoring Struktur Project (Best Practice)
