@@ -24,6 +24,17 @@
 ![alt text](image-6.png)<br>
 
 ### 3. Styling Untuk Pages (CSS Module)
+- Tambahkan `login.module.css` pada folder `auth` <br>
+![alt text](image-7.png)<br>
+- Modifikasi `login.module.css` <br>
+![alt text](image-8.png)<br>
+- Modifikasi `login.tsx` <br>
+    - Tambahkan `import styles from "./login.module.css"` <br>
+    - Tambahkan `className={styles.login}` <br>
+![alt text](image-9.png)<br>
+- Jalankan browser <br>
+![alt text](image-10.png)<br>
+
 ### 4. Conditional Rendering Navbar (Tanpa Navbar di Login)
 ### 5. Refactoring Struktur Project (Best Practice)
 ### 6. Inline Styling (CSS-in-JS)
