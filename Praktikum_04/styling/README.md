@@ -165,10 +165,21 @@
 ![alt text](image-41.png)<br>
 `register.tsx` di folder `pages/auth`<br>
 ![alt text](image-42.png)<br>
+- Tampilan Browser <br>
+![alt text](image-43.png)<br>
 
 ### Tugas 2
 - Refactor halaman Produk ke folder views
-- Pisahkan Hero Section dan Main Section
+- Pisahkan Hero Section dan Main Section <br>
+![alt text](image-50.png)
+`HeroSection.tsx`<br>
+![alt text](image-51.png)<br>
+`MainSection.tsx`<br>
+![alt text](image-52.png)<br>
+`index.tsx` pada folder `pages/produk`
+![alt text](image-49.png)<br>
+- Tampilan Browser
+![alt text](image-48.png) <br>
 
 ### Tugas 3
 - Terapkan Tailwind CSS

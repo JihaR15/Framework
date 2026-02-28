@@ -1,3 +1,5 @@
+import HeroSection from "@/views/produk/HeroSection";
+import MainSection from "@/views/produk/MainSection";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -12,17 +14,10 @@ const produk = () => {
         }
     }, []);
     return (
-        <div>
-            Produk User Page <br />
-            {/* <button
-                onClick={() => {
-                    localStorage.removeItem("isLogin");
-                    push("/auth/login");
-                }}
-            >
-                Logout
-            </button> */}
-        </div>
+        <>
+            <HeroSection />
+            <MainSection />
+        </>
     );
 };
 
