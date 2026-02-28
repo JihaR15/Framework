@@ -69,6 +69,18 @@
     > • Mudah dikembangkan <br>
 
 ### 6. Inline Styling (CSS-in-JS)
+
+- Modifikasi `index.tsx` pada folder `views/auth/login` <br>
+    - `<h1 style={{ color: "red", border:"1px solid red", borderRadius: "5px", padding: "5px" }}>Belum Punya Akun</h1>` <br>
+    ![alt text](image-20.png)<br>
+- Jalankan browser <br>
+![alt text](image-21.png)<br>
+
+**Catatan Penting:** <br>
+- Menggunakan camelCase (contoh: `borderRadius: "10px"`) <br>
+- Cocok untuk styling kecil & dinamis <br>
+- Tidak disarankan untuk layout besar <br>
+
 ### 7. Kombinasi Global CSS + CSS Module
 ### 8. SCSS (SASS)
 ### 9. Tailwind CSS
