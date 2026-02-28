@@ -11,7 +11,7 @@
         }
       return (
         <div className={styles.login}>
-            <h1>Halaman Login</h1>
+            <h1 className="text-3xl font-bold text-blue-600">Halaman Login</h1>
             <button onClick={handlerLogin}>Login</button> <br /> 
             {/* <button onClick={ () => push("/produk")}>Login</button> <br />
             <button onClick={ () => handlerLogin()}>Login</button> <br /> */}

@@ -123,6 +123,35 @@
 - Maintainable → Ideal untuk project skala besar<br>
 
 ### 9. Tailwind CSS
+**a. Install** <br>
+- `npm install -D tailwindcss postcss autoprefixer` <br>
+![alt text](image-32.png) <br>
+- `npx tailwindcss init -p` <br>
+![alt text](image-33.png) <br>
+    - Jika terjadi error, downgrade versi tailwindcss <br>
+    ![alt text](image-34.png) <br>
+
+**b. Konfigurasi tailwind.config.js** <br>
+![alt text](image-35.png)<br>
+
+**c. Import di Global CSS** <br>
+- `@tailwind base;` <br>
+- `@tailwind components;` <br>
+- `@tailwind utilities;` <br>
+![alt text](image-37.png)<br>
+
+**d. Contoh Penggunaan** <br>
+- Modifikasi `index.tsx` pada folder `views/auth/login/` <br>
+    - `<h1 className="text-3xl font-bold text-blue-600">Halaman Login</h1>` <br>
+![alt text](image-38.png)<br>
+- Jalankan browser <br>
+![alt text](image-36.png)<br>
+
+**Keunggulan Tailwind CSS:** <br>
+- Utility-first → Styling langsung di markup <br>
+- Responsive → Built-in breakpoints <br>
+- Efisien → Hanya include CSS yang digunakan <br>
+
 
 ## Tugas Praktikum
 
