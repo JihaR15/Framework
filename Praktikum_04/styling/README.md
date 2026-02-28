@@ -93,6 +93,35 @@
 - CSS Module → styling spesifik komponen <br>
 
 ### 8. SCSS (SASS)
+**a. Install SASS**
+![alt text](image-24.png) <br>
+- Cek `package.json` untuk memastikan instalasi berhasil <br>
+![alt text](image-25.png) <br>
+
+**b. Global Variable**
+- Tambahkan `colors.scss` pada folder `styles`<br>
+![alt text](image-27.png)<br>
+- Modifikasi `colors.scss`<br>
+![alt text](image-29.png)<br>
+
+**c. Gunakan di Module**
+- Tambahkan file `login.module.scss` pada folder `views/auth/login/`<br>
+![alt text](image-28.png)<br>
+- Modifikasi `index.tsx`
+    - `import styles from "./login.module.scss"`
+    - Hapus `import styles from "./login.module.css"`<br>
+![alt text](image-31.png)<br>
+- Modifikasi `login.module.scss`
+    - `background-color: map-get($map: $schema, $key: color-secondary);`<br>
+![alt text](image-30.png)<br>
+- Jalankan browser<br>
+![alt text](image-26.png)<br>
+
+**Keunggulan SCSS:**
+- Variable → Simpan warna, font, ukuran di satu tempat
+- Nested rule → Struktur CSS mengikuti struktur HTML
+- Maintainable → Ideal untuk project skala besar<br>
+
 ### 9. Tailwind CSS
 
 ## Tugas Praktikum
