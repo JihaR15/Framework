@@ -82,6 +82,16 @@
 - Tidak disarankan untuk layout besar <br>
 
 ### 7. Kombinasi Global CSS + CSS Module
+- Modifikasi `globals.css` <br>
+![alt text](image-22.png)<br>
+- Modifikasi `index.tsx` pada folder `components/layouts/navbar` <br>
+    - `<div className="big">navbar</div>` <br>
+![alt text](image-23.png)<br>
+
+**Kesimpulan:**
+- Global CSS → utility umum & reusable <br>
+- CSS Module → styling spesifik komponen <br>
+
 ### 8. SCSS (SASS)
 ### 9. Tailwind CSS
 
