@@ -17,7 +17,9 @@ disini saya kembalikan ke sebelum memakai tailwind <br>
 ### 2. Membuat Custom Document
 - Masuk ke folder `pages/_document.js`
 - Modifikasi dengan kode yang sesuai
-- Periksa di Inspect Element bahwa atribut `lang="id"` sudah berubah
+![alt text](image-3.png) <br>
+- Periksa di Inspect Element bahwa atribut `lang="id"` sudah berubah <br>
+![alt text](image-2.png) <br>
 
 ### 3. Pengaturan Title per Halaman
 1. Buka `pages/index.js`
