@@ -79,7 +79,13 @@ Hasil:<br>
     > sudah diterapkan pada praktikum langkah 5 poin ke 3
 
 **Tugas 3 (Pengayaan)**
-- Tambahkan tombol "Kembali ke Home" dengan Next.js Link
+- Tambahkan tombol "Kembali ke Home" dengan Next.js Link<br>
+`404.module.scss` disini saya menambahkan style button untuk Linknya nanti<br>
+![alt text](image-24.png)<br>
+`404.tsx` tambahkan Link yang mengarah ke "/"<br>
+![alt text](image-23.png)<br>
+hasil<br>
+![alt text](image-25.png)<br>
 
 ### F. Pertanyaan Evaluasi
 1. Apa fungsi utama `_document.js`?
