@@ -87,9 +87,15 @@
 ![alt text](image-27.png)<br>
 
 ### Langkah 10 – API Mengambil Data Firebase
-1. Edit `pages/api/product.js`
-2. Jalankan browser: http://localhost:3000/api/produk
-3. Modifikasi `index.ts` pada produk sesuaikan nama type dan database
+1. Edit `pages/api/product.ts`<br>
+![alt text](image-29.png)<br>
+2. Jalankan browser: http://localhost:3000/api/produk<br>
+![alt text](image-28.png)<br>
+3. Modifikasi `MainSection.tsx` pada `views/produk` sesuaikan nama type dan database<br>
+![alt text](image-30.png)<br>
+![alt text](image-32.png)<br>
+hasil<br>
+![alt text](image-31.png)<br>
 
 ## E. Tugas Praktikum
 
