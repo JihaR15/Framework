@@ -6,9 +6,13 @@
 ![alt text](image.png)<br>
 
 ### Langkah 2 – Membuat API Produk
-1. Buat file `pages/api/produk.js`
-2. Tambahkan data statis
-3. Akses: http://localhost:3000/api/produk
+1. Buat file `pages/api/produk.ts`<br>
+![alt text](image-1.png)<br>
+2. Tambahkan data statis<br>
+![alt text](image-2.png)<br>
+![alt text](image-3.png)<br>
+3. Akses: http://localhost:3000/api/produk<br>
+![alt text](image-4.png)<br>
 
 ### Langkah 3 – Fetch Data API di Frontend
 1. Buka `pages/product/index.tsx`
