@@ -23,8 +23,10 @@ disini saya kembalikan ke sebelum memakai tailwind <br>
 
 ### 3. Pengaturan Title per Halaman
 1. Buka `pages/index.js`
-2. Tambahkan title halaman
-3. Refresh dan perhatikan judul tab browser
+2. Tambahkan title halaman <br>
+![alt text](image-4.png)<br>
+3. Refresh dan perhatikan judul tab browser <br>
+![alt text](image-5.png)<br>
 
 ### 4. Membuat Custom Error Page (404)
 - Buat file `pages/404.tsx`
