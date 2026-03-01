@@ -49,9 +49,14 @@ hasil: <br>
 ![alt text](image-14.png)<br>
 
 ### 6. Menampilkan Gambar dari Folder Public
-1. Download gambar 404 dari https://undraw.co/
-2. Simpan sebagai `public/page-not-found.png`
-3. Modifikasi `404.tsx`: `<img src="/page-not-found.png" alt="404" className={styles.error__image} />`
+1. Download gambar 404 dari https://undraw.co/<br>
+![alt text](public/page-not-found.png)<br>
+2. Simpan sebagai `public/page-not-found.png`<br>
+![alt text](image-15.png)<br>
+3. Modifikasi `404.tsx`: `<img src="/page-not-found.png" alt="404" className={styles.error__image} />`<br>
+![alt text](image-16.png)<br>
+hasil: <br>
+![alt text](image-17.png)<br>
 
 ### E. Tugas Praktikum
 
