@@ -89,10 +89,13 @@ hasil<br>
 
 ### F. Pertanyaan Evaluasi
 1. Apa fungsi utama `_document.js`?
-    >
+    > Mengatur struktur HTML dasar (tag `<html>`, `<head>`, `<body>`) yang berlaku untuk semua halaman di aplikasi Next.js.
+
 2. Mengapa `<title>` tidak disarankan di `_document.js`?
-    >
+    > Karena `<title>` harus unik untuk setiap halaman. Jika di-set di `_document.js`, semua halaman akan memiliki judul yang sama. 
+    
 3. Apa perbedaan halaman biasa dan halaman `404.js`?
-    >
+    > Halaman biasa ditampilkan ketika user mengakses route yang valid. Halaman `404.js` adalah halaman khusus yang otomatis ditampilkan Next.js ketika user mengakses route yang tidak ada.
+
 4. Mengapa folder public tidak perlu di-import?
-    >
+    > Folder `public` di Next.js secara otomatis di-serve sebagai folder statis. File di dalamnya dapat diakses langsung melalui URL root (misal: `/page-not-found.png`), tanpa perlu import atau konfigurasi tambahan.
