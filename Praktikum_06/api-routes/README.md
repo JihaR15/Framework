@@ -125,6 +125,14 @@ hasil<br>
 
 ## F. Pertanyaan Evaluasi
 1. Apa fungsi API Routes pada Next.js?
+    > API Routes memungkinkan pembuat aplikasi membuat endpoint backend langsung di folder `pages/api/`, sehingga bisa menangani request HTTP tanpa perlu server terpisah.
+
 2. Mengapa `.env.local` tidak boleh di-push ke repository?
+    > Karena file `.env.local` berisi kunci rahasia (API key, kredensial database) yang tidak boleh dibagikan publik untuk mencegah akses tidak sah ke layanan.
+
 3. Apa perbedaan data statis dan data dinamis?
+    > Data statis tidak berubah dan disimpan langsung dalam kode, sedangkan data dinamis bersumber dari database dan bisa berubah sesuai kebutuhan.
+
 4. Mengapa Next.js disebut framework fullstack?
+    > Karena Next.js dapat menangani frontend (tampilan website) dan backend (API) dalam satu project, sehingga developer bisa membuat aplikasi lengkap tanpa tools terpisah.
+
