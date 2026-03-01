@@ -52,12 +52,16 @@
     ![alt text](image-19.png)<br>
 
 ### Langkah 6 – Install Firebase
-1. `npm install firebase`
-2. Buat folder dan file: `pages/utils/db/firebase.ts`
-3. Copy paste konfigurasi ke file `firebase.ts`
+1. `npm install firebase`<br>
+![alt text](image-20.png)<br>
+2. Buat folder dan file: `pages/utils/db/firebase.ts`<br>
+![alt text](image-21.png)<br>
+3. Copy paste konfigurasi ke file `firebase.ts`<br>
+![alt text](image-22.png)<br>
 
 ### Langkah 7 – Konfigurasi Environment Variable
-1. Buat file: `.env.local`
+1. Buat file: `.env.local`<br>
+![alt text](image-23.png)<br>
 2. Modifikasi file `.env`:
     ```
     FIREBASE_API_KEY=xxxx
@@ -67,9 +71,14 @@
     FIREBASE_MESSAGING_SENDER_ID=xxxx
     FIREBASE_APP_ID=xxxx
     ```
+    <br>
+    
+    ![alt text](image-24.png)<br>
+
 
 ### Langkah 8 – Konfigurasi Firebase
-- Modifikasi `firebase.ts`
+- Modifikasi `firebase.ts`<br>
+![alt text](image-25.png)<br>
 
 ### Langkah 9 – Ambil Data dari Firestore
 1. Buat file: `utils/db/servicefirebase.js`
