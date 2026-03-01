@@ -67,10 +67,16 @@ hasil: <br>
 ![alt text](image-19.png)<br>
     >  untuk deskripsi dan gambar ilustrasi sudah ditambahkan pada langkah ke 4-6
 
-
 **Tugas 2 (Wajib)**
-- Custom warna, font, dan layout halaman 404
-- Navbar tidak tampil di halaman 404
+- Custom warna, font, dan layout halaman 404 <br>
+`404.module.scss` disini saya menambahkan warna dan font family<br>
+![alt text](image-20.png)<br>
+`404.tsx` penerapan styles<br>
+![alt text](image-21.png)<br>
+Hasil:<br>
+![alt text](image-22.png)<br>
+- Navbar tidak tampil di halaman 404<br>
+    > sudah diterapkan pada praktikum langkah 5 poin ke 3
 
 **Tugas 3 (Pengayaan)**
 - Tambahkan tombol "Kembali ke Home" dengan Next.js Link

@@ -7,7 +7,7 @@ const Custom404 = () => {
             <title>404 - Halaman Tidak Ditemukan</title>
         </head>
         <img src="/page-not-found.png" alt="404" className={styles._image} />
-        <h1>404 - Halaman Tidak Ditemukan</h1>
+        <h1 className={styles._text_red}>404 - Halaman Tidak Ditemukan</h1>
         <p>Maaf, Halaman yang anda cari tidak ada.</p>
     </div>
   )
