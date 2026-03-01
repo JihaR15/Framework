@@ -15,10 +15,12 @@
 ![alt text](image-4.png)<br>
 
 ### Langkah 3 – Fetch Data API di Frontend
-1. Buka `pages/product/index.tsx`
-    - Modifikasi kode
-    - Tambahkan `useEffect()` dan comment useEffect untuk isLogin
-2. Jalankan browser: http://localhost:3000/produk
+1. Buka `views/produk/MainSection.tsx`<br>
+    - Modifikasi kode<br>
+    ![alt text](image-5.png)<br>
+    ![alt text](image-6.png)<br>
+2. Jalankan browser: http://localhost:3000/produk<br>
+![alt text](image-7.png)<br>
 
 ## Integrasi Firebase
 
