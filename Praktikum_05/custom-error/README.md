@@ -29,8 +29,12 @@ disini saya kembalikan ke sebelum memakai tailwind <br>
 ![alt text](image-5.png)<br>
 
 ### 4. Membuat Custom Error Page (404)
-- Buat file `pages/404.tsx`
-- Akses URL yang tidak ada, misalnya: `/dashboard`
+- Buat file `pages/404.tsx`<br>
+![alt text](image-6.png)<br>
+isinya: <br>
+![alt text](image-7.png) <br>
+- Akses URL yang tidak ada, misalnya: `/dashboard`<br>
+![alt text](image-8.png) <br>
 
 ### 5. Styling Halaman 404
 1. Buat file `styles/404.module.scss`
