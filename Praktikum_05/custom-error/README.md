@@ -37,9 +37,16 @@ isinya: <br>
 ![alt text](image-8.png) <br>
 
 ### 5. Styling Halaman 404
-1. Buat file `styles/404.module.scss`
-2. Modifikasi `pages/404.tsx` dengan style yang dibuat
-3. Untuk menghilangkan navbar, tambahkan `/404` pada daftar disable navbar
+1. Buat file `styles/404.module.scss`<br>
+![alt text](image-10.png)<br>
+![alt text](image-9.png)<br>
+2. Modifikasi `pages/404.tsx` dengan style yang dibuat<br>
+![alt text](image-11.png)<br>
+![alt text](image-12.png)<br>
+3. Untuk menghilangkan navbar, tambahkan `/404` pada daftar disable navbar<br>
+![alt text](image-13.png)<br>
+hasil: <br>
+![alt text](image-14.png)<br>
 
 ### 6. Menampilkan Gambar dari Folder Public
 1. Download gambar 404 dari https://undraw.co/
