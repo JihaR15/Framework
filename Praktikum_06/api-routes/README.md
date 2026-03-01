@@ -81,8 +81,10 @@
 ![alt text](image-25.png)<br>
 
 ### Langkah 9 – Ambil Data dari Firestore
-1. Buat file: `utils/db/servicefirebase.js`
-2. Modifikasi file `servicefirebase.js`
+1. Buat file: `utils/db/servicefirebase.js`<br>
+![alt text](image-26.png)<br>
+2. Modifikasi file `servicefirebase.js`<br>
+![alt text](image-27.png)<br>
 
 ### Langkah 10 – API Mengambil Data Firebase
 1. Edit `pages/api/product.js`
