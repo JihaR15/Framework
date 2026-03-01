@@ -3,13 +3,16 @@
 ### 1. Menjalankan Project
 1. Buka folder project
 2. Jalankan: `npm run dev`
-3. Akses: `http://localhost:3000`
+3. Akses: `http://localhost:3000`<br>
+![alt text](image.png)<br>
 
 **Jika ada kendala tampilan:**
 - Uninstall Tailwind: `npm uninstall tailwindcss postcss autoprefixer`
 - Hapus file konfigurasi:
     - `tailwind.config.js`
-    - `postcss.config.js`
+    - `postcss.config.js`<br>
+disini saya kembalikan ke sebelum memakai tailwind <br>
+![alt text](image-1.png)<br>
 
 ### 2. Membuat Custom Document
 - Masuk ke folder `pages/_document.js`
