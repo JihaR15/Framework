@@ -25,19 +25,31 @@
 ## Integrasi Firebase
 
 ### Langkah 5 – Setup Firebase
-1. Buka Firebase Console (login dengan Google)
-    - **Note:** Jangan lupa select parent resource
-    - **Note:** Klik create project dan disable Google Analytics
-    - **Note:** Klik add app dan pilih web
-    - **Note:** Klik register app
-    - **Note:** Klik continue to console
+1. Buka Firebase Console (login dengan Google)<br>
+![alt text](image-8.png)<br>
+    - **Note:** Jangan lupa select parent resource<br>
+    ![alt text](image-11.png)<br>
+    - **Note:** Klik create project dan disable Google Analytics<br>
+    ![alt text](image-10.png)<br>
+    ![alt text](image-12.png)<br>
+    - **Note:** Klik add app dan pilih web<br>
+    ![alt text](image-13.png)<br>
+    - **Note:** Klik register app<br>
+    ![alt text](image-14.png)<br>
+    - **Note:** Klik continue to console<br>
+    ![alt text](image-15.png)<br>
 
-2. Aktifkan Firestore Database
-    - Klik create database
-    - Ubah rules menjadi `true` dan klik publish
+2. Aktifkan Firestore Database<br>
+    - Klik create database<br>
+    ![alt text](image-16.png)<br>
+    ![alt text](image-17.png)<br>
+    - Ubah rules menjadi `true` dan klik publish<br>
+    ![alt text](image-18.png)<br>
 
-3. Buat collection: `products`
-    - Gunakan auto-id
+
+3. Buat collection: `produk`
+    - Gunakan auto-id<br>
+    ![alt text](image-19.png)<br>
 
 ### Langkah 6 – Install Firebase
 1. `npm install firebase`
