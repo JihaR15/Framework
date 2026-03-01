@@ -61,7 +61,12 @@ hasil: <br>
 ### E. Tugas Praktikum
 
 **Tugas 1 (Wajib)**
-- Tambahkan judul halaman, deskripsi, dan gambar ilustrasi
+- Tambahkan judul halaman, deskripsi, dan gambar ilustrasi <br>
+- Judul Halaman: <br>
+![alt text](image-18.png)<br>
+![alt text](image-19.png)<br>
+    >  untuk deskripsi dan gambar ilustrasi sudah ditambahkan pada langkah ke 4-6
+
 
 **Tugas 2 (Wajib)**
 - Custom warna, font, dan layout halaman 404
