@@ -13,4 +13,6 @@ Jiha Ramdhan / 15 / 2341720043 / TI-3D
 | 3   | Link Navigation | [link-navigation](https://github.com/JihaR15/Framework/tree/main/Praktikum_03/link-navigation) | [Laporan 03](./Laporan%20Praktikum/Laporan_03.md) |
 | 4   | Styling | [styling](https://github.com/JihaR15/Framework/tree/main/Praktikum_04/styling) | [Laporan 04](./Laporan%20Praktikum/Laporan_04.md) |
 | 5   | Custom Error & Document | [custom-error](https://github.com/JihaR15/Framework/tree/main/Praktikum_05/custom-error) | [Laporan 05](./Laporan%20Praktikum/Laporan_05.md) |
+| 6   | Api Routes | [api-routes](https://github.com/JihaR15/Framework/tree/main/Praktikum_06/api-routes) | [Laporan 06](./Laporan%20Praktikum/Laporan_06.md) |
+| 7   | Client Side Rendering (CSR) | [client-side-rendering](https://github.com/JihaR15/Framework/tree/main/Praktikum_07/client-side-rendering) | [Laporan 07](./Laporan%20Praktikum/Laporan_07.md) |
 
