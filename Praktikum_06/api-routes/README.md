@@ -2,7 +2,8 @@
 
 ### Langkah 1 – Menjalankan Project
 - `npm run dev`
-- Akses: http://localhost:3000
+- Akses: http://localhost:3000<br>
+![alt text](image.png)<br>
 
 ### Langkah 2 – Membuat API Produk
 1. Buat file `pages/api/produk.js`
