@@ -116,8 +116,12 @@ hasil<br>
 ![alt text](image-38.png)<br>
 
 ### Tugas 3 (Pengayaan)
-- Tambahkan tombol Refresh Data
-- Gunakan fetch ulang tanpa reload halaman
+- Tambahkan tombol Refresh Data<br>
+- Gunakan fetch ulang tanpa reload halaman<br>
+![alt text](image-40.png)<br>
+![alt text](image-39.png)<br>
+![alt text](updatedata.gif)<br>
+![alt text](refreshdata.gif)<br>
 
 ## F. Pertanyaan Evaluasi
 1. Apa fungsi API Routes pada Next.js?

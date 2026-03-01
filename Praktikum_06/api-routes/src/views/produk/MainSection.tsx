@@ -10,25 +10,34 @@ type ProductType = {
 
 const MainSection = () => {
   const [products, setProducts] = useState<ProductType[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const fetchProducts = async () => {
+    try {
+      setIsLoading(true);
+      const res = await fetch("/api/produk");
+      const data = await res.json();
+      setProducts(data.data);
+    } catch (err) {
+      console.error("Error fetching products:", err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    fetch("/api/produk")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data.data);
-      })
-      .catch((err) => {
-        console.error("Error fetching products:", err);
-      });
+    fetchProducts();
   }, []);
 
   return (
     <div>
-
-      {/* <div className="mx-4">
-        <h3 className="text-xl font-bold">Produk Gweh</h3>
-        <p className="text-gray-600">Ini deskripsi singkat buat Produk Gweh</p>
-      </div> */}
+      <button
+        type="button"
+        onClick={fetchProducts}
+        disabled={isLoading}
+      >
+        {isLoading ? "Loading..." : "Refresh Data"}
+      </button>
 
       <div>
         {products.map((produk:ProductType) => (
