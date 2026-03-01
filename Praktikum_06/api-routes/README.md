@@ -100,8 +100,10 @@ hasil<br>
 ## E. Tugas Praktikum
 
 ### Tugas 1 (Wajib)
-- Tambahkan minimal 3 data produk di Firestore
-- Pastikan data tampil di halaman produk
+- Tambahkan minimal 3 data produk di Firestore<br>
+![alt text](image-33.png)<br>
+- Pastikan data tampil di halaman produk<br>
+![alt text](image-34.png)<br>
 
 ### Tugas 2 (Wajib)
 - Tambahkan field baru: `category`
