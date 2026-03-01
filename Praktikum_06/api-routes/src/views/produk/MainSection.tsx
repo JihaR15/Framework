@@ -5,6 +5,7 @@ type ProductType = {
   nama: string;
   harga: number;
   ukuran: string;
+  kategori: string;
 };
 
 const MainSection = () => {
@@ -33,6 +34,7 @@ const MainSection = () => {
         {products.map((produk:ProductType) => (
           <div key={produk.id} className="border p-4 rounded shadow">
             <h3>{produk.nama}</h3>
+            <p>Kategori: {produk.kategori}</p>
             <p>Harga: Rp {produk.harga.toLocaleString()}</p>
             <p>Ukuran: {produk.ukuran}</p>
           </div>

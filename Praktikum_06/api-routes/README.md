@@ -106,8 +106,14 @@ hasil<br>
 ![alt text](image-34.png)<br>
 
 ### Tugas 2 (Wajib)
-- Tambahkan field baru: `category`
-- Tampilkan category di frontend
+- Tambahkan field baru: `category`<br>
+![alt text](image-35.png)<br>
+- Tampilkan category di frontend<br>
+- `MainSection.tsx` <br>
+![alt text](image-36.png) <br>
+![alt text](image-37.png) <br>
+- hasil <br>
+![alt text](image-38.png)<br>
 
 ### Tugas 3 (Pengayaan)
 - Tambahkan tombol Refresh Data
