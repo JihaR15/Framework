@@ -74,10 +74,20 @@
 ### Tugas Praktikum
 1. Jelaskan perbedaan:
     - Client Side Rendering (CSR)
+      > Rendering dilakukan di browser. Halaman dimuat kosong, kemudian JavaScript fetch data dan render konten. Lebih cepat untuk interaksi pengguna, tapi lebih lambat initial load.
     - Server Side Rendering (SSR)
+      > Rendering dilakukan di server. HTML sudah berisi konten saat dikirim ke browser. Lebih SEO-friendly dan initial load lebih cepat, tapi server membeban lebih berat.
     - Static Site Generation (SSG)
-2. Buat halaman produk dengan skeleton loading dan animasi
-3. Refactor dari useEffect menjadi SWR
+      > Halaman di-generate saat build time menjadi file HTML statis. Tercepat untuk load dan serve, cocok untuk konten yang jarang berubah.
 
-### Troubleshooting
-Jika error saat mengakses `http://localhost:3000/produk/server`, modifikasi file `index.tsx` di folder `views/product/`
+2. Buat halaman produk dengan skeleton loading dan animasi
+   > sudah diterapkan pada langkah 3
+![alt text](skeleton2.gif)<br>
+
+
+3. Refactor dari useEffect menjadi SWR
+   > sudah diterapkan pada langkah 5
+![alt text](image-21.png)<br>
+![alt text](swr.gif)<br>
+
+
