@@ -9,8 +9,10 @@
 ![alt text](image-2.png)<br>
 
 ### Langkah 2 – Implementasi getServerSideProps
-1. Tambahkan `getServerSideProps` pada `server.tsx`
-2. Jalankan browser: `http://localhost:3000/produk/server`
+1. Tambahkan `getServerSideProps` pada `server.tsx`<br>
+![alt text](image-3.png)<br>
+2. Jalankan browser: `http://localhost:3000/produk/server`<br>
+![alt text](image-4.png)<br>
 
 **Catatan:**
 - Skeleton tidak muncul dan data langsung tampil
