@@ -44,15 +44,15 @@
 - SSR: HTML sudah berisi data lengkap<br>
 ![alt text](<skeleton server.gif>)
 
-## D. Tugas Praktikum
-
-**Tugas Individu:**
-1. Buat 2 halaman: `/products` (CSR) dan `/products/server` (SSR)
-2. Dokumentasikan dengan screenshot dan analisis perbedaan Network tab dan View Source
-3. Buat laporan analisis minimal 2 halaman
-
 ## E. Studi Analisis
 1. Mengapa SSR lebih baik untuk SEO?
+  > SSR mengirimkan HTML lengkap dengan data ke browser, sehingga search engine dapat langsung melihat dan mengindeks konten tanpa perlu menjalankan JavaScript. Halaman CSR hanya mengirim skeleton, sehingga search engine kesulitan membaca konten.
+
 2. Kapan sebaiknya menggunakan SSR?
+  > Gunakan SSR untuk halaman yang membutuhkan SEO (homepage, product pages), konten yang frequently indexing oleh search engine, atau ketika performa awal loading adalah prioritas utama.
+
 3. Apa kekurangan SSR dibanding CSR?
+  > SSR membutuhkan server untuk render setiap request, sehingga lebih beban server, lebih lambat response time, dan lebih kompleks dalam setup. Setiap user request memicu render baru di server.
+
 4. Mengapa skeleton tidak muncul pada SSR?
+  > Skeleton hanya muncul saat data sedang di-fetch di browser (CSR). Pada SSR, data sudah di-fetch di server sebelum HTML dikirim, sehingga halaman langsung menampilkan konten lengkap tanpa loading skeleton.
