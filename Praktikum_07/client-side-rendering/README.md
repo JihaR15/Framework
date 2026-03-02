@@ -50,13 +50,26 @@
 ### Langkah 5: Implementasi SWR
 [SWR Documentation](https://swr.vercel.app/)
 
-1. Install SWR: `npm install swr`
-2. Buat folder `utils/swr` dan file `fetcher.ts`
-3. Modifikasi `fetcher.ts`
-4. Update `pages/produk/index.tsx`
+1. Install SWR: `npm install swr`<br>
+![alt text](image-16.png)<br>
+2. Buat folder `utils/swr` dan file `fetcher.ts`<br>
+![alt text](image-17.png)<br>
+3. Modifikasi `fetcher.ts`<br>
+![alt text](image-18.png)<br>
+4. Update `pages/produk/index.tsx`<br>
+![alt text](image-19.png)<br>
+![alt text](image-20.png)<br>
 
-### Perbandingan
-- useEffect manual vs SWR
+### Hasil & Perbandingan
+![alt text](swr.gif)<br>
+> Disini ketika diupdate datanya dari firebase, maka dia langsung update pada saat buka tab `localhost:3000`, tanpa refresh.
+
+| Aspek | useEffect Manual | SWR (State While Revalidate) |
+|-------|-----------------|-----|
+| Kode | Lebih panjang, state manual | Satu baris hook |
+| Update Data | Hanya saat mount, perlu refresh manual | Otomatis revalidasi saat tab aktif/koneksi kembali |
+| Cache | Tidak ada, fetch ulang setiap kali | Cache instant, fetch di background |
+| Loading | Perlu handle manual | Otomatis ter-handle |
 
 ### Tugas Praktikum
 1. Jelaskan perbedaan:
