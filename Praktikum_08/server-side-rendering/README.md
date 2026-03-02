@@ -20,9 +20,12 @@
 - Dipanggil setiap kali halaman di-request
 
 ### Langkah 3 – Refactor Type
-1. Buat folder `types` pada folder `pages` dan file `Product.type.ts`
-2. Modifikasi `Product.type.ts`
-3. Update file `server.tsx` dengan tipe yang baru
+1. Buat folder `types` pada folder `pages` dan file `Product.type.ts`<br>
+![alt text](image-5.png)<br>
+2. Modifikasi `Product.type.ts`<br>
+![alt text](image-6.png)<br>
+3. Update file `server.tsx` dengan tipe yang baru<br>
+![alt text](image-7.png)<br>
 
 ### Langkah 4 – Uji Perbedaan SSR vs CSR
 
