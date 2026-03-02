@@ -1,9 +1,12 @@
 ## Praktikum 08 - Server-Side Rendering
 
 ### Langkah 1 – Setup Halaman SSR
-1. Buat file baru pada `pages/products/server.tsx`
-2. Modifikasi file `server.tsx`
-3. Jalankan browser: `http://localhost:3000/produk/server`
+1. Buat file baru pada `pages/products/server.tsx`<br>
+![alt text](image.png)<br>
+2. Modifikasi file `server.tsx`<br>
+![alt text](image-1.png)<br>
+3. Jalankan browser: `http://localhost:3000/produk/server`<br>
+![alt text](image-2.png)<br>
 
 ### Langkah 2 – Implementasi getServerSideProps
 1. Tambahkan `getServerSideProps` pada `server.tsx`
