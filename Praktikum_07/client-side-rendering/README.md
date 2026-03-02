@@ -2,28 +2,29 @@
 
 ### Langkah 1: Setup Data Produk
 1. Siapkan project Next.js
-2. Buat endpoint API `/api/products`
+2. Buat endpoint API `/api/produk`
 3. Pastikan data memiliki struktur:
     - `id`
-    - `name`
-    - `category`
-    - `price`
+    - `nama`
+    - `kategori`
+    - `harga`
     - `image`
-4. Jalankan: `http://localhost:3000/api/products`
+4. Jalankan: `http://localhost:3000/api/products`<br>
+![alt text](image.png)<br>
 
 ### Langkah 2: Implementasi CSR dengan useEffect
-1. Buat file `index.tsx` di folder `views/products`
+1. Buat file `index.tsx` di folder `views/produk`
 2. Modifikasi `index.tsx`
 3. Buka file `index.tsx` di `pages/produk/`
 4. Modifikasi `index.tsx`
 5. Jalankan: `http://localhost:3000/produk`
 6. Buat file `produk.module.scss` di folder `produk`
 7. Modifikasi `produk.module.scss`
-8. Modifikasi `index.tsx` di `pages/views/product`
+8. Modifikasi `index.tsx` di `pages/views/produk`
 9. Jalankan browser
 
 ### Langkah 3: Implementasi Skeleton Loading
-- Modifikasi `views/product/index.tsx`
+- Modifikasi `views/produk/index.tsx`
 - Modifikasi `product.module.scss`
 - Jalankan browser untuk melihat skeleton dengan animasi blinking
 - Skeleton akan ditampilkan terlebih dahulu, kemudian gambar dan data produk
