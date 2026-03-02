@@ -31,15 +31,18 @@
 
 **Uji 1 – Skeleton:**
 - Halaman CSR: skeleton muncul saat refresh
-- Halaman SSR: skeleton tidak muncul
+- Halaman SSR: skeleton tidak muncul<br>
+![alt text](<skeleton server.gif>)
 
 **Uji 2 – Network Tab:**
 - CSR: request API terlihat di DevTools → Network → XHR
-- SSR: request API tidak terlihat
+- SSR: request API tidak terlihat<br>
+![alt text](image-8.png)
 
 **Uji 3 – Response HTML:**
 - CSR: HTML awal kosong (berisi skeleton)
-- SSR: HTML sudah berisi data lengkap
+- SSR: HTML sudah berisi data lengkap<br>
+![alt text](<skeleton server.gif>)
 
 ## D. Tugas Praktikum
 
