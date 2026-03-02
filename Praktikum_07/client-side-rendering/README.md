@@ -34,10 +34,18 @@
 ![alt text](image-10.png)<br>
 
 ### Langkah 3: Implementasi Skeleton Loading
-- Modifikasi `views/produk/index.tsx`
-- Modifikasi `product.module.scss`
-- Jalankan browser untuk melihat skeleton dengan animasi blinking
-- Skeleton akan ditampilkan terlebih dahulu, kemudian gambar dan data produk
+- Modifikasi `views/produk/index.tsx`<br>
+![alt text](image-11.png)<br>
+- Modifikasi `product.module.scss`<br>
+![alt text](image-12.png)<br>
+![alt text](image-13.png)<br>
+![alt text](image-14.png)<br>
+- Jalankan browser untuk melihat skeleton dengan animasi blinking<br>
+![alt text](skeleton.gif)<br>
+- Modifikasi lagi `views/produk/index.tsx`<br>
+![alt text](image-15.png)<br>
+- Skeleton akan ditampilkan terlebih dahulu, kemudian gambar dan data produk<br>
+![alt text](skeleton2.gif)<br>
 
 ### Langkah 5: Implementasi SWR
 [SWR Documentation](https://swr.vercel.app/)
