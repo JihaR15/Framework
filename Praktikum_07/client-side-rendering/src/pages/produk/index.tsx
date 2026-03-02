@@ -1,22 +1,29 @@
 import HeroSection from "@/views/produk/HeroSection";
 import MainSection from "@/views/produk/MainSection";
+import TampilanProduk from "@/views/produk";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const produk = () => {
-    // const [isLogin, setIsLogin] = useState(false);
-    const { push } = useRouter();
-    useEffect(() => {
-        const isLogin = localStorage.getItem("isLogin");
+    const [products, setProducts] = useState([]);
 
-        if (!isLogin) {
-            push("/auth/login");
-        }
+    useEffect(() => {
+        fetch("/api/produk")
+            .then((res) => res.json())
+            .then((responsedata) => {
+                setProducts(responsedata.data);
+                console.log("Data produk:", responsedata);
+            })
+            .catch((err) => {
+                console.error("Error fetching produk:", err);
+            });
     }, []);
+    
     return (
         <>
-            <HeroSection />
-            <MainSection />
+            {/* <HeroSection />
+            <MainSection /> */}
+            <TampilanProduk products={products} />
         </>
     );
 };

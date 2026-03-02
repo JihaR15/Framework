@@ -13,15 +13,25 @@
 ![alt text](image.png)<br>
 
 ### Langkah 2: Implementasi CSR dengan useEffect
-1. Buat file `index.tsx` di folder `views/produk`
-2. Modifikasi `index.tsx`
-3. Buka file `index.tsx` di `pages/produk/`
-4. Modifikasi `index.tsx`
-5. Jalankan: `http://localhost:3000/produk`
-6. Buat file `produk.module.scss` di folder `produk`
-7. Modifikasi `produk.module.scss`
-8. Modifikasi `index.tsx` di `pages/views/produk`
-9. Jalankan browser
+1. Buat file `index.tsx` di folder `views/produk`<br>
+![alt text](image-1.png)<br>
+2. Modifikasi `index.tsx`<br>
+![alt text](image-2.png)<br>
+3. Buka file `index.tsx` di `pages/produk/`<br>
+![alt text](image-5.png)<br>
+4. Modifikasi `index.tsx`<br>
+![alt text](image-3.png)<br>
+5. Jalankan: `http://localhost:3000/produk`<br>
+![alt text](image-4.png)<br>
+6. Buat file `produk.module.scss` di folder `produk`<br>
+![alt text](image-6.png)<br>
+7. Modifikasi `produk.module.scss`<br>
+![alt text](image-7.png)<br>
+![alt text](image-8.png)<br>
+8. Modifikasi `index.tsx` di `pages/views/produk`<br>
+![alt text](image-9.png)<br>
+9. Jalankan browser<br>
+![alt text](image-10.png)<br>
 
 ### Langkah 3: Implementasi Skeleton Loading
 - Modifikasi `views/produk/index.tsx`
