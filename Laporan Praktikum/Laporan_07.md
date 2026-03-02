@@ -10,58 +10,58 @@
   - `harga`
   - `image`
 4. Jalankan: `http://localhost:3000/api/products`<br>
-![alt text](img/image.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image.png)<br>
 
 ### Langkah 2: Implementasi CSR dengan useEffect
 1. Buat file `index.tsx` di folder `views/produk`<br>
-![alt text](img/image-1.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-1.png)<br>
 2. Modifikasi `index.tsx`<br>
-![alt text](img/image-2.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-2.png)<br>
 3. Buka file `index.tsx` di `pages/produk/`<br>
-![alt text](img/image-5.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-5.png)<br>
 4. Modifikasi `index.tsx`<br>
-![alt text](img/image-3.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-3.png)<br>
 5. Jalankan: `http://localhost:3000/produk`<br>
-![alt text](img/image-4.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-4.png)<br>
 6. Buat file `produk.module.scss` di folder `produk`<br>
-![alt text](img/image-6.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-6.png)<br>
 7. Modifikasi `produk.module.scss`<br>
-![alt text](img/image-7.png)<br>
-![alt text](img/image-8.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-7.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-8.png)<br>
 8. Modifikasi `index.tsx` di `pages/views/produk`<br>
-![alt text](img/image-9.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-9.png)<br>
 9. Jalankan browser<br>
-![alt text](img/image-10.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-10.png)<br>
 
 ### Langkah 3: Implementasi Skeleton Loading
 - Modifikasi `views/produk/index.tsx`<br>
-![alt text](img/image-11.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-11.png)<br>
 - Modifikasi `product.module.scss`<br>
-![alt text](img/image-12.png)<br>
-![alt text](img/image-13.png)<br>
-![alt text](img/image-14.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-12.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-13.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-14.png)<br>
 - Jalankan browser untuk melihat skeleton dengan animasi blinking<br>
-![alt text](img/skeleton.gif)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/skeleton.gif)<br>
 - Modifikasi lagi `views/produk/index.tsx`<br>
-![alt text](img/image-15.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-15.png)<br>
 - Skeleton akan ditampilkan terlebih dahulu, kemudian gambar dan data produk<br>
-![alt text](img/skeleton2.gif)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/skeleton2.gif)<br>
 
 ### Langkah 5: Implementasi SWR
 [SWR Documentation](https://swr.vercel.app/)
 
 1. Install SWR: `npm install swr`<br>
-![alt text](img/image-16.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-16.png)<br>
 2. Buat folder `utils/swr` dan file `fetcher.ts`<br>
-![alt text](img/image-17.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-17.png)<br>
 3. Modifikasi `fetcher.ts`<br>
-![alt text](img/image-18.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-18.png)<br>
 4. Update `pages/produk/index.tsx`<br>
-![alt text](img/image-19.png)<br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-19.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-20.png)<br>
 
 ### Hasil & Perbandingan
-![alt text](img/swr.gif)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/swr.gif)<br>
 > Disini ketika diupdate datanya dari firebase, maka dia langsung update pada saat buka tab `localhost:3000`, tanpa refresh.
 
 | Aspek | useEffect Manual | SWR (State While Revalidate) |
@@ -82,10 +82,10 @@
 
 2. Buat halaman produk dengan skeleton loading dan animasi
    > sudah diterapkan pada langkah 3
-![alt text](img/skeleton2.gif)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/skeleton2.gif)<br>
 
 3. Refactor dari useEffect menjadi SWR
    > sudah diterapkan pada langkah 5
-![alt text](img/image-21.png)<br>
-![alt text](img/swr.gif)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/image-21.png)<br>
+![alt text](../Praktikum_07/client-side-rendering/img/swr.gif)<br>
 
