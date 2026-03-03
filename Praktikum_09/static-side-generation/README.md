@@ -34,29 +34,28 @@
 - Hapus folder `.next`: `Remove-Item -Recurse -Force .next`
 - Jalankan: `npm run dev`
 
-### Langkah 4 – Menjalankan Production
-1. Pastikan `npm run dev` sudah dihentikan
-2. Jalankan `npm run start`
-3. Akses: `http://localhost:3000/products/static`
-
-### Langkah 5 – Pengujian Perubahan Data
+### Langkah 4 – Pengujian Perubahan Data
 
 **Uji 1 – Tambah Data di Database:**
 1. Buka database Firebase dan tambahkan produk baru
+![alt text](image-9.png)<br>
 2. Bandingkan hasil:
-  - `/products` (CSR) → Data bertambah
-  - `/products/server` (SSR) → Data bertambah
-  - `/products/static` (SSG) → Data tidak berubah
+  - `/products` (CSR) → Data bertambah<br>
+  ![alt text](image-10.png)<br>
+  - `/products/server` (SSR) → Data bertambah<br>
+  ![alt text](image-11.png)<br>
+  - `/products/static` (SSG) → Data tidak berubah<br>
+  ![alt text](image-12.png)<br>
 
 **Uji 2 – Build Ulang:**
-1. Jalankan `npm run build` dan `npm run dev` secara bersamaan
-2. Jalankan `npm run start` (hentikan `npm run dev` terlebih dahulu)
-3. Refresh halaman static → Data baru muncul
-
-### Tugas Praktikum
-1. Buat 3 halaman: CSR, SSR, dan SSG
-2. Lakukan pengujian: tambah data, hapus data, dan bandingkan hasil
-3. Buat laporan analisis minimal 3 halaman
+1. Jalankan `npm run build` dan `npm run dev` secara bersamaan<br>
+![alt text](image-13.png)<br>
+![alt text](image-14.png)<br>
+2. Jalankan `npm run start` (hentikan `npm run dev` terlebih dahulu)<br>
+![alt text](image-15.png)<br>
+![alt text](image-17.png)<br>
+3. Refresh halaman static → Data baru muncul<br>
+![alt text](image-16.png)<br>
 
 ### Studi Analisis
 1. Mengapa SSG tidak menampilkan data terbaru?
