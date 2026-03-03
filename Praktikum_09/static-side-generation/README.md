@@ -1,14 +1,18 @@
 ## Praktikum 09 - Static Side Generation
 
 ### Langkah 1 – Setup Halaman Static
-1. Buat file baru pada `pages/products/static.tsx`
-2. Modifikasi file `static.tsx`
+1. Buat file baru pada `pages/products/static.tsx`<br>
+![alt text](image.png)<br>
+2. Modifikasi file `static.tsx`<br>
+![alt text](image-1.png)<br>
 
 **Catatan:**
 - Mirip dengan SSR
 - Perbedaan hanya pada nama method
 
-### Langkah 2 – Build Production Mode
+> di Jobsheet tidak ada langkah 2
+
+### Langkah 3 – Build Production Mode
 1. Pindahkan folder `Views`, `utils`, dan `styles` ke luar folder `src`
 2. Jalankan `npm run build`
 3. Buka dua terminal:
@@ -20,12 +24,12 @@
 - Hapus folder `.next`: `Remove-Item -Recurse -Force .next`
 - Jalankan: `npm run dev`
 
-### Langkah 3 – Menjalankan Production
+### Langkah 4 – Menjalankan Production
 1. Pastikan `npm run dev` sudah dihentikan
 2. Jalankan `npm run start`
 3. Akses: `http://localhost:3000/products/static`
 
-### Langkah 4 – Pengujian Perubahan Data
+### Langkah 5 – Pengujian Perubahan Data
 
 **Uji 1 – Tambah Data di Database:**
 1. Buka database Firebase dan tambahkan produk baru
