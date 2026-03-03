@@ -59,7 +59,16 @@
 
 ### Studi Analisis
 1. Mengapa SSG tidak menampilkan data terbaru?
+  > SSG menghasilkan halaman saat build time, bukan saat runtime. Data hanya diperbarui jika melakukan build ulang.
+
 2. Mengapa SSG lebih cepat?
+  > Halaman sudah di-generate menjadi file HTML statis, tinggal dikirim ke browser tanpa proses server, sehingga lebih cepat.
+
 3. Kapan SSG tidak cocok digunakan?
+  > SSG tidak cocok untuk konten yang sering berubah, seperti real-time data, user-specific content, atau dashboard yang terupdate setiap saat.
+
 4. Mengapa e-commerce tidak cocok menggunakan SSG murni?
+  > E-commerce membutuhkan data produk, harga, dan stok yang selalu up-to-date. SSG tidak bisa menampilkan perubahan real-time tanpa build ulang.
+
 5. Apa perbedaan build mode dan development mode?
+  > Build mode menghasilkan file optimized untuk production. Development mode memungkinkan hot reload dan debugging, tapi lebih lambat.
