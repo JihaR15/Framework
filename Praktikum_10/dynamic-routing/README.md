@@ -1,9 +1,11 @@
 ## Praktikum 10 - Dynamic Routing
 
 ### Langkah 1 – Membuat Dynamic Route
-1. Buka file `pages/products/[product].tsx` dan modifikasi sesuai (line 20)
+1. Buka file `pages/products/[product].tsx` dan modifikasi sesuai (line 20)<br>
+![alt text](image.png)<br>
 2. Jalankan browser di `http://localhost:3000/produk`
 3. Klik salah satu gambar untuk menuju halaman detail
+![alt text](dynamic.gif)<br>
 
 ### Langkah 2 – Implementasi CSR (Client-Side Rendering)
 1. Modifikasi file `[produk].tsx` di folder `src/pages/produk/`
