@@ -58,6 +58,13 @@
 2. Buat tabel perbandingan CSR vs SSR vs SSG (Loading, Build Required, SEO, Perubahan Data)
 3. Dokumentasikan: Screenshot, Network tab, Build result
 
+### CSR
+![alt text](image-17.png)
+### SSR
+![alt text](image-18.png)
+### SSG
+
+
 ### Pertanyaan Analisis
 1. Mengapa `getStaticPaths` wajib pada dynamic SSG?
 2. Mengapa CSR membutuhkan loading state?

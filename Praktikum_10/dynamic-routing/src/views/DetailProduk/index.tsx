@@ -12,12 +12,14 @@ const DetailProduk = ({ products }: { products: ProductType }) => {
         </div>
 
         <div className={styles.produkdetail__info}>
-          <Link href="/produk">
-            <button className={styles.produkdetail__button}>
-              {"< "}
-              Kembali ke Daftar Produk
-            </button>
-          </Link>
+          <button 
+            type="button"
+            className={styles.produkdetail__button}
+            onClick={() => window.history.back()}
+          >
+            {"< "}
+            Kembali ke Daftar Produk
+          </button>
           <h1 className={styles.produkdetail__name}>{products.nama}</h1>
           <p className={styles.produkdetail__category}>{products.kategori}</p>
           <p className={styles.produkdetail__price}>
