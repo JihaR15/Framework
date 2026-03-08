@@ -34,14 +34,19 @@
 ![alt text](image-15.png)<br>
 
 ### Langkah 3 – Implementasi SSR (Server-Side Rendering)
-1. Comment line 9-20 di `[produk].tsx` dan tambahkan kode SSR
-2. Test: `http://localhost:3000/produk/server`
-3. Catatan: Tidak ada loading state karena data sudah tersedia sebelum render
+1. Comment line 9-20 di `[produk].tsx` dan tambahkan kode SSR<br>
+![alt text](image-19.png)<br>
+2. Test: `http://localhost:3000/produk/server`<br>
+![alt text](SSR.gif)<br>
+3. Catatan: Tidak ada loading state karena data sudah tersedia sebelum render<br>
 
 ### Langkah 4 – Implementasi SSG (Static Site Generation)
-1. Modifikasi `[produk].tsx` dengan `getStaticPaths` dan `getStaticProps`
-2. Update `index.tsx` di `src/views/DetailProduct`
-3. Test: `http://localhost:3000/produk`
+1. Modifikasi `[produk].tsx` dengan `getStaticPaths` dan `getStaticProps`<br>
+![alt text](image-20.png)<br>
+2. Update `index.tsx` di `src/views/DetailProduct`<br>
+![alt text](image-21.png)<br>
+3. Test: `http://localhost:3000/produk`<br>
+![alt text](ssg.gif)<br>
 
 ### Pengujian
 
@@ -58,11 +63,16 @@
 2. Buat tabel perbandingan CSR vs SSR vs SSG (Loading, Build Required, SEO, Perubahan Data)
 3. Dokumentasikan: Screenshot, Network tab, Build result
 
+### Implementasi dan Dokumentasi
 ### CSR
-![alt text](image-17.png)
+![alt text](image-17.png)<br>
 ### SSR
-![alt text](image-18.png)
+![alt text](image-18.png)<br>
 ### SSG
+![alt text](image-22.png)<br>
+![alt text](image-23.png)<br>
+- Setelah Build<br>
+![alt text](<ssg setelah build.gif>)<br>
 
 
 ### Pertanyaan Analisis
