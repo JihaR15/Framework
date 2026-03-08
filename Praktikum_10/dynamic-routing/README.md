@@ -15,21 +15,23 @@
 3. Update file `servicefirebase.ts`
 ![alt text](image-3.png)
 4. Update file `[[...produk]].ts`<br>
-![alt text](image-4.png)
-![alt text](image-5.png)
-![alt text](image-6.png)
+![alt text](image-4.png)<br>
+![alt text](image-5.png)<br>
+![alt text](image-6.png)<br>
 5. Buat file `index.tsx` di folder `views/DetailProduk` dan `detailProduk.module.scss`
-![alt text](image-7.png)
-- `detailProduk.module.scss`
-![alt text](image-9.png)
-![alt text](image-13.png)
-![alt text](image-11.png)
-- `index.tsx`
-![alt text](image-14.png)
-6. Modifikasi `[produk].tsx` di `src/pages/produk/`
-![alt text](image-8.png)
-7. Test: `http://localhost:3000/produk/` → klik produk → `http://localhost:3000/produk/"id produk"`
-![alt text](detailproduk.gif)
+![alt text](image-7.png)<br>
+- `detailProduk.module.scss`<br>
+![alt text](image-9.png)<br>
+![alt text](image-13.png)<br>
+![alt text](image-11.png)<br>
+- `index.tsx`<br>
+![alt text](image-14.png)<br>
+6. Modifikasi `[produk].tsx` di `src/pages/produk/`<br>
+![alt text](image-8.png)<br>
+7. Test: `http://localhost:3000/produk/` → klik produk → `http://localhost:3000/produk/"id produk"`<br>
+![alt text](detailproduk.gif)<br>
+- update style center title<br>
+![alt text](image-15.png)<br>
 
 ### Langkah 3 – Implementasi SSR (Server-Side Rendering)
 1. Comment line 9-20 di `[produk].tsx` dan tambahkan kode SSR
