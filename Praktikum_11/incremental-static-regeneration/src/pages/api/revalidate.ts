@@ -2,17 +2,25 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
     revalidated: boolean;
+    message?: string;
 }
 
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>,
 ) {
-    try {
-        await res.revalidate('/produk/static');
-        return res.status(200).json({ revalidated: true });
-    } catch (err) {
-        console.error("Error in API route:",err);
-        return res.status(500).json({ revalidated: false });
+    if (req.query.data === "produk") {
+        try {
+            await res.revalidate('/produk/static');
+            return res.status(200).json({ revalidated: true });
+        } catch (err) {
+            console.error("Error in API route:",err);
+            return res.status(500).json({ revalidated: false });
+        }
     }
+
+    return res.json({
+        revalidated: false,
+        message: "Invalid data query parameter. Expected 'data=produk'."
+    })
 }

@@ -26,20 +26,22 @@
 ### Langkah 2: On-Demand Revalidation
 
 **2.1 Buat API Revalidate**
-- Buat file `revalidate.ts` di `pages/api/`
-![alt text](image-8.png)
-![alt text](image-9.png)
-- Endpoint dapat dipicu tanpa menunggu waktu revalidate
-- coba tambah data baru
-![alt text](image-10.png)
-- setelah ditambahkan lalu di refresh tanpa menunggu 10 detik
-![alt text](image-11.png)
-- setelah data dihapus 
-![alt text](image-12.png)
+- Buat file `revalidate.ts` di `pages/api/`<br>
+![alt text](image-8.png)<br>
+![alt text](image-9.png)<br>
+- Endpoint dapat dipicu tanpa menunggu waktu revalidate<br>
+- coba tambah data baru<br>
+![alt text](image-10.png)<br>
+- setelah ditambahkan lalu di refresh tanpa menunggu 10 detik<br>
+![alt text](image-11.png)<br>
+- setelah data dihapus <br>
+![alt text](image-12.png)<br>
 
 **2.2 Tambahkan Parameter Data**
-- Modifikasi `revalidate.ts` dengan kondisi: `req.query.data === "produk"`
-- Uji: `http://localhost:3000/api/revalidate?data=produk`
+- Modifikasi `revalidate.ts` dengan kondisi: `req.query.data === "produk"`<br>
+![alt text](image-13.png)<br>
+- Uji: `http://localhost:3000/api/revalidate?data=produk`<br>
+![alt text](image-14.png)<br>
 
 **2.3 Tambahkan Token Security**
 - Buka file `.env` dan tambahkan token
