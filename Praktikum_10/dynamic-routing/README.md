@@ -9,12 +9,27 @@
 
 ### Langkah 2 – Implementasi CSR (Client-Side Rendering)
 1. Modifikasi file `[produk].tsx` di folder `src/pages/produk/`
-2. Rename file `produk.ts` (folder `pages/api/`) menjadi `[[...product]].ts`
+![alt text](image-1.png)<br>
+2. Rename file `produk.ts` (folder `pages/api/`) menjadi `[[...produk]].ts`<br>
+![alt text](image-2.png) <br>
 3. Update file `servicefirebase.ts`
-4. Update file `[[...produk]].ts`
-5. Buat file `index.tsx` di folder `views/DetailProduct` dan `detailProduct.module.scss`
-6. Modifikasi `[product].tsx` di `src/pages/produk/`
-7. Test: `http://localhost:3000/produk/` → klik produk → `http://localhost:3000/produk/pAWIT99SWmVbVrNm49ml`
+![alt text](image-3.png)
+4. Update file `[[...produk]].ts`<br>
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+5. Buat file `index.tsx` di folder `views/DetailProduk` dan `detailProduk.module.scss`
+![alt text](image-7.png)
+- `detailProduk.module.scss`
+![alt text](image-9.png)
+![alt text](image-13.png)
+![alt text](image-11.png)
+- `index.tsx`
+![alt text](image-14.png)
+6. Modifikasi `[produk].tsx` di `src/pages/produk/`
+![alt text](image-8.png)
+7. Test: `http://localhost:3000/produk/` → klik produk → `http://localhost:3000/produk/"id produk"`
+![alt text](detailproduk.gif)
 
 ### Langkah 3 – Implementasi SSR (Server-Side Rendering)
 1. Comment line 9-20 di `[produk].tsx` dan tambahkan kode SSR
