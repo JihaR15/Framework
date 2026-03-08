@@ -2,51 +2,51 @@
 
 ### Langkah 1 – Membuat Dynamic Route
 1. Buka file `pages/products/[product].tsx` dan modifikasi sesuai (line 20)<br>
-![alt text](img/image.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image.png)<br>
 2. Jalankan browser di `http://localhost:3000/produk`
 3. Klik salah satu gambar untuk menuju halaman detail
-![alt text](img/dynamic.gif)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/dynamic.gif)<br>
 
 ### Langkah 2 – Implementasi CSR (Client-Side Rendering)
 1. Modifikasi file `[produk].tsx` di folder `src/pages/produk/`
-![alt text](img/image-1.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-1.png)<br>
 2. Rename file `produk.ts` (folder `pages/api/`) menjadi `[[...produk]].ts`<br>
-![alt text](img/image-2.png) <br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-2.png) <br>
 3. Update file `servicefirebase.ts`
-![alt text](img/image-3.png)
+![alt text](../Praktikum_10/dynamic-routing/img/image-3.png)
 4. Update file `[[...produk]].ts`<br>
-![alt text](img/image-4.png)<br>
-![alt text](img/image-5.png)<br>
-![alt text](img/image-6.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-4.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-5.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-6.png)<br>
 5. Buat file `index.tsx` di folder `views/DetailProduk` dan `detailProduk.module.scss`
-![alt text](img/image-7.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-7.png)<br>
 - `detailProduk.module.scss`<br>
-![alt text](img/image-9.png)<br>
-![alt text](img/image-13.png)<br>
-![alt text](img/image-11.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-9.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-13.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-11.png)<br>
 - `index.tsx`<br>
-![alt text](img/image-14.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-14.png)<br>
 6. Modifikasi `[produk].tsx` di `src/pages/produk/`<br>
-![alt text](img/image-8.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-8.png)<br>
 7. Test: `http://localhost:3000/produk/` → klik produk → `http://localhost:3000/produk/"id produk"`<br>
-![alt text](img/detailproduk.gif)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/detailproduk.gif)<br>
 - update style center title<br>
-![alt text](img/image-15.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-15.png)<br>
 
 ### Langkah 3 – Implementasi SSR (Server-Side Rendering)
 1. Comment line 9-20 di `[produk].tsx` dan tambahkan kode SSR<br>
-![alt text](img/image-19.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-19.png)<br>
 2. Test: `http://localhost:3000/produk/server`<br>
-![alt text](img/SSR.gif)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/SSR.gif)<br>
 3. Catatan: Tidak ada loading state karena data sudah tersedia sebelum render<br>
 
 ### Langkah 4 – Implementasi SSG (Static Site Generation)
 1. Modifikasi `[produk].tsx` dengan `getStaticPaths` dan `getStaticProps`<br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-20.png)<br>
 2. Update `index.tsx` di `src/views/DetailProduct`<br>
-![alt text](img/image-21.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-21.png)<br>
 3. Test: `http://localhost:3000/produk`<br>
-![alt text](img/ssg.gif)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/ssg.gif)<br>
 
 ### Pengujian
 
@@ -65,15 +65,15 @@
 
 ### Implementasi dan Dokumentasi
 ### CSR
-![alt text](img/image-17.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-17.png)<br>
 ### SSR
-![alt text](img/image-18.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-18.png)<br>
 ### SSG
-![alt text](img/image-22.png)<br>
-![alt text](img/image-23.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-22.png)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/image-23.png)<br>
 - Setelah Build<br>
 
-![alt text](img/ssgsetelahbuild.gif)<br>
+![alt text](../Praktikum_10/dynamic-routing/img/ssgsetelahbuild.gif)<br>
 
 ### Tabel Perbandingan
 | Aspek | CSR (Client-Side Rendering) | SSR (Server-Side Rendering) | SSG (Static Site Generation) |

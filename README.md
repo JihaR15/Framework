@@ -17,4 +17,6 @@ Jiha Ramdhan / 15 / 2341720043 / TI-3D
 | 7   | Client Side Rendering (CSR) | [client-side-rendering](https://github.com/JihaR15/Framework/tree/main/Praktikum_07/client-side-rendering) | [Laporan 07](./Laporan%20Praktikum/Laporan_07.md) |
 | 8   | Server Side Rendering (SSR) | [server-side-rendering](https://github.com/JihaR15/Framework/tree/main/Praktikum_08/server-side-rendering) | [Laporan 08](./Laporan%20Praktikum/Laporan_08.md) |
 | 9   | Static Side Generation (SSG) | [static-side-generation](https://github.com/JihaR15/Framework/tree/main/Praktikum_09/static-side-generation) | [Laporan 09](./Laporan%20Praktikum/Laporan_09.md) |
+| 10   | Dynamic Routing | [dynamic-routing](https://github.com/JihaR15/Framework/tree/main/Praktikum_10/dynamic-routing) | [Laporan 10](./Laporan%20Praktikum/Laporan_10.md) |
+
 
