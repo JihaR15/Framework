@@ -5,13 +5,23 @@
 **1.1 Buka halaman static.tsx**
 - Lokasi: `src/pages/produk`
 - Tambahkan `revalidate: 10` untuk memeriksa ulang setiap 10 detik
-- Jika ada perubahan data → cache diperbarui
+- Jika ada perubahan data → cache diperbarui<br>
+![alt text](image.png)
 
 **1.2 Pengujian ISR**
-- Jalankan: `npm run build && npm run start`
-- Tambahkan data baru di Firebase
-- Refresh sebelum 10 detik → tampil data lama
-- Refresh setelah 10 detik → tampil data baru
+- Jalankan: `npm run build && npm run start`<br>
+![alt text](image-1.png)<br>
+![alt text](image-4.png)<br>
+- Tambahkan data baru di Firebase<br>
+![alt text](image-3.png)<br>
+- Produk Awal:<br>
+![alt text](image-5.png)<br>
+- 10 detik setelah penambahan dan di refresh<br>
+![alt text](image-7.png)<br>
+![alt text](image-6.png)<br>
+
+> Refresh sebelum 10 detik → tampil data lama <br>
+> Refresh setelah 10 detik → tampil data baru
 
 ### Langkah 2: On-Demand Revalidation
 

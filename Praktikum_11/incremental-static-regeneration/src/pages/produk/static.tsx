@@ -15,11 +15,12 @@ export default halamanProdukStatic
 
 export async function getStaticProps() {
   const res = await fetch("http://localhost:3000/api/produk");
-  const response = await res.json();
+  const response: { data: ProductType[] } = await res.json();
 
     return {
         props: {
             products: response.data
-        }
+        },
+        revalidate: 10,
     }
 }
