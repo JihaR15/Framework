@@ -27,7 +27,15 @@
 
 **2.1 Buat API Revalidate**
 - Buat file `revalidate.ts` di `pages/api/`
+![alt text](image-8.png)
+![alt text](image-9.png)
 - Endpoint dapat dipicu tanpa menunggu waktu revalidate
+- coba tambah data baru
+![alt text](image-10.png)
+- setelah ditambahkan lalu di refresh tanpa menunggu 10 detik
+![alt text](image-11.png)
+- setelah data dihapus 
+![alt text](image-12.png)
 
 **2.2 Tambahkan Parameter Data**
 - Modifikasi `revalidate.ts` dengan kondisi: `req.query.data === "produk"`
