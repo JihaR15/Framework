@@ -72,13 +72,32 @@
 ![alt text](image-22.png)<br>
 ![alt text](image-23.png)<br>
 - Setelah Build<br>
+
 ![alt text](<ssg setelah build.gif>)<br>
 
+### Tabel Perbandingan
+| Aspek | CSR (Client-Side Rendering) | SSR (Server-Side Rendering) | SSG (Static Site Generation) |
+| :--- | :--- | :--- | :--- |
+| **Loading** | Tampilan dasar cepat muncul, tapi data butuh jeda waktu (*loading*) untuk tampil karena di-fetch dari browser. | Tampilan awal mungkin sedikit lebih lama (menunggu server merender), tapi saat muncul data sudah utuh. | **Sangat Cepat**. Halaman langsung muncul secara utuh seketika karena HTML sudah disiapkan sebelumnya. |
+| **Build Required** | Tidak wajib untuk data. Data diambil saat aplikasi sudah berjalan (Runtime). | Tidak wajib untuk data. Data diambil setiap kali ada *request* (Runtime). | **Wajib**. Data diambil dan halaman HTML dibuat secara permanen *pada saat* proses `npm run build` dijalankan. |
+| **SEO** | **Kurang Bagus**. Bot Google sering kali hanya melihat kerangka halaman kosong saat melakukan *crawling*. | **Sangat Bagus**. Bot Google melihat struktur HTML yang sudah berisi data lengkap. | **Sangat Bagus**. Bot Google melihat struktur HTML statis yang sudah berisi data lengkap. |
+| **Perubahan Data** | **Real-time**. Data selalu terbaru setiap kali user membuka halaman. | **Real-time**. Data selalu terbaru setiap kali user me-refresh halaman. | **Statis**. Data tidak akan berubah (menggunakan data lama) sampai kamu menjalankan *build* ulang. |
 
 ### Pertanyaan Analisis
-1. Mengapa `getStaticPaths` wajib pada dynamic SSG?
-2. Mengapa CSR membutuhkan loading state?
-3. Mengapa SSG tidak menampilkan produk baru tanpa build ulang?
-4. Mana metode terbaik untuk halaman detail e-commerce?
-5. Apa risiko menggunakan SSG untuk produk yang sering berubah?
+
+1. **Mengapa `getStaticPaths` wajib pada dynamic SSG?**
+    > `getStaticPaths` memberitahu Next.js route mana saja yang harus di-generate saat build. Tanpanya, Next.js tidak tahu produk mana yang perlu dibuat halaman HTMLnya sebelumnya.
+
+2. **Mengapa CSR membutuhkan loading state?**
+    > Data diambil dari browser setelah halaman muncul, jadi ada jeda waktu. Loading state memberi tahu user bahwa data sedang diproses, bukan aplikasi rusak.
+
+3. **Mengapa SSG tidak menampilkan produk baru tanpa build ulang?**
+    > SSG membuat HTML permanen saat build. Produk baru hanya ada di database, bukan di file HTML yang sudah tersimpan. Build ulang diperlukan untuk membuat HTML dengan data terbaru.
+
+4. **Mana metode terbaik untuk halaman detail e-commerce?**
+    > **SSR** adalah pilihan terbaik: data selalu terbaru (SEO bagus), performa cepat, dan tidak perlu rebuild saat produk diubah.
+
+5. **Apa risiko menggunakan SSG untuk produk yang sering berubah?**
+    > User akan melihat data lama sampai build ulang dilakukan. Untuk katalog dengan ratusan produk, build ulang bisa memakan waktu lama dan membuat deployment menjadi lambat.
+
 
