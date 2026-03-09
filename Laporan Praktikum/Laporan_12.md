@@ -2,45 +2,45 @@
 
 ### Langkah 1 – Membuat Middleware
 - Modifikasi file `index.tsx` pada folder `src/pages/produk`<br>
-![alt text](img/image.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image.png)<br>
 - Buat file: `src/middleware.ts` sejajar dengan folder `pages`<br>
-![alt text](img/image-1.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-1.png)<br>
 
 ### Langkah 2 – Struktur Dasar Middleware
 - Jika menggunakan `NextResponse.next()` → tidak ada redirect<br>
-![alt text](img/image-2.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-2.png)<br>
 - Masih bisa mengakses ke `http://localhost:3000/produk`<br>
 
 ### Langkah 3 – Redirect Sederhana
 - Semua halaman akan redirect ke home<br>
-![alt text](img/image-4.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-4.png)<br>
 - Error dikarenakan terus-menerus loading<br>
-![alt text](img/image-3.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-3.png)<br>
 
 ### Langkah 4 – Batasi Route Tertentu
 - Middleware hanya berlaku untuk `/produk` dan `/about`<br>
-![alt text](img/image-5.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-5.png)<br>
 - Halaman lain tetap normal<br>
-![alt text](img/image-6.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-6.png)<br>
 - User yang mengakses produk dan about akan redirect ke home<br>
-![alt text](img/middleware.gif)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/middleware.gif)<br>
 
 ### Langkah 5 – Simulasi Sistem Login
 - Modifikasi file `middleware.ts`<br>
-![alt text](img/image-7.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-7.png)<br>
 - Jika user mengakses `http://localhost:3000/produk` tanpa login, akan diarahkan ke halaman login<br>
-![alt text](img/loginsimulasi.gif)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/loginsimulasi.gif)<br>
 
 ### Langkah 6 – Pengujian
 - **Uji 1:** `isLogin = false` → Akses `/produk` → Redirect ke `/login`<br>
-![alt text](img/uji1.gif)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/uji1.gif)<br>
 - **Uji 2:** `isLogin = true` → Bisa mengakses `/produk`<br>
-![alt text](img/image-8.png)<br>
-![alt text](img/uji2.gif)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/image-8.png)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/uji2.gif)<br>
 - **Uji 3:** Tambahkan multiple route dengan matcher: `['/produk', '/about']`<br>
 > sudah dilakukan di langkah 4 - 5, kondisi isLogin = false
 
-![alt text](img/loginsimulasi.gif)<br>
+![alt text](../Praktikum_12/middleware-route-protection/img/loginsimulasi.gif)<br>
 
 
 ### Analisis Perbandingan
