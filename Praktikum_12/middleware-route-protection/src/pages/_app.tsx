@@ -9,19 +9,19 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const isLogin = localStorage.getItem("isLogin");
+  // useEffect(() => {
+  //   const isLogin = localStorage.getItem("isLogin");
 
-    const publicPages = ["/auth/login", "/auth/register"];
+  //   const publicPages = ["/auth/login", "/auth/register"];
 
-    if (!isLogin && !publicPages.includes(router.pathname)) {
-      router.push("/auth/login");
-    } else {
-      setLoading(false);
-    }
-  }, [router.pathname]);
+  //   if (!isLogin && !publicPages.includes(router.pathname)) {
+  //     router.push("/auth/login");
+  //   } else {
+  //     setLoading(false);
+  //   }
+  // }, [router.pathname]);
 
-  if (loading) return null;
+  // if (loading) return null;
 
   // const isAuthPage =
   //   router.pathname === "/auth/login" ||
@@ -34,14 +34,14 @@ export default function App({ Component, pageProps }: AppProps) {
       ) : ( */}
         <AppShell>
           <Component {...pageProps} />
-          <button className="m-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
+          {/* <button className="m-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
             onClick={() => {
               localStorage.removeItem("isLogin");
               router.push("/auth/login");
             }}
           >
             Logout
-          </button>
+          </button> */}
         </AppShell>
       {/* )} */}
     </>

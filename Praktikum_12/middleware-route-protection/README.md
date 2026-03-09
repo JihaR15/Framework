@@ -1,12 +1,15 @@
 ## Praktikum 12 - Middleware & Route Protection
 
 ### Langkah 1 – Membuat Middleware
-- Modifikasi file `index.tsx` pada folder `src/pages/produk`
-- Buat file: `src/middleware.ts` sejajar dengan folder `pages`
+- Modifikasi file `index.tsx` pada folder `src/pages/produk`<br>
+![alt text](image.png)<br>
+- Buat file: `src/middleware.ts` sejajar dengan folder `pages`<br>
+![alt text](image-1.png)<br>
 
 ### Langkah 2 – Struktur Dasar Middleware
-- Jika menggunakan `NextResponse.next()` → tidak ada redirect
-- Masih bisa mengakses ke `http://localhost:3000/produk`
+- Jika menggunakan `NextResponse.next()` → tidak ada redirect<br>
+![alt text](image-2.png)<br>
+- Masih bisa mengakses ke `http://localhost:3000/produk`<br>
 
 ### Langkah 3 – Redirect Sederhana
 - Semua halaman akan redirect ke home
