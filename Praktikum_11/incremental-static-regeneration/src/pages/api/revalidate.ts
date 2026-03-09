@@ -9,6 +9,12 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>,
 ) {
+    if (req.query.token !== process.env.REVALIDATE_TOKEN) {
+        return res.status(401).json({ 
+            revalidated: false, 
+            message: "Insert Correct token" 
+        });
+    }
     if (req.query.data === "produk") {
         try {
             await res.revalidate('/produk/static');

@@ -42,11 +42,16 @@
 ![alt text](image-13.png)<br>
 - Uji: `http://localhost:3000/api/revalidate?data=produk`<br>
 ![alt text](image-14.png)<br>
+- `http://localhost:3000/api/revalidate?data=`
+![alt text](image-15.png)<br>
 
 **2.3 Tambahkan Token Security**
-- Buka file `.env` dan tambahkan token
-- Modifikasi `revalidate.ts` (line 13-17) untuk validasi token
-- Uji: `http://localhost:3000/api/revalidate?data=products&token=12345678`
+- Buka file `.env` dan tambahkan token<br>
+![alt text](image-16.png)<br>
+- Modifikasi `revalidate.ts` untuk validasi token<br>
+![alt text](image-17.png)<br>
+- Uji: `http://localhost:3000/api/revalidate?data=produk&token=12345678`<br>
+![alt text](image-18.png)<br>
 
 ### Langkah 3: Pengujian Manual
 
