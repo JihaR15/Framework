@@ -12,13 +12,18 @@
 - Masih bisa mengakses ke `http://localhost:3000/produk`<br>
 
 ### Langkah 3 – Redirect Sederhana
-- Semua halaman akan redirect ke home
-- Error dikarenakan terus-menerus loading
+- Semua halaman akan redirect ke home<br>
+![alt text](image-4.png)<br>
+- Error dikarenakan terus-menerus loading<br>
+![alt text](image-3.png)<br>
 
 ### Langkah 4 – Batasi Route Tertentu
-- Middleware hanya berlaku untuk `/products` dan `/about`
-- Halaman lain tetap normal
-- User yang mengakses produk dan about akan redirect ke home
+- Middleware hanya berlaku untuk `/produk` dan `/about`<br>
+![alt text](image-5.png)<br>
+- Halaman lain tetap normal<br>
+![alt text](image-6.png)<br>
+- User yang mengakses produk dan about akan redirect ke home<br>
+![alt text](middleware.gif)<br>
 
 ### Langkah 5 – Simulasi Sistem Login
 - Modifikasi file `middleware.ts`
