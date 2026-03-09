@@ -6,19 +6,19 @@
 - Lokasi: `src/pages/produk`
 - Tambahkan `revalidate: 10` untuk memeriksa ulang setiap 10 detik
 - Jika ada perubahan data → cache diperbarui<br>
-![alt text](img/image.png)
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image.png)
 
 **1.2 Pengujian ISR**
 - Jalankan: `npm run build && npm run start`<br>
-![alt text](img/image-1.png)<br>
-![alt text](img/image-4.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-1.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-4.png)<br>
 - Tambahkan data baru di Firebase<br>
-![alt text](img/image-3.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-3.png)<br>
 - Produk Awal:<br>
-![alt text](img/image-5.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-5.png)<br>
 - 10 detik setelah penambahan dan di refresh<br>
-![alt text](img/image-7.png)<br>
-![alt text](img/image-6.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-7.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-6.png)<br>
 
 > Refresh sebelum 10 detik → tampil data lama <br>
 > Refresh setelah 10 detik → tampil data baru
@@ -27,43 +27,43 @@
 
 **2.1 Buat API Revalidate**
 - Buat file `revalidate.ts` di `pages/api/`<br>
-![alt text](img/image-8.png)<br>
-![alt text](img/image-9.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-8.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-9.png)<br>
 - Endpoint dapat dipicu tanpa menunggu waktu revalidate<br>
 - coba tambah data baru<br>
-![alt text](img/image-10.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-10.png)<br>
 - setelah ditambahkan lalu di refresh tanpa menunggu 10 detik<br>
-![alt text](img/image-11.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-11.png)<br>
 - setelah data dihapus <br>
-![alt text](img/image-12.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-12.png)<br>
 
 **2.2 Tambahkan Parameter Data**
 - Modifikasi `revalidate.ts` dengan kondisi: `req.query.data === "produk"`<br>
-![alt text](img/image-13.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-13.png)<br>
 - Uji: `http://localhost:3000/api/revalidate?data=produk`<br>
-![alt text](img/image-14.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-14.png)<br>
 - `http://localhost:3000/api/revalidate?data=`
-![alt text](img/image-15.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-15.png)<br>
 
 **2.3 Tambahkan Token Security**
 - Buka file `.env` dan tambahkan token<br>
-![alt text](img/image-16.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-16.png)<br>
 - Modifikasi `revalidate.ts` untuk validasi token<br>
-![alt text](img/image-17.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-17.png)<br>
 - Uji: `http://localhost:3000/api/revalidate?data=produk&token=12345678`<br>
-![alt text](img/image-18.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-18.png)<br>
 
 ### Langkah 3: Pengujian Manual
 
 **Uji dengan:**
 - Token benar ✓<br>
-![alt text](img/image-19.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-19.png)<br>
 - Token salah ✗<br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-20.png)<br>
 - Tanpa token ✗<br>
-![alt text](img/image-21.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-21.png)<br>
 - token benar tapi parameter data salah<br>
-![alt text](img/image-22.png)<br>
+![alt text](../Praktikum_11/incremental-static-regeneration/img/image-22.png)<br>
 
 ### Pertanyaan Analisis
 
