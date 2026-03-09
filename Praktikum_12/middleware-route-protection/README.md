@@ -26,8 +26,10 @@
 ![alt text](middleware.gif)<br>
 
 ### Langkah 5 – Simulasi Sistem Login
-- Modifikasi file `middleware.ts`
-- Jika user mengakses `http://localhost:3000/produk` tanpa login, akan diarahkan ke halaman login
+- Modifikasi file `middleware.ts`<br>
+![alt text](image-7.png)<br>
+- Jika user mengakses `http://localhost:3000/produk` tanpa login, akan diarahkan ke halaman login<br>
+![alt text](loginsimulasi.gif)<br>
 
 ### Langkah 6 – Pengujian
 - **Uji 1:** `isLogin = false` → Akses `/products` → Redirect ke `/login`
