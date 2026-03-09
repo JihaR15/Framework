@@ -32,9 +32,16 @@
 ![alt text](loginsimulasi.gif)<br>
 
 ### Langkah 6 – Pengujian
-- **Uji 1:** `isLogin = false` → Akses `/products` → Redirect ke `/login`
-- **Uji 2:** `isLogin = true` → Bisa mengakses `/products`
-- **Uji 3:** Tambahkan multiple route dengan matcher: `['/products', '/about']`
+- **Uji 1:** `isLogin = false` → Akses `/produk` → Redirect ke `/login`<br>
+![alt text](uji1.gif)<br>
+- **Uji 2:** `isLogin = true` → Bisa mengakses `/produk`<br>
+![alt text](image-8.png)<br>
+![alt text](uji2.gif)<br>
+- **Uji 3:** Tambahkan multiple route dengan matcher: `['/produk', '/about']`<br>
+> sudah dilakukan di langkah 4 - 5, kondisi isLogin = false
+
+![alt text](loginsimulasi.gif)<br>
+
 
 ### Analisis Perbandingan
 | Aspek | useEffect | Middleware |
