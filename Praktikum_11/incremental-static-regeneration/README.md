@@ -68,7 +68,16 @@
 ### Pertanyaan Analisis
 
 1. Mengapa ISR lebih fleksibel dibanding SSG?
+> ISR memperbarui halaman secara otomatis tanpa rebuild ulang. SSG harus rebuild seluruh proyek jika ada perubahan data, sedangkan ISR cukup tunggu waktu revalidate atau trigger manual.
+
 2. Perbedaan revalidate waktu vs on-demand?
+> Revalidate waktu: halaman diperbarui otomatis setelah X detik. On-demand: halaman diperbarui hanya saat Anda memanggil endpoint tertentu, lebih cepat dan hemat resource.
+
 3. Mengapa endpoint revalidation harus diamankan?
+> Tanpa keamanan, siapa saja bisa memanggil endpoint dan memaksa pembaruan halaman, yang bisa disalahgunakan untuk serangan atau pemborosan server.
+
 4. Risiko jika token tidak digunakan?
+> Endpoint revalidate bisa dipicu oleh orang asing, menyebabkan server sibuk terus-menerus memproses ulang data tanpa perlu, atau bahkan digunakan untuk sabotase.
+
 5. Kapan ISR lebih cocok dibanding SSR?
+> ISR cocok untuk halaman yang jarang berubah tapi perlu update berkala. SSR cocok untuk halaman yang selalu real-time. ISR lebih cepat dan hemat server dibanding SSR.
