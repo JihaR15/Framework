@@ -55,25 +55,17 @@
 
 ### Langkah 3: Pengujian Manual
 
-**Hasil sukses:**
-```
-{ revalidate: true }
-```
-
 **Uji dengan:**
-- Token benar ✓
-- Token salah ✗
-- Tanpa token ✗
+- Token benar ✓<br>
+![alt text](image-19.png)<br>
+- Token salah ✗<br>
+![alt text](image-20.png)<br>
+- Tanpa token ✗<br>
+![alt text](image-21.png)<br>
+- token benar tapi parameter data salah<br>
+![alt text](image-22.png)<br>
 
-### Langkah 4: Tugas Praktikum
-
-1. Tambahkan produk baru di Firebase
-2. Implementasikan ISR dengan `revalidate: 10`
-3. Buat endpoint On-Demand Revalidation
-4. Validasi token pada endpoint
-5. Uji semua skenario token
-
-### Langkah 5: Pertanyaan Analisis
+### Pertanyaan Analisis
 
 1. Mengapa ISR lebih fleksibel dibanding SSG?
 2. Perbedaan revalidate waktu vs on-demand?
