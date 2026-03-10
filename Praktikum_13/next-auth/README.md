@@ -1,16 +1,21 @@
 ## Praktikum 13 - Sistem Autentikasi & Proteksi Route
 
 ### Langkah 1 – Install NextAuth
-1. Jalankan command: `npm install next-auth --force`
+1. Jalankan command: `npm install next-auth --force`<br>
+![alt text](image.png)<br>
 
 ### Langkah 2 – Konfigurasi API Auth
-1. Buat file `pages/api/auth/[...nextauth].ts`
-2. Modifikasi file `[...nextauth].ts` dengan konfigurasi NextAuth
+1. Buat file `pages/api/auth/[...nextauth].ts`<br>
+![alt text](image-1.png)<br>
+2. Modifikasi file `[...nextauth].ts` dengan konfigurasi NextAuth<br>
+![alt text](image-2.png)<br>
+![alt text](image-3.png)<br>
 
 ### Langkah 3 – Tambahkan Secret
 1. Buka file `.env.local`
 2. Tambahkan pada line 12: `NEXTAUTH_SECRET=RANDOM_BASE64_STRING`
-3. Generate RANDOM_BASE64_STRING menggunakan https://www.convertsimple.com/random-base64-generator/
+3. Generate RANDOM_BASE64_STRING menggunakan https://www.convertsimple.com/random-base64-generator/<br>
+![alt text](image-4.png)<br>
 
 ### Langkah 4 – Tambahkan SessionProvider
 1. Buka file `_app.tsx`
