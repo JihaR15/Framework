@@ -69,9 +69,20 @@
 > User klik Sign In -> NextAuth tampilkan form credentials -> Authorize() dijalankan -> JWT dibuat -> Session disimpan -> Frontend akses useSession()
 
 ### Pertanyaan Analisis
+
 1. Mengapa session menggunakan JWT?
+    > JWT stateless dan aman untuk menyimpan data session di client tanpa perlu database session di server, sehingga lebih scalable dan efisien.
+
 2. Apa perbedaan authorize() dan callback jwt()?
+    > authorize() memvalidasi username/password pengguna saat login, sedangkan callback jwt() memproses dan menambahkan data ke token JWT setelah autentikasi berhasil.
+
 3. Mengapa middleware perlu getToken()?
+    > getToken() digunakan middleware untuk membaca dan memverifikasi token JWT dari request, sehingga bisa menentukan apakah pengguna terautentikasi sebelum mengakses halaman yang dilindungi.
+
 4. Apa risiko jika NEXTAUTH_SECRET tidak digunakan?
+    > Token JWT tidak terenkripsi dan dapat dipalsukan oleh penyerang, sehingga data session tidak aman dan sistem autentikasi bisa dijebol.
+
 5. Apa perbedaan autentikasi dan otorisasi dalam sistem ini?
+    > Autentikasi adalah verifikasi identitas pengguna (username/password), sedangkan otorisasi adalah penentuan akses sumber daya (middleware proteksi `/profile` hanya untuk user terautentikasi).
+
 
