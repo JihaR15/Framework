@@ -37,10 +37,16 @@
 ![alt text](signout.gif)<br>
 
 ### Langkah 6 – Menambahkan Data Tambahan (Full Name)
-1. Buka `[...nextauth].ts` dan modifikasi callbacks pada line 22
-2. Modifikasi `navbar.module.scss`
-3. Modifikasi `components/navbar/index.tsx`
-4. Jalankan browser dan lakukan Sign In
+1. Buka `[...nextauth].ts` dan modifikasi callbacks<br>
+![alt text](image-9.png)<br>
+2. Modifikasi `navbar.module.css`<br>
+![alt text](image-10.png)<br>
+![alt text](image-11.png)<br>
+![alt text](image-12.png)<br>
+3. Modifikasi `components/navbar/index.tsx`<br>
+![alt text](image-13.png)<br>
+4. Jalankan browser dan lakukan Sign In<br>
+![alt text](fullname.gif)<br>
 
 ### Langkah 7 – Proteksi Halaman Profile
 1. Buat `pages/profile/index.tsx`
