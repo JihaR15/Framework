@@ -49,30 +49,24 @@
 ![alt text](fullname.gif)<br>
 
 ### Langkah 7 – Proteksi Halaman Profile
-1. Buat `pages/profile/index.tsx`
-2. Buat `src/middleware/withAuth.ts` dengan middleware authorization
-3. Modifikasi `middleware.ts`
+1. Modifikasi `pages/profile/index.tsx`<br>
+![alt text](image-14.png)<br>
+![alt text](image-15.png)<br>
+2. Buat `src/middleware/withAuth.ts` dengan middleware authorization<br>
+![alt text](image-16.png)<br>
+3. Modifikasi `middleware.ts`<br>
+![alt text](image-17.png)<br>
 
 ### Pengujian
-- **Uji 1**: Akses `/profile` tanpa login → Redirect ke home
-- **Uji 2**: Login terlebih dahulu → Akses `/profile` → Berhasil masuk
-- **Uji 3**: Logout → Akses `/profile` → Tidak bisa masuk
+- **Uji 1**: Akses `/profile` tanpa login → Redirect ke home<br>
+![alt text](uji1profile.gif)<br>
+- **Uji 2**: Login terlebih dahulu → Akses `/profile` → Berhasil masuk<br>
+![alt text](uji2profile.gif)<br>
+- **Uji 3**: Logout → Akses `/profile` → Tidak bisa masuk<br>
+![alt text](uji3profile.gif)<br>
 
 ### Alur Login NextAuth
-1. User klik Sign In
-2. NextAuth tampilkan form credentials
-3. Authorize() dijalankan
-4. JWT dibuat
-5. Session disimpan
-6. Frontend akses useSession()
-
-### Tugas Praktikum
-1. Implementasikan login menggunakan Credentials Provider
-2. Tambahkan field full name
-3. Tampilkan full name setelah login
-4. Buat halaman profile
-5. Lindungi halaman profile dengan middleware
-6. Dokumentasikan screenshot login, session, dan redirect middleware
+> User klik Sign In -> NextAuth tampilkan form credentials -> Authorize() dijalankan -> JWT dibuat -> Session disimpan -> Frontend akses useSession()
 
 ### Pertanyaan Analisis
 1. Mengapa session menggunakan JWT?

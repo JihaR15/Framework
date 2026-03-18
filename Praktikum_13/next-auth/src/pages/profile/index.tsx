@@ -1,13 +1,13 @@
-const profile = () => {
+import { useSession } from "next-auth/react";
+
+const HalamanProfile = () => {
+  const {data}:any = useSession();
   return (
     <div>
-        <h1>My Profile</h1> <br />
-        <p>Nama: Jiha Ramdhan</p>
-        <p>Kelas: TI-3D</p>
-        <p>NIM: 2341720043</p>
-        <p>Jurusan: Teknik Informatika D-IV</p> <br />
+      <h1>Halaman Profile</h1>
+      <h3>Selamat Datang, {data?.user?.fullname}</h3>
     </div>
   )
 }
 
-export default profile;
+export default HalamanProfile
