@@ -1,18 +1,25 @@
 ## Praktikum 14 - Implementasi Sistem Registrasi (Database Integration)
 
 ### Langkah 1 – Membuat Register View
-- Buat folder pada views dengan nama register dan tambahkan 2 file yaitu index.tsx dan register.module.scss
-- Modifikasi file index.tsx (pada folder views/auth/register/index.tsx)
-- Buka file register.tsx pada folder auth/register.tsx
-- Modifikasi file register.tsx (pada folder pages/auth/register.tsx)
-- Modifikasi register.module.scss
-- Tambahkan form inputan pada file index.tsx (pada folder views/auth/register/index.tsx) dengan field:
-    - Email
-    - Full Name
-    - Password
-    - Button Register
-- Modifikasi register.module.scss
-- Jalankan browser di http://localhost:3000/auth/register
+- Buat folder pada views/auth dengan nama register dan tambahkan 2 file yaitu index.tsx dan register.module.scss<br>
+![alt text](image.png)<br>
+- Buka file register.tsx pada folder auth/register.tsx dan Modifikasi file register.tsx (pada folder pages/auth/register.tsx)<br>
+![alt text](image-1.png)<br>
+- Modifikasi register.module.scss<br>
+![alt text](image-2.png)<br>
+![alt text](image-3.png)<br>
+![alt text](image-4.png)<br>
+- Tambahkan form inputan pada file index.tsx (pada folder views/auth/register/index.tsx) dengan field:<br>
+    - Email<br>
+    ![alt text](image-5.png)<br>
+    - Full Name<br>
+    ![alt text](image-6.png)<br>
+    - Password<br>
+    ![alt text](image-7.png)<br>
+    - Button Register<br>
+    ![alt text](image-8.png)<br>
+- Jalankan browser di http://localhost:3000/auth/register<br>
+![alt text](image-9.png)<br>
 
 ### Langkah 2 – Membuat API Register
 - Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi
