@@ -21,3 +21,4 @@ Jiha Ramdhan / 15 / 2341720043 / TI-3D
 | 11   | Incremental Static Regeneration | [incremental-static-regerenation](https://github.com/JihaR15/Framework/tree/main/Praktikum_11/incremental-static-regerenation) | [Laporan 11](./Laporan%20Praktikum/Laporan_11.md) |
 | 12   | Middleware & Route Protection | [middleware-route-protection](https://github.com/JihaR15/Framework/tree/main/Praktikum_12/middleware-route-protection) | [Laporan 12](./Laporan%20Praktikum/Laporan_12.md) |
 | 13   | Sistem Autentikasi & Proteksi Route | [next-auth](https://github.com/JihaR15/Framework/tree/main/Praktikum_13/next-auth) | [Laporan 13](./Laporan%20Praktikum/Laporan_13.md) |
+| 14   | Implementasi Sistem Registrasi (Database Integration) | [auth-register](https://github.com/JihaR15/Framework/tree/main/Praktikum_14/auth-register) | [Laporan 14](./Laporan%20Praktikum/Laporan_14.md) |
