@@ -18,15 +18,23 @@
 ![alt text](image-4.png)<br>
 
 ### Langkah 4 – Tambahkan SessionProvider
-1. Buka file `_app.tsx`
-2. Modifikasi dengan SessionProvider
+1. Buka file `_app.tsx`<br>
+2. Modifikasi dengan SessionProvider<br>
+![alt text](image-6.png)<br>
 
 ### Langkah 5 – Tambahkan Tombol Login & Logout
-1. Buka `components/navbar/index.tsx` dan modifikasi line 10 dan 2
-2. Buka `navbar.module.scss` dan tambahkan code pada line 9
-3. Jalankan `http://localhost:3000/`
-4. Klik Sign In, isikan credentials, dan klik Sign In
-5. Verifikasi session muncul setelah login
+1. Buka `components/navbar/index.tsx` dan modifikasi line 10 dan 2<br>
+![alt text](image-5.png)<br>
+2. Buka `navbar.module.css` dan tambahkan code pada line 9<br>
+![alt text](image-7.png)<br>
+3. Jalankan `http://localhost:3000/`<br>
+4. Klik Sign In, isikan credentials, dan klik Sign In<br>
+5. Verifikasi session muncul setelah login<br>
+![alt text](signin.gif)<br>
+6. Untuk dapat menangkap data pada session maka tambahkan code sebagai berikut :<br>
+![alt text](image-8.png)<br>
+7. Uji coba sign in dan sign out<br>
+![alt text](signout.gif)<br>
 
 ### Langkah 6 – Menambahkan Data Tambahan (Full Name)
 1. Buka `[...nextauth].ts` dan modifikasi callbacks pada line 22
