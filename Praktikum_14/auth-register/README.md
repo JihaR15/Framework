@@ -22,11 +22,21 @@
 ![alt text](image-9.png)<br>
 
 ### Langkah 2 – Membuat API Register
-- Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi
-- Buat file register.ts pada folder api
-- Modifikasi file register.ts
-- Modifikasi index.tsx pada folder register (tambahkan beberapa code)
-- Buka browser http://localhost:3000/auth/register, isikan data dan klik register. Jika berhasil maka akan masuk ke menu login
+- Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi<br>
+![alt text](image-10.png)<br>
+> disini ada yang dibedakan dari jobsheet agar bisa saat klik register masuk ke menu login, soalnya kalo mengikuti jobsheet pasti tidak mengarah ke auth/login dan di error 400
+<br>
+
+![alt text](image-11.png)<br>
+- Buat file register.ts pada folder api<br>
+![alt text](image-12.png)<br>
+- Modifikasi file register.ts<br>
+![alt text](image-13.png)<br>
+- Modifikasi index.tsx pada folder register (tambahkan beberapa code)<br>
+![alt text](image-14.png)<br>
+![alt text](image-15.png)<br>
+- Buka browser http://localhost:3000/auth/register, isikan data dan klik register. Jika berhasil maka akan masuk ke menu login<br>
+![alt text](apiregister.gif)<br>
 
 ### Langkah 3 – Install bcrypt
 - npm install bcrypt --force
