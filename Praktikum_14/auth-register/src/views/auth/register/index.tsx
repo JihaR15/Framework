@@ -9,6 +9,8 @@ const TampilanRegister = () => {
   const [error, setError] = useState("");
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    setError("");
+    setIsLoading(true);
     event.preventDefault();
 
     const form = event.currentTarget;
@@ -31,14 +33,14 @@ const TampilanRegister = () => {
     } else {
       setIsLoading(false);
       setError(
-        response.status === 400 ? "User already exists" : "An error occurred",
+        response.status === 400 ? "Email already exists" : "An error occurred",
       );
     }
   };
 
-  
   return (
     <div className={styles.register}>
+      {error && <p className={styles.register__error}>{error}</p>}
       <h1 className={styles.register__title}>Halaman Register</h1>
       <div className={styles.register__form}>
         <form onSubmit={handleSubmit}>
@@ -90,8 +92,12 @@ const TampilanRegister = () => {
               className={styles.register__form__item__input}
             />
           </div>
-          <button type="submit" className={styles.register__form__item__button}>
-            Register
+          <button
+            type="submit"
+            className={styles.register__form__item__button}
+            disabled={isLoading}
+          >
+            {isLoading ? "Loading..." : "Register"}
           </button>
         </form>
         <br />

@@ -39,13 +39,25 @@
 ![alt text](apiregister.gif)<br>
 
 ### Langkah 3 – Install bcrypt
-- npm install bcrypt --force
-- npm install --save-dev @types/bcrypt --force
-- Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi
-- Jalankan browser http://localhost:3000/auth/register dan input data setelah itu klik register
-- Buka Firebase jika berhasil maka data register akan masuk
-- Tambahkan notifikasi error untuk email duplikat pada index.tsx
-- Tambahkan loading indicator saat klik register
+- npm install bcrypt --force<br>
+![alt text](image-16.png)<br>
+- npm install --save-dev @types/bcrypt --force<br>
+![alt text](image-17.png)<br>
+- Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi<br>
+![alt text](image-18.png)<br>
+![alt text](image-19.png)<br>
+![alt text](image-20.png)<br>
+- Jalankan browser http://localhost:3000/auth/register dan input data setelah itu klik register<br>
+![alt text](image-21.png)<br>
+- Buka Firebase jika berhasil maka data register akan masuk<br>
+![alt text](image-22.png)<br>
+- Tambahkan notifikasi error untuk email duplikat pada index.tsx<br>
+![alt text](image-25.png)<br>
+- Tambahkan loading indicator saat klik register<br>
+![alt text](image-26.png)<br>
+![alt text](image-24.png)<br>
+- Setelah ditambahkan<br>
+![alt text](image-23.png)<br>
 
 ### Langkah 4 – Pengujian
 

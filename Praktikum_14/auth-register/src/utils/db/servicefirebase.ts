@@ -6,8 +6,10 @@ import {
   doc,
   query,
   where,
+  addDoc,
 } from "firebase/firestore";
 import app from "./firebase";
+import bcrypt from "bcrypt";
 
 const db = getFirestore(app);
 
@@ -33,6 +35,7 @@ export async function signUp(
     email: string;
     fullName: string;
     password: string;
+    role?: string;
   },
   callback: Function,
 ) {
@@ -46,21 +49,26 @@ export async function signUp(
     ...doc.data(),
   }));
 
-  // if (data.length > 0) {
-  //   callback({
-  //     status: "success",
-  //     message: "User Registered Successfully",
-  //   })
-  // } else {
-  //   callback({
-  //     status: "error",
-  //     message: "User already exists",
-  //   })
-  // }
-  setTimeout(() => {
+  if (data.length > 0) {
     callback({
-      status: "success",
-      message: "User Registered Successfully",
-    });
-  }, 500);
+      status: "error",
+      message: "Email already exists",
+    })
+  } else {
+    userData.password = await bcrypt.hash(userData.password, 10);
+    userData.role = "user";
+    await addDoc(collection(db, "users"), userData)
+      .then(() => {
+        callback({
+          status: "success",
+          message: "User Registered Successfully",
+        });
+      })
+      .catch((error) => {
+        callback({
+          status: "error",
+          message: error.message,
+        });
+      });
+  }
 }
