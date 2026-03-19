@@ -100,8 +100,18 @@
 ![alt text](tugaspraktikumregister2.gif)<br>
 
 ### Pertanyaan Analisis
+
 1. Mengapa password harus di-hash?
+    > Password di-hash agar tidak tersimpan dalam bentuk teks biasa di database. Jika database diretas, hacker tidak dapat langsung menggunakan password tersebut karena sudah dienkripsi. Hash adalah proses satu arah, sehingga tidak bisa dikembalikan ke password asli.
+
 2. Apa perbedaan addDoc dan setDoc?
+    > `addDoc` membuat dokumen baru dengan ID otomatis yang di-generate oleh Firebase. `setDoc` membuat atau menimpa dokumen dengan ID spesifik yang kita tentukan sendiri. Gunakan `addDoc` ketika ID tidak penting, gunakan `setDoc` ketika ingin ID tertentu.
+
 3. Mengapa perlu validasi method POST?
+    > Validasi method POST memastikan API hanya menerima request POST dan menolak method lain seperti GET atau DELETE. Ini mencegah penyalahgunaan endpoint dan meningkatkan keamanan aplikasi.
+
 4. Apa risiko jika email tidak dicek unik?
+    > Jika email tidak dicek unik, user bisa mendaftar dengan email yang sama berkali-kali. Ini menyebabkan data duplikat di database dan user bisa login dengan banyak akun sekaligus, menimbulkan kebingungan dan masalah data integrity.
+
 5. Apa fungsi role pada user?
+    > Role menentukan level akses dan izin user dalam aplikasi. Misalnya "member" adalah user biasa, "admin" memiliki akses lebih tinggi. Ini membantu mengontrol apa yang boleh dilakukan setiap user.
