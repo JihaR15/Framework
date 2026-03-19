@@ -2,102 +2,102 @@
 
 ### Langkah 1 – Membuat Register View
 - Buat folder pada views/auth dengan nama register dan tambahkan 2 file yaitu index.tsx dan register.module.scss<br>
-![alt text](img/image.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image.png)<br>
 - Buka file register.tsx pada folder auth/register.tsx dan Modifikasi file register.tsx (pada folder pages/auth/register.tsx)<br>
-![alt text](img/image-1.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-1.png)<br>
 - Modifikasi register.module.scss<br>
-![alt text](img/image-2.png)<br>
-![alt text](img/image-3.png)<br>
-![alt text](img/image-4.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-2.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-3.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-4.png)<br>
 - Tambahkan form inputan pada file index.tsx (pada folder views/auth/register/index.tsx) dengan field:<br>
     - Email<br>
-    ![alt text](img/image-5.png)<br>
+    ![alt text](../Praktikum_14/auth-register/img/image-5.png)<br>
     - Full Name<br>
-    ![alt text](img/image-6.png)<br>
+    ![alt text](../Praktikum_14/auth-register/img/image-6.png)<br>
     - Password<br>
-    ![alt text](img/image-7.png)<br>
+    ![alt text](../Praktikum_14/auth-register/img/image-7.png)<br>
     - Button Register<br>
-    ![alt text](img/image-8.png)<br>
+    ![alt text](../Praktikum_14/auth-register/img/image-8.png)<br>
 - Jalankan browser di http://localhost:3000/auth/register<br>
-![alt text](img/image-9.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-9.png)<br>
 
 ### Langkah 2 – Membuat API Register
 - Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi<br>
-![alt text](img/image-10.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-10.png)<br>
 > disini ada yang dibedakan dari jobsheet agar bisa saat klik register masuk ke menu login, soalnya kalo mengikuti jobsheet pasti tidak mengarah ke auth/login dan di error 400
 <br>
 
-![alt text](img/image-11.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-11.png)<br>
 - Buat file register.ts pada folder api<br>
-![alt text](img/image-12.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-12.png)<br>
 - Modifikasi file register.ts<br>
-![alt text](img/image-13.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-13.png)<br>
 - Modifikasi index.tsx pada folder register (tambahkan beberapa code)<br>
-![alt text](img/image-14.png)<br>
-![alt text](img/image-15.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-14.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-15.png)<br>
 - Buka browser http://localhost:3000/auth/register, isikan data dan klik register. Jika berhasil maka akan masuk ke menu login<br>
-![alt text](img/apiregister.gif)<br>
+![alt text](../Praktikum_14/auth-register/img/apiregister.gif)<br>
 
 ### Langkah 3 – Install bcrypt
 - npm install bcrypt --force<br>
-![alt text](img/image-16.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-16.png)<br>
 - npm install --save-dev @types/bcrypt --force<br>
-![alt text](img/image-17.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-17.png)<br>
 - Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi<br>
-![alt text](img/image-18.png)<br>
-![alt text](img/image-19.png)<br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-18.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-19.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-20.png)<br>
 - Jalankan browser http://localhost:3000/auth/register dan input data setelah itu klik register<br>
-![alt text](img/image-21.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-21.png)<br>
 - Buka Firebase jika berhasil maka data register akan masuk<br>
-![alt text](img/image-22.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-22.png)<br>
 - Tambahkan notifikasi error untuk email duplikat pada index.tsx<br>
-![alt text](img/image-25.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-25.png)<br>
 - Tambahkan loading indicator saat klik register<br>
-![alt text](img/image-26.png)<br>
-![alt text](img/image-24.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-26.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-24.png)<br>
 - Setelah ditambahkan<br>
-![alt text](img/image-23.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-23.png)<br>
 
 ### Langkah 4 – Pengujian
 
 **Uji 1 – Register Baru**
 - Input: Email baru
 - Hasil: Data tersimpan di Firestore, password ter-hash, redirect ke login<br>
-![alt text](img/uji1register.gif)<br>
+![alt text](../Praktikum_14/auth-register/img/uji1register.gif)<br>
 
 **Uji 2 – Email Sudah Ada**<br>
 - Input: Email yang sama<br>
 - Hasil: Error 400 dengan message "Email already exists"<br>
-![alt text](img/uji2register.gif)<br>
+![alt text](../Praktikum_14/auth-register/img/uji2register.gif)<br>
 
 **Uji 3 – Method GET**<br>
 - Akses: /api/register<br>
 - Hasil: 405 Method Not Allowed<br>
-![alt text](img/image-27.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-27.png)<br>
 
 ### Tugas Praktikum
 1. Implementasikan register terhubung database (Sudah Terhubung)<br>
 2. Tambahkan validasi: Email wajib, Password minimal 6 karakter<br>
 - modifikasi index.tsx<br>
-![alt text](img/image-30.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-30.png)<br>
 - menambahkan field required dan minLength untuk password<br>
-![alt text](img/image-31.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-31.png)<br>
 - hasil<br>
-![alt text](img/image-28.png)<br>
-![alt text](img/image-29.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-28.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-29.png)<br>
 3. Tambahkan role default "member"<br>
 - modifikasi servicefirebase.ts<br>
-![alt text](img/image-32.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-32.png)<br>
 4. Tampilkan pesan error di UI<br>
 - bisa jika mematikan required dan minLength<br>
-![alt text](img/image-33.png)<br>
-![alt text](img/image-34.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-33.png)<br>
+![alt text](../Praktikum_14/auth-register/img/image-34.png)<br>
 5. Screenshot hasil: Register sukses, Email sudah ada, Database Firestore<br>
 - Register berhasil dan ada di firestore dengan role member<br>
-![alt text](img/tugaspraktikumregister.gif)<br>
+![alt text](../Praktikum_14/auth-register/img/tugaspraktikumregister.gif)<br>
 - Register jika akun sudah ada<br>
-![alt text](img/tugaspraktikumregister2.gif)<br>
+![alt text](../Praktikum_14/auth-register/img/tugaspraktikumregister2.gif)<br>
 
 ### Pertanyaan Analisis
 
