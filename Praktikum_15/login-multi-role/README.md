@@ -1,9 +1,12 @@
 ## Praktikum 15 - Implementasi Login Database & Multi-Role
 
 ### Langkah 1 – Custom Login Page
-Tambahkan custom page di NextAuth line 55-57
+- Tambahkan custom page di NextAuth line 51-53<br>
+![alt text](image-1.png)<br>
+![alt text](image.png)<br>
 
-- Jalankan browser http://localhost:3000/ dan klik sign in maka akan diarahkan ke login
+- Jalankan browser http://localhost:3000/ dan klik sign in maka akan diarahkan ke login<br>
+![alt text](custompage.gif)<br>
 
 ### Langkah 2 – Handle Login di Frontend
 - Copy paste isi dari register/index.tsx ke file login/index.tsx
