@@ -9,17 +9,29 @@
 ![alt text](custompage.gif)<br>
 
 ### Langkah 2 – Handle Login di Frontend
-- Copy paste isi dari register/index.tsx ke file login/index.tsx
-- Copy paste isi dari register/register.module.scss ke file login/login.module.scss
-- Semua text register pada file index.tsx pada folder login diubah menjadi login
-- Jangan lupa setting link hrefnya
-- Lakukan hal yang sama pada file login.module.scss rubah text register menjadi login
-- Cek pada file login.tsx pada pages/auth
-- Jalankan browser localhost:3000/auth/login. Tampilannya akan sama dengan register
-- Pada tampilan login kita tidak perlu hapus fullname jadi pada folder views/auth/login/index.tsx hapus fullname
-- Buka file index.tsx pada folder views/auth/login dan modifikasi codenya seperti berikut (Untuk line 64 sampai kebawah tidak ada perubahan)
-- Note: pastikan tulisan password pada event.password.value pada line 48 sama dengan yang ada di database
-- Buka file servicefirebase.ts dan tambahkan code di line 25-38
+- Copy paste isi dari register/index.tsx ke file login/index.tsx<br>
+![alt text](copytologin.gif)<br>
+- Copy paste isi dari register/register.module.scss ke file login/login.module.scss<br>
+![alt text](copytologinscss.gif)<br>
+- Semua text register pada file index.tsx pada folder login diubah menjadi login<br>
+![alt text](replacelogin.gif)<br>
+- Jangan lupa setting link hrefnya<br>
+![alt text](image-2.png)<br>
+- Lakukan hal yang sama pada file login.module.scss rubah text register menjadi login<br>
+![alt text](replaceloginscss.gif)<br>
+- Cek pada file login.tsx pada pages/auth<br>
+![alt text](image-3.png)<br>
+- Jalankan browser localhost:3000/auth/login. Tampilannya akan sama dengan register<br>
+![alt text](image-4.png)<br>
+- Pada tampilan register kita tidak perlu hapus fullname, jadi pada folder views/auth/login/index.tsx hapus fullname<br>
+![alt text](image-5.png)<br>
+![alt text](image-6.png)<br>
+- Buka file index.tsx pada folder views/auth/login dan modifikasi codenya seperti berikut (Untuk line 64 sampai kebawah tidak ada perubahan)<br>
+- Note: pastikan tulisan password pada event.password.value pada line 48 sama dengan yang ada di database<br>
+![alt text](image-8.png)<br>
+![alt text](image-9.png)<br>
+- Buka file servicefirebase.ts dan tambahkan code di line 25-38<br>
+![alt text](image-7.png)<br>
 
 ### Langkah 3 – Authorize di NextAuth (Database Login)
 - Buka file [...nextauth].ts modifikasi menjadi berikut (pada bagian providers)

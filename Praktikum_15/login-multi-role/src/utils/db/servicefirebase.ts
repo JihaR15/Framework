@@ -30,6 +30,21 @@ export async function retrieveDataById(collectionName: string, id: string) {
   return data;
 }
 
+export async function signIn(email: string) {
+  const q = query(collection(db, "users"), where("email", "==", email));
+  const querySnapshot = await getDocs(q);
+  const data = querySnapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  }));
+
+  if (data) {
+    return data[0];
+  } else {
+    return null;
+  }
+}
+
 export async function signUp(
   userData: {
     email: string;
@@ -53,7 +68,7 @@ export async function signUp(
     callback({
       status: "error",
       message: "Email already exists",
-    })
+    });
   } else {
     userData.password = await bcrypt.hash(userData.password, 10);
     // userData.role = "user";
