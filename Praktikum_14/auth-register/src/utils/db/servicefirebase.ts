@@ -56,7 +56,8 @@ export async function signUp(
     })
   } else {
     userData.password = await bcrypt.hash(userData.password, 10);
-    userData.role = "user";
+    // userData.role = "user";
+    userData.role = "member";
     await addDoc(collection(db, "users"), userData)
       .then(() => {
         callback({

@@ -63,32 +63,41 @@
 
 **Uji 1 – Register Baru**
 - Input: Email baru
-- Hasil: Data tersimpan di Firestore, password ter-hash, redirect ke login
+- Hasil: Data tersimpan di Firestore, password ter-hash, redirect ke login<br>
+![alt text](uji1register.gif)<br>
 
-**Uji 2 – Email Sudah Ada**
-- Input: Email yang sama
-- Hasil: Error 400 dengan message "Email already exists"
+**Uji 2 – Email Sudah Ada**<br>
+- Input: Email yang sama<br>
+- Hasil: Error 400 dengan message "Email already exists"<br>
+![alt text](uji2register.gif)<br>
 
-**Uji 3 – Method GET**
-- Akses: /api/register
-- Hasil: 405 Method Not Allowed
-
-### Langkah 5 – Struktur Database (Firestore)
-Collection: users
-| Field | Tipe |
-|-------|------|
-| fullName | string |
-| email | string |
-| password | string (hashed) |
-| role | string |
-| createdAt | timestamp |
+**Uji 3 – Method GET**<br>
+- Akses: /api/register<br>
+- Hasil: 405 Method Not Allowed<br>
+![alt text](image-27.png)<br>
 
 ### Tugas Praktikum
-1. Implementasikan register terhubung database
-2. Tambahkan validasi: Email wajib, Password minimal 6 karakter
-3. Tambahkan role default "member"
-4. Tampilkan pesan error di UI
-5. Screenshot hasil: Register sukses, Email sudah ada, Database Firestore
+1. Implementasikan register terhubung database (Sudah Terhubung)<br>
+2. Tambahkan validasi: Email wajib, Password minimal 6 karakter<br>
+- modifikasi index.tsx<br>
+![alt text](image-30.png)<br>
+- menambahkan field required dan minLength untuk password<br>
+![alt text](image-31.png)<br>
+- hasil<br>
+![alt text](image-28.png)<br>
+![alt text](image-29.png)<br>
+3. Tambahkan role default "member"<br>
+- modifikasi servicefirebase.ts<br>
+![alt text](image-32.png)<br>
+4. Tampilkan pesan error di UI<br>
+- bisa jika mematikan required dan minLength<br>
+![alt text](image-33.png)<br>
+![alt text](image-34.png)<br>
+5. Screenshot hasil: Register sukses, Email sudah ada, Database Firestore<br>
+- Register berhasil dan ada di firestore dengan role member<br>
+![alt text](tugaspraktikumregister.gif)<br>
+- Register jika akun sudah ada<br>
+![alt text](tugaspraktikumregister2.gif)<br>
 
 ### Pertanyaan Analisis
 1. Mengapa password harus di-hash?
