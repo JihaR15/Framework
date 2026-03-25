@@ -53,8 +53,10 @@ hasil<br>
 
 
 ### Langkah 5 – Callback URL Logic
-- Modifikasi withAuth.ts pada folder src/middleware
-- Tujuannya: Setelah login, user kembali ke halaman sebelumnya.
+- Modifikasi withAuth.ts pada folder src/middleware<br>
+![alt text](image-16.png)<br>
+![alt text](callback.gif)<br>
+- Tujuannya: Setelah login, user kembali ke halaman sebelumnya.<br>
 
 ### Langkah 6 – Membuat Halaman Admin dan Authorisasi
 - Buat halaman admin
