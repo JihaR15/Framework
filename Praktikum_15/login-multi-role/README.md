@@ -59,11 +59,22 @@ hasil<br>
 - Tujuannya: Setelah login, user kembali ke halaman sebelumnya.<br>
 
 ### Langkah 6 – Membuat Halaman Admin dan Authorisasi
-- Buat halaman admin
-- Pada index.tsx tambahkan code berikut
-- Modifikasi withAuth.ts
-- Jalankan browser localhost:3000/produk dan pada status sudah login. Rubah urlnya menjadi http://localhost:3000/admin maka user akan diarahkan ke localhost. Pada intinya role selain admin tidak bisa mengakses
-- Untuk mencoba halaman admin rubah role pada firebase pada salah satu akun dan jalankan http://localhost:3000/admin
+- Buat halaman admin<br>
+![alt text](image-18.png)<br>
+- Pada index.tsx tambahkan code berikut<br>
+![alt text](image-17.png)<br>
+- Modifikasi withAuth.ts<br>
+![alt text](image-19.png)<br>
+- Modifikasi middleware.ts<br>
+![alt text](image-21.png)<br>
+- Jalankan browser localhost:3000/produk dan pada status sudah login. Rubah urlnya menjadi http://localhost:3000/admin maka user akan diarahkan ke localhost. Pada intinya role selain admin tidak bisa mengakses<br>
+![alt text](rolenonadmin.gif)<br>
+
+<br>
+
+- Untuk mencoba halaman admin rubah role pada firebase pada salah satu akun dan jalankan http://localhost:3000/admin<br>
+![alt text](image-20.png)<br>
+![alt text](admin.gif)<br>
 
 ## D. Pengujian
 

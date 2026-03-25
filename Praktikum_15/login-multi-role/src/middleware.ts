@@ -7,5 +7,4 @@ export function MainMiddleware(request: NextRequest) {
    return res;
 }
 
-// Middleware ini akan memeriksa apakah pengguna sudah login sebelum mengakses halaman profile
-export default withAuth(MainMiddleware, ["/profile"]);
+export default withAuth(MainMiddleware, ["/profile","/admin"]);
