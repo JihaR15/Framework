@@ -76,7 +76,7 @@ hasil<br>
 ![alt text](image-20.png)<br>
 ![alt text](admin.gif)<br>
 
-## D. Pengujian
+## Pengujian
 
 ### Uji 1 – Login Valid
 **Input:**
@@ -86,6 +86,7 @@ hasil<br>
 **Hasil:**
 - Login berhasil
 - Redirect sesuai callbackUrl
+![alt text](uji1login.gif)
 
 ### Uji 2 – Password Salah
 **Input:**
@@ -95,6 +96,7 @@ hasil<br>
 **Hasil:**
 - Error message tampil
 - Tidak login
+![alt text](uji2login.gif)
 
 ### Uji 3 – Akses Admin sebagai User
 **Login sebagai:**
@@ -104,6 +106,7 @@ hasil<br>
 
 **Hasil:**
 - Redirect ke home
+![alt text](uji3loginadmin.gif)
 
 ### Uji 4 – Akses Admin sebagai Admin
 **Login sebagai:**
@@ -113,8 +116,9 @@ hasil<br>
 
 **Hasil:**
 - Bisa masuk halaman admin
+![alt text](uji4login.gif)
 
-## E. Struktur Database Users
+## Struktur Database Users
 **Collection: users**
 
 | Field | Tipe |
@@ -124,7 +128,7 @@ hasil<br>
 | role | string |
 | fullName | string |
 
-## F. Perbandingan Sistem
+## Perbandingan Sistem
 
 | Fitur | Sebelum | Sekarang |
 |-------|---------|---------|
@@ -134,19 +138,21 @@ hasil<br>
 | Redirect | Manual | Callback URL |
 | Middleware | Basic | Role-based |
 
-## G. Tugas Praktikum
-1. Implementasikan login database.
-2. Tambahkan role pada user.
-3. Buat halaman:
-    - /profile
-    - /admin
-4. Proteksi /admin hanya untuk admin.
-5. Implementasikan callback URL.
+## Pertanyaan Analisis
 
-## H. Pertanyaan Analisis
 1. Mengapa password harus diverifikasi dengan bcrypt.compare?
+    > Karena password disimpan dalam bentuk hash (terenkripsi), bukan plaintext. bcrypt.compare membandingkan password input pengguna dengan hash yang tersimpan di database untuk memastikan kecocokan tanpa perlu menyimpan password asli.
+
 2. Mengapa role disimpan di token?
+    > Agar server tidak perlu query database setiap kali mengecek otorisasi user. Token yang sudah berisi role memudahkan pengecekan izin akses ke halaman tertentu dengan cepat.
+
 3. Apa fungsi callbackUrl?
+    > callbackUrl menyimpan URL halaman sebelumnya saat user login, sehingga setelah berhasil login, user akan diarahkan kembali ke halaman tersebut bukan selalu ke home.
+
 4. Mengapa middleware penting untuk security?
+    > Middleware berjalan di sisi server dan melakukan pengecekan autentikasi & otorisasi sebelum user bisa mengakses halaman. Ini mencegah akses tidak sah ke halaman tertentu seperti admin.
+
 5. Apa risiko jika role tidak dicek di middleware?
+    > User dengan role biasa bisa langsung mengakses halaman admin hanya dengan mengubah URL, karena pengecekan hanya terjadi di frontend yang mudah dimanipulasi.
+
 
