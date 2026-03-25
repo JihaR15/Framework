@@ -34,13 +34,23 @@
 ![alt text](image-7.png)<br>
 
 ### Langkah 3 – Authorize di NextAuth (Database Login)
-- Buka file [...nextauth].ts modifikasi menjadi berikut (pada bagian providers)
+- Buka file [...nextauth].ts modifikasi menjadi berikut (pada bagian providers)<br>
+![alt text](image-11.png)<br>
 
 ### Langkah 4 – Tambahkan Role ke Token
-- JWT Callback pada file [...nextauth].ts Modifikasi menjadi
-- Jalankan browser http://localhost:3000/auth/login
+- JWT Callback pada file [...nextauth].ts Modifikasi menjadi<br>
+![alt text](image-10.png)<br>
+- Jalankan browser http://localhost:3000/auth/login<br>
+![alt text](login.gif)<br>
 
-**Note ERROR:** Jika terdapat error seperti "head tag is being rendered inside a div", buka file `src/views/auth/login/index.tsx` dan tambahkan `<> </>` pada line 67 dan 116.
+**Note ERROR:** Jika terdapat error seperti "head tag is being rendered inside a div", buka file `src/views/auth/login/index.tsx` dan tambahkan `<> </>` pada line 81 dan 150.<br>
+![alt text](image-12.png)<br>
+![alt text](image-13.png)<br>
+modifikasi index.tsx juga agar menggunakan Home milik next/head<br>
+![alt text](image-15.png)<br>
+hasil<br>
+![alt text](image-14.png)<br>
+
 
 ### Langkah 5 – Callback URL Logic
 - Modifikasi withAuth.ts pada folder src/middleware

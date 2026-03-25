@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { retrieveProductById,  retrieveProducts } from "../../utils/db/servicefirebase";
+import { retrieveDataById,  retrieveProducts } from "../../utils/db/servicefirebase";
 
 
 type Data = {
@@ -13,7 +13,7 @@ export default async function handler(
   res: NextApiResponse<Data>,
 ) {
   if (req.query.produk![1]) {
-    const data = await retrieveProductById("produk", req.query.produk![1]);
+    const data = await retrieveDataById("produk", req.query.produk![1]);
     res.status(200).json({ status: true, status_code: 200, data: data });
     return;
   } else {

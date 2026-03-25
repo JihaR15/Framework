@@ -55,7 +55,6 @@ const Tampilanlogin = () => {
     //   );
     // }
 
-    
     try {
       const res = await signIn("credentials", {
         redirect: false,
@@ -78,27 +77,31 @@ const Tampilanlogin = () => {
   };
 
   return (
-    <div className={styles.login}>
-      {error && <p className={styles.login__error}>{error}</p>}
-      <h1 className={styles.login__title}>Halaman login</h1>
-      <div className={styles.login__form}>
-        <form onSubmit={handleSubmit}>
-          {/* email */}
-          <div className={styles.login__form__item}>
-            <label htmlFor="email" className={styles.login__form__item__label}>
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              className={styles.login__form__item__input}
-              // required
-            />
-          </div>
-          {/* full name */}
-          {/* <div className={styles.login__form__item}>
+    <>
+      <div className={styles.login}>
+        {error && <p className={styles.login__error}>{error}</p>}
+        <h1 className={styles.login__title}>Halaman login</h1>
+        <div className={styles.login__form}>
+          <form onSubmit={handleSubmit}>
+            {/* email */}
+            <div className={styles.login__form__item}>
+              <label
+                htmlFor="email"
+                className={styles.login__form__item__label}
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                className={styles.login__form__item__input}
+                // required
+              />
+            </div>
+            {/* full name */}
+            {/* <div className={styles.login__form__item}>
             <label
               htmlFor="FullName"
               className={styles.login__form__item__label}
@@ -114,38 +117,39 @@ const Tampilanlogin = () => {
               // required
             />
           </div> */}
-          {/* password */}
-          <div className={styles.login__form__item}>
-            <label
-              htmlFor="password"
-              className={styles.login__form__item__label}
+            {/* password */}
+            <div className={styles.login__form__item}>
+              <label
+                htmlFor="password"
+                className={styles.login__form__item__label}
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                className={styles.login__form__item__input}
+                // required
+                // minLength={6}
+              />
+            </div>
+            <button
+              type="submit"
+              className={styles.login__form__item__button}
+              disabled={isLoading}
             >
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Password"
-              className={styles.login__form__item__input}
-              // required
-              // minLength={6}
-            />
-          </div>
-          <button
-            type="submit"
-            className={styles.login__form__item__button}
-            disabled={isLoading}
-          >
-            {isLoading ? "Loading..." : "login"}
-          </button>
-        </form>
-        <br />
-        <p className={styles.login__form__item__text}>
-          Belum punya akun? <Link href="/auth/register">Daftar di sini</Link>
-        </p>
+              {isLoading ? "Loading..." : "login"}
+            </button>
+          </form>
+          <br />
+          <p className={styles.login__form__item__text}>
+            Belum punya akun? <Link href="/auth/register">Daftar di sini</Link>
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

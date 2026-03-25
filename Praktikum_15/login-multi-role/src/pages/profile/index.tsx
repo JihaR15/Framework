@@ -5,7 +5,7 @@ const HalamanProfile = () => {
   return (
     <div>
       <h1>Halaman Profile</h1>
-      <h3>Selamat Datang, {data?.user?.fullname}</h3>
+      <h3>Selamat Datang, {data?.user?.fullName}</h3>
     </div>
   )
 }

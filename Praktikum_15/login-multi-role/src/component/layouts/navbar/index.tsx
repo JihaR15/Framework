@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className={styles.navbar__right}>
                 {data ? (
                     <div className={styles.navbar__user}>
-                        Welcome, {data.user?.fullname}
+                        Welcome, {data.user?.fullName}
                     </div>
                 ) : null}
                 {data ? (
