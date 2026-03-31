@@ -7,6 +7,7 @@ import {
   query,
   where,
   addDoc,
+  updateDoc,
 } from "firebase/firestore";
 import app from "./firebase";
 import bcrypt from "bcrypt";
@@ -86,5 +87,43 @@ export async function signUp(
           message: error.message,
         });
       });
+  }
+}
+
+export async function signInWithGoogle(userData: any, callback: any) {
+  try {
+    const q = query(
+      collection(db, "users"),
+      where("email", "==", userData.email),
+    );
+
+    const querySnapshot = await getDocs(q);
+    const data: any = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    if (data.length > 0) {
+      userData.role = data[0].role;
+      await updateDoc(doc(db, "users", data[0].id), userData);
+      callback({
+        status: true,
+        message: "User registered and logged in with Google",
+        data: userData,
+      });
+    } else {
+      userData.role = "member";
+      await addDoc(collection(db, "users"), userData);
+      callback({
+        status: true,
+        message: "User registered and logged in with Google",
+        data: userData,
+      });
+    }
+  } catch (error: any) {
+    callback({
+      status: false,
+      message: "Failed to register user with Google",
+    });
   }
 }

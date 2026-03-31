@@ -45,14 +45,20 @@
 **Note:** Data akun Google tidak tersimpan dalam database
 
 ### Langkah 8 – Menampilkan Image dari Google
-- Buka file `index.tsx` dan tambahkan code untuk menampilkan image
-- Buka file `navbar.module.css` dan tambahkan styling
-- Jika berhasil, tampilan akan menampilkan avatar dari Google
+- Buka file `index.tsx` dan tambahkan code untuk menampilkan image<br>
+![alt text](image-12.png)<br>
+- Buka file `navbar.module.css` dan tambahkan styling<br>
+![alt text](image-13.png)<br>
+- Jika berhasil, tampilan akan menampilkan avatar dari Google<br>
+![alt text](image-14.png)<br>
 
 ### Langkah 9 – Simpan Data Google ke Database
-- Buka file `servicefirebase.ts` pada folder `src/utils/db/` dan tambahkan beberapa kode
-- Panggil Service di JWT Callback di file `[...nextAuth].ts`
-- Jalankan browser dan login menggunakan akun Google, cek di Firebase untuk verifikasi
+- Buka file `servicefirebase.ts` pada folder `src/utils/db/` dan tambahkan beberapa kode<br>
+![alt text](image-15.png)<br>
+- Panggil Service di JWT Callback di file `[...nextAuth].ts`<br>
+![alt text](image-16.png)<br>
+- Jalankan browser dan login menggunakan akun Google, cek di Firebase untuk verifikasi<br>
+![alt text](image-17.png)<br>
 
 ### Langkah 10 – Pengujian
 | Skenario | Hasil yang Diharapkan |
