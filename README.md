@@ -23,3 +23,4 @@ Jiha Ramdhan / 15 / 2341720043 / TI-3D
 | 13   | Sistem Autentikasi & Proteksi Route | [next-auth](https://github.com/JihaR15/Framework/tree/main/Praktikum_13/next-auth) | [Laporan 13](./Laporan%20Praktikum/Laporan_13.md) |
 | 14   | Implementasi Sistem Registrasi (Database Integration) | [auth-register](https://github.com/JihaR15/Framework/tree/main/Praktikum_14/auth-register) | [Laporan 14](./Laporan%20Praktikum/Laporan_14.md) |
 | 15   | Implementasi Login Database & Multi-Role | [login-multi-role](https://github.com/JihaR15/Framework/tree/main/Praktikum_15/login-multi-role) | [Laporan 15](./Laporan%20Praktikum/Laporan_15.md) |
+| 16   | Implementasi Login Google Provider dengan NextAuth.js + Firebase | [login-google](https://github.com/JihaR15/Framework/tree/main/Praktikum_16/login-google) | [Laporan 16](./Laporan%20Praktikum/Laporan_16.md) |
