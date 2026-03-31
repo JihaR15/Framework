@@ -7,41 +7,49 @@
 - Klik **New Project**
 - Nama project: `MyAppNext`
 - Klik **Create**
+![alt text](image.png)
 - Setelah berhasil, pastikan project adalah `MyAppNext` di https://console.cloud.google.com/apis/credentials
+![alt text](image-1.png)
 
 ### Langkah 3 – Konfigurasi OAuth Consent Screen
 1. Pilih **OAuth consent screen**
+![alt text](image-2.png)
 2. Pilih **Get Started**
 3. Isikan form yang muncul
 4. Klik **create**
+![alt text](image-3.png)
 
 ### Langkah 4 – Buat OAuth Credentials
 - Klik **create client** pada Clients
+![alt text](image-4.png)
+![alt text](image-5.png)
 
-### C. Tambahkan Environment Variables
+### Langkah 5 – Tambahkan Environment Variables
+![alt text](image-6.png)
 - Copy dan paste Client ID dan Client Secret ke `.env`
+![alt text](image-7.png)
 
-### D. Konfigurasi Google Provider di NextAuth dan Handle Callback JWT & Session
+### Langkah 6 – Konfigurasi Google Provider di NextAuth dan Handle Callback JWT & Session
 - Buka file `[...nextauth].ts` pada folder `api/auth` dan modifikasi sesuai konfigurasi
 
-### E. Tambahkan Button Login Google
+### Langkah 7 – Tambahkan Button Login Google
 1. Modifikasi file `index.tsx` pada folder `views/auth/login`
 2. Jalankan browser `localhost:3000/auth/login` dan masuk melalui **Sign in with Google**
 3. Jika berhasil, akan terhubung dengan akun Google
 
 **Note:** Data akun Google tidak tersimpan dalam database
 
-### F. Menampilkan Image dari Google
+### Langkah 8 – Menampilkan Image dari Google
 - Buka file `index.tsx` dan tambahkan code untuk menampilkan image
 - Buka file `navbar.module.css` dan tambahkan styling
 - Jika berhasil, tampilan akan menampilkan avatar dari Google
 
-### G. Simpan Data Google ke Database
+### Langkah 9 – Simpan Data Google ke Database
 - Buka file `servicefirebase.ts` pada folder `src/utils/db/` dan tambahkan beberapa kode
 - Panggil Service di JWT Callback di file `[...nextAuth].ts`
 - Jalankan browser dan login menggunakan akun Google, cek di Firebase untuk verifikasi
 
-### H. Pengujian
+### Langkah 10 – Pengujian
 | Skenario | Hasil yang Diharapkan |
 |----------|----------------------|
 | Login Google pertama kali | Data tersimpan di Firestore |
