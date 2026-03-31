@@ -4,38 +4,43 @@
 - Buka: https://console.cloud.google.com/apis/credentials
 
 ### Langkah 2 – Buat Project Baru
-- Klik **New Project**
-- Nama project: `MyAppNext`
-- Klik **Create**
-![alt text](image.png)
-- Setelah berhasil, pastikan project adalah `MyAppNext` di https://console.cloud.google.com/apis/credentials
-![alt text](image-1.png)
+- Klik **New Project**<br>
+- Nama project: `MyAppNext`<br>
+- Klik **Create**<br>
+![alt text](image.png)<br>
+- Setelah berhasil, pastikan project adalah `MyAppNext` di https://console.cloud.google.com/apis/credentials<br>
+![alt text](image-1.png)<br>
 
 ### Langkah 3 – Konfigurasi OAuth Consent Screen
-1. Pilih **OAuth consent screen**
-![alt text](image-2.png)
-2. Pilih **Get Started**
-3. Isikan form yang muncul
-4. Klik **create**
-![alt text](image-3.png)
+1. Pilih **OAuth consent screen**<br>
+![alt text](image-2.png)<br>
+2. Pilih **Get Started**<br>
+3. Isikan form yang muncul<br>
+4. Klik **create**<br>
+![alt text](image-3.png)<br>
 
 ### Langkah 4 – Buat OAuth Credentials
-- Klik **create client** pada Clients
-![alt text](image-4.png)
-![alt text](image-5.png)
+- Klik **create client** pada Clients<br>
+![alt text](image-4.png)<br>
+![alt text](image-5.png)<br>
 
 ### Langkah 5 – Tambahkan Environment Variables
-![alt text](image-6.png)
-- Copy dan paste Client ID dan Client Secret ke `.env`
-![alt text](image-7.png)
+![alt text](image-6.png)<br>
+- Copy dan paste Client ID dan Client Secret ke `.env`<br>
+![alt text](image-7.png)<br>
 
 ### Langkah 6 – Konfigurasi Google Provider di NextAuth dan Handle Callback JWT & Session
-- Buka file `[...nextauth].ts` pada folder `api/auth` dan modifikasi sesuai konfigurasi
+- Buka file `[...nextauth].ts` pada folder `api/auth` dan modifikasi sesuai konfigurasi<br>
+![alt text](image-8.png)<br>
+![alt text](image-9.png)<br>
+![alt text](image-10.png)<br>
 
 ### Langkah 7 – Tambahkan Button Login Google
-1. Modifikasi file `index.tsx` pada folder `views/auth/login`
-2. Jalankan browser `localhost:3000/auth/login` dan masuk melalui **Sign in with Google**
-3. Jika berhasil, akan terhubung dengan akun Google
+1. Modifikasi file `index.tsx` pada folder `views/auth/login`<br>
+![alt text](image-11.png)<br>
+2. Jalankan browser `localhost:3000/auth/login` dan masuk melalui **Sign in with Google**<br>
+3. Jika berhasil, akan terhubung dengan akun Google<br>
+![alt text](logingoogle.gif)<br>
 
 **Note:** Data akun Google tidak tersimpan dalam database
 
