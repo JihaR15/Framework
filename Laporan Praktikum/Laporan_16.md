@@ -7,75 +7,75 @@
 - Klik **New Project**<br>
 - Nama project: `MyAppNext`<br>
 - Klik **Create**<br>
-![alt text](img/image.png)<br>
+![alt text](../Praktikum_16/login-google/img/image.png)<br>
 - Setelah berhasil, pastikan project adalah `MyAppNext` di https://console.cloud.google.com/apis/credentials<br>
-![alt text](img/image-1.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-1.png)<br>
 
 ### Langkah 3 – Konfigurasi OAuth Consent Screen
 1. Pilih **OAuth consent screen**<br>
-![alt text](img/image-2.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-2.png)<br>
 2. Pilih **Get Started**<br>
 3. Isikan form yang muncul<br>
 4. Klik **create**<br>
-![alt text](img/image-3.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-3.png)<br>
 
 ### Langkah 4 – Buat OAuth Credentials
 - Klik **create client** pada Clients<br>
-![alt text](img/image-4.png)<br>
-![alt text](img/image-5.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-4.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-5.png)<br>
 
 ### Langkah 5 – Tambahkan Environment Variables
-![alt text](img/image-6.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-6.png)<br>
 - Copy dan paste Client ID dan Client Secret ke `.env`<br>
-![alt text](img/image-7.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-7.png)<br>
 
 ### Langkah 6 – Konfigurasi Google Provider di NextAuth dan Handle Callback JWT & Session
 - Buka file `[...nextauth].ts` pada folder `api/auth` dan modifikasi sesuai konfigurasi<br>
-![alt text](img/image-8.png)<br>
-![alt text](img/image-9.png)<br>
-![alt text](img/image-10.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-8.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-9.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-10.png)<br>
 
 ### Langkah 7 – Tambahkan Button Login Google
 1. Modifikasi file `index.tsx` pada folder `views/auth/login`<br>
-![alt text](img/image-11.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-11.png)<br>
 2. Jalankan browser `localhost:3000/auth/login` dan masuk melalui **Sign in with Google**<br>
 3. Jika berhasil, akan terhubung dengan akun Google<br>
-![alt text](img/logingoogle.gif)<br>
+![alt text](../Praktikum_16/login-google/img/logingoogle.gif)<br>
 
 **Note:** Data akun Google tidak tersimpan dalam database
 
 ### Langkah 8 – Menampilkan Image dari Google
 - Buka file `index.tsx` dan tambahkan code untuk menampilkan image<br>
-![alt text](img/image-12.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-12.png)<br>
 - Buka file `navbar.module.css` dan tambahkan styling<br>
-![alt text](img/image-13.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-13.png)<br>
 - Jika berhasil, tampilan akan menampilkan avatar dari Google<br>
-![alt text](img/image-14.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-14.png)<br>
 
 ### Langkah 9 – Simpan Data Google ke Database
 - Buka file `servicefirebase.ts` pada folder `src/utils/db/` dan tambahkan beberapa kode<br>
-![alt text](img/image-15.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-15.png)<br>
 - Panggil Service di JWT Callback di file `[...nextAuth].ts`<br>
-![alt text](img/image-16.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-16.png)<br>
 - Jalankan browser dan login menggunakan akun Google, cek di Firebase untuk verifikasi<br>
-![alt text](img/image-17.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-17.png)<br>
 
 ### Langkah 10 – Pengujian
 **Testing Checklist:**
 1. Login Google pertama kali – Data tersimpan di Firestore<br>
-    ![alt text](img/testloginbarugoogle.gif)<br>
+    ![alt text](../Praktikum_16/login-google/img/testloginbarugoogle.gif)<br>
 2. Login Google kedua kali – Data diupdate<br>
    > hapus isi image di firebase, lalu login ulang untuk melihat data image terupdate atau tidak
 
    <br>
 
-    ![alt text](img/testlogin2.gif)<br>
+    ![alt text](../Praktikum_16/login-google/img/testlogin2.gif)<br>
 3. User role member akses /admin – Redirect<br>
-    ![alt text](img/memberadmin.gif)<br>
+    ![alt text](../Praktikum_16/login-google/img/memberadmin.gif)<br>
 4. User role admin akses /admin – Bisa masuk<br>
-    ![alt text](img/adminadmin.gif)<br>
+    ![alt text](../Praktikum_16/login-google/img/adminadmin.gif)<br>
 5. Avatar tampil – Ya<br>
-    ![alt text](img/image-18.png)<br>
+    ![alt text](../Praktikum_16/login-google/img/image-18.png)<br>
 
 
 ### Analisis & Diskusi
@@ -96,51 +96,51 @@
 
 ## Tugas Mandiri
 ### 1. Tambahkan role editor<br>
-![alt text](img/image-21.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-21.png)<br>
 ### 2. Buat halaman khusus editor<br>
 - Buat file index.ts di folder pages/editor<br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-20.png)<br>
 - Modifikasi index.ts<br>
-![alt text](img/image-38.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-38.png)<br>
 - Modifikasi withAuth.ts<br>
-![alt text](img/image-36.png)<br>
-![alt text](img/image-41.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-36.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-41.png)<br>
 - Modifikasi middleware.ts<br>
-![alt text](img/image-37.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-37.png)<br>
 - Hasil<br>
-![alt text](img/image-35.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-35.png)<br>
 ### 3. Tambahkan provider GitHub<br>
 - Daftar OAuth Github, di Setting > Developer Settings > OAuth Apps > New OAuth App<br>
-![alt text](img/image-19.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-19.png)<br>
 - Isi Homepage URL dengan http://localhost:3000<br>
 - Isi Authorization callback URL dengan http://localhost:3000/api/auth/callback/github<br>
-![alt text](img/image-22.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-22.png)<br>
 - lalu Generate a new client secret<br>
-![alt text](img/image-23.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-23.png)<br>
 - Update .env: Copy Client ID dan Client Secret dari Github dan masukkan ke file .env.local<br>
-![alt text](img/image-24.png)<br>
-![alt text](img/image-25.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-24.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-25.png)<br>
 - Update [...nextauth].ts tambahkan GithubProvider<br>
-![alt text](img/image-39.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-39.png)<br>
 - Modifikasi index.tsx pada views/auth/login<br>
-![alt text](img/image-30.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-30.png)<br>
 - Hasil<br>
-![alt text](img/image-40.png)<br>
-![alt text](img/image-26.png)<br>
-![alt text](img/image-27.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-40.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-26.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-27.png)<br>
 ### 4. Refactor service agar reusable<br>
 - Modifikasi servicefirebase.ts<br>
-![alt text](img/image-28.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-28.png)<br>
 - Modifikasi [...nextauth].ts<br>
-![alt text](img/image-29.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-29.png)<br>
 - Hasil<br>
-![alt text](img/image-31.png)<br>
-![alt text](img/image-32.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-31.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-32.png)<br>
 ### 5. Gunakan `next/image` untuk optimasi avatar<br>
 - Ganti tag di index.tsx di navbar<br>
-![alt text](img/image-33.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-33.png)<br>
 - Konfigurasi next.config.js agar tidak error<br>
-![alt text](img/image-34.png)<br>
+![alt text](../Praktikum_16/login-google/img/image-34.png)<br>
 
 ### Kesimpulan
 Pada praktikum ini saya telah:
