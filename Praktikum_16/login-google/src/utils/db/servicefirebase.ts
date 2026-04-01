@@ -90,25 +90,68 @@ export async function signUp(
   }
 }
 
-export async function signInWithGoogle(userData: any, callback: any) {
+// export async function signInWithGoogle(userData: any, callback: any) {
+//   try {
+//     const q = query(
+//       collection(db, "users"),
+//       where("email", "==", userData.email),
+//     );
+
+//     const querySnapshot = await getDocs(q);
+//     const data: any = querySnapshot.docs.map((doc) => ({
+//       id: doc.id,
+//       ...doc.data(),
+//     }));
+
+//     if (data.length > 0) {
+//       userData.role = data[0].role;
+//       await updateDoc(doc(db, "users", data[0].id), userData);
+//       callback({
+//         status: true,
+//         message: "User registered and logged in with Google",
+//         data: userData,
+//       });
+//     } else {
+//       userData.role = "member";
+//       await addDoc(collection(db, "users"), userData);
+//       callback({
+//         status: true,
+//         message: "User registered and logged in with Google",
+//         data: userData,
+//       });
+//     }
+//   } catch (error: any) {
+//     callback({
+//       status: false,
+//       message: "Failed to register user with Google",
+//     });
+//   }
+// }
+
+export async function getUserByEmail(email: string) {
+  const q = query(
+    collection(db, "users"),
+    where("email", "==", email)
+  );
+  const querySnapshot = await getDocs(q);
+  const data = querySnapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  }));
+  
+  return data.length > 0 ? data[0] : null;
+}
+
+export async function signInOAuth(userData: any, callback: any) {
   try {
-    const q = query(
-      collection(db, "users"),
-      where("email", "==", userData.email),
-    );
+    const existingUser: any = await getUserByEmail(userData.email);
 
-    const querySnapshot = await getDocs(q);
-    const data: any = querySnapshot.docs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-
-    if (data.length > 0) {
-      userData.role = data[0].role;
-      await updateDoc(doc(db, "users", data[0].id), userData);
+    if (existingUser) {
+      userData.role = existingUser.role;
+      await updateDoc(doc(db, "users", existingUser.id), userData);
       callback({
         status: true,
-        message: "User registered and logged in with Google",
+        message: "User successfully logged in",
         data: userData,
       });
     } else {
@@ -116,14 +159,14 @@ export async function signInWithGoogle(userData: any, callback: any) {
       await addDoc(collection(db, "users"), userData);
       callback({
         status: true,
-        message: "User registered and logged in with Google",
+        message: "New user registered and logged in",
         data: userData,
       });
     }
   } catch (error: any) {
     callback({
       status: false,
-      message: "Failed to register user with Google",
+      message: "Failed to authenticate user",
     });
   }
 }

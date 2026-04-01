@@ -4,6 +4,10 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   reactStrictMode: true,
+
+  images: {
+    domains: ["lh3.googleusercontent.com", "avatars.githubusercontent.com"],
+  },
 };
 
 export default nextConfig;

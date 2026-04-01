@@ -62,17 +62,19 @@
 
 ### Langkah 10 – Pengujian
 **Testing Checklist:**
-1. Login Google pertama kali – Data tersimpan di Firestore
+1. Login Google pertama kali – Data tersimpan di Firestore<br>
     ![alt text](testloginbarugoogle.gif)<br>
-2. Login Google kedua kali – Data diupdate
+2. Login Google kedua kali – Data diupdate<br>
    > hapus isi image di firebase, lalu login ulang untuk melihat data image terupdate atau tidak
+
    <br> 
+
     ![alt text](testlogin2.gif)<br>
-3. User role member akses /admin – Redirect
+3. User role member akses /admin – Redirect<br>
     ![alt text](memberadmin.gif)<br>
-4. User role admin akses /admin – Bisa masuk
+4. User role admin akses /admin – Bisa masuk<br>
     ![alt text](adminadmin.gif)<br>
-5. Avatar tampil – Ya
+5. Avatar tampil – Ya<br>
     ![alt text](image-18.png)<br>
 
 
@@ -92,15 +94,56 @@
 5. Apa risiko jika tidak menyimpan user ke database?
    > Aplikasi tidak bisa membedakan user mana yang siapa, tidak bisa tracking apa yang dilakukan user, tidak bisa ngeset role, dan tidak bisa simpan data custom. Setiap login dianggap orang baru, fitur aplikasi jadi terbatas dan tidak aman.
 
-### Tugas Mandiri
-1. Tambahkan role editor
-2. Buat halaman khusus editor
-3. Tambahkan provider GitHub
-4. Refactor service agar reusable
-5. Gunakan `next/image` untuk optimasi avatar
+## Tugas Mandiri
+### 1. Tambahkan role editor<br>
+![alt text](image-21.png)<br>
+### 2. Buat halaman khusus editor<br>
+- Buat file index.ts di folder pages/editor<br>
+![alt text](image-20.png)<br>
+- Modifikasi index.ts<br>
+![alt text](image-38.png)<br>
+- Modifikasi withAuth.ts<br>
+![alt text](image-36.png)<br>
+![alt text](image-41.png)<br>
+- Modifikasi middleware.ts<br>
+![alt text](image-37.png)<br>
+- Hasil<br>
+![alt text](image-35.png)<br>
+### 3. Tambahkan provider GitHub<br>
+- Daftar OAuth Github, di Setting > Developer Settings > OAuth Apps > New OAuth App<br> 
+![alt text](image-19.png)<br>
+- Isi Homepage URL dengan http://localhost:3000<br>
+- Isi Authorization callback URL dengan http://localhost:3000/api/auth/callback/github<br>
+![alt text](image-22.png)<br>
+- lalu Generate a new client secret<br>
+![alt text](image-23.png)<br>
+- Update .env: Copy Client ID dan Client Secret dari Github dan masukkan ke file .env.local<br>
+![alt text](image-24.png)<br>
+![alt text](image-25.png)<br>
+- Update [...nextauth].ts tambahkan GithubProvider<br>
+![alt text](image-39.png)<br>
+- Modifikasi index.tsx pada views/auth/login<br>
+![alt text](image-30.png)<br>
+- Hasil<br>
+![alt text](image-40.png)<br>
+![alt text](image-26.png)<br>
+![alt text](image-27.png)<br>
+### 4. Refactor service agar reusable<br>
+- Modifikasi servicefirebase.ts<br>
+![alt text](image-28.png)<br>
+- Modifikasi [...nextauth].ts<br>
+![alt text](image-29.png)<br>
+- Hasil<br>
+![alt text](image-31.png)<br>
+![alt text](image-32.png)<br>
+### 5. Gunakan `next/image` untuk optimasi avatar<br>
+- Ganti tag di index.tsx di navbar<br>
+![alt text](image-33.png)<br>
+- Konfigurasi next.config.js agar tidak error<br>
+![alt text](image-34.png)<br>
 
 ### Kesimpulan
-Pada praktikum ini mahasiswa telah:
+Pada praktikum ini saya telah:
 - Mengimplementasikan Google OAuth
 - Mengintegrasikan dengan NextAuth.js
 - Menyimpan user ke Firestore

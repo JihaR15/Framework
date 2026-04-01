@@ -1,8 +1,9 @@
 import NextAuth, { NextAuthOptions } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
-import { signIn, signInWithGoogle } from "../../../utils/db/servicefirebase";
+import { signIn, signInOAuth } from "../../../utils/db/servicefirebase";
 import bcrypt from "bcrypt"
 import GoogleProvider from "next-auth/providers/google"
+import GithubProvider from "next-auth/providers/github";
 
 export const authOptions: NextAuthOptions = {
     session: {
@@ -43,6 +44,10 @@ export const authOptions: NextAuthOptions = {
             clientId: process.env.GOOGLE_CLIENT_ID || "",
             clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
         }),
+        GithubProvider({
+            clientId: process.env.GITHUB_ID || "",
+            clientSecret: process.env.GITHUB_SECRET || "",
+        }),
     ],
 
 
@@ -53,14 +58,14 @@ export const authOptions: NextAuthOptions = {
                 token.fullName = user.fullName
                 token.role = user.role
             }
-            if (account?.provider === "google") {
+            if (account?.provider === "google" || account?.provider === "github") {
                 const data = {
                     fullName: user.name,
                     email: user.email,
                     image: user.image,
                     type: account.provider,
                 }
-                await signInWithGoogle(data, (result: any) => {
+                await signInOAuth(data, (result: any) => {
                     if(result.status){
                         token.fullName = result.data.fullName
                         token.email = result.data.email
