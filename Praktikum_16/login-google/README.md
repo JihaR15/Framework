@@ -61,20 +61,36 @@
 ![alt text](image-17.png)<br>
 
 ### Langkah 10 – Pengujian
-| Skenario | Hasil yang Diharapkan |
-|----------|----------------------|
-| Login Google pertama kali | Data tersimpan di Firestore |
-| Login Google kedua kali | Data diupdate |
-| User role member akses /admin | Redirect |
-| User role admin akses /admin | Bisa masuk |
-| Avatar tampil | Ya |
+**Testing Checklist:**
+1. Login Google pertama kali – Data tersimpan di Firestore
+    ![alt text](testloginbarugoogle.gif)<br>
+2. Login Google kedua kali – Data diupdate
+   > hapus isi image di firebase, lalu login ulang untuk melihat data image terupdate atau tidak
+   <br> 
+    ![alt text](testlogin2.gif)<br>
+3. User role member akses /admin – Redirect
+    ![alt text](memberadmin.gif)<br>
+4. User role admin akses /admin – Bisa masuk
+    ![alt text](adminadmin.gif)<br>
+5. Avatar tampil – Ya
+    ![alt text](image-18.png)<br>
+
 
 ### Analisis & Diskusi
 1. Apa perbedaan login credential dan login Google?
+   > **Login Credential** pakai username dan password sendiri yang tersimpan di database aplikasi. **Login Google** langsung pake akun Google yang sudah ada, jadi tidak perlu buat password baru, Google yang jaga keamanannya.
+
 2. Mengapa data Google tetap perlu disimpan ke database?
+   > Supaya aplikasi bisa mengenali siapa yang login, bisa nyimpen data khusus tentang user, dan bisa ngeset role (admin atau member). Kalau tidak disimpan, aplikasi akan anggap setiap kali login itu orang baru.
+
 3. Apa fungsi JWT callback?
+   > JWT callback itu fungsi yang jalan saat bikin token login. Gunanya untuk memasukkan informasi tambahan ke token (seperti role atau ID user), jadi informasi itu tersedia di mana-mana tanpa perlu tanya database berkali-kali.
+
 4. Mengapa perlu multi-role?
+   > Biar bisa bedain hak akses tiap user. Admin bisa masuk halaman `/admin`, tapi member tidak boleh. Ini bikin aplikasi lebih aman dan terstruktur.
+
 5. Apa risiko jika tidak menyimpan user ke database?
+   > Aplikasi tidak bisa membedakan user mana yang siapa, tidak bisa tracking apa yang dilakukan user, tidak bisa ngeset role, dan tidak bisa simpan data custom. Setiap login dianggap orang baru, fitur aplikasi jadi terbatas dan tidak aman.
 
 ### Tugas Mandiri
 1. Tambahkan role editor
