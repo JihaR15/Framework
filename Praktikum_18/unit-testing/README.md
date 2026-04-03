@@ -95,16 +95,23 @@ Jalankan `npm run test:coverage`<br>
 ```jsx
 <h1 data-testid="title">About Page</h1>
 ```
+<br>
 
-2. Update Testing pada `about.spec.tsx`
+![alt text](image-14.png)<br>
 
-3. Coba jika dibuat salah (ubah menjadi `toBe("About")`):
+2. Update Testing pada `about.spec.tsx`<br>
+![alt text](image-13.png)<br>
+![alt text](image-15.png)<br>
+
+3. Coba jika dibuat salah (ubah menjadi `toBe("About")`):<br>
+![alt text](image-16.png)<br>
 ```
 FAIL
 Expected: "About"
 Received: "About Page"
 ```
-
+![alt text](image-17.png)<br>
+![alt text](image-18.png)<br>
 ---
 
 ### Langkah 7 – Testing Page dengan Router (Mocking)

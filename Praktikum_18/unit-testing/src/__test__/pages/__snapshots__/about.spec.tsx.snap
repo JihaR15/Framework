@@ -6,11 +6,11 @@ exports[`AboutPage renders about page correctly 1`] = `
   "baseElement": <body>
     <div>
       <div>
-        <h1>
+        <h1
+          data-testid="title"
+        >
           About Me
         </h1>
-         
-        <br />
         <p>
           Nama: Jiha Ramdhan
         </p>
@@ -30,11 +30,11 @@ exports[`AboutPage renders about page correctly 1`] = `
   </body>,
   "container": <div>
     <div>
-      <h1>
+      <h1
+        data-testid="title"
+      >
         About Me
       </h1>
-       
-      <br />
       <p>
         Nama: Jiha Ramdhan
       </p>
