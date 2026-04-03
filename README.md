@@ -25,3 +25,4 @@ Jiha Ramdhan / 2341720043 / TI-3D
 | 16   | Implementasi Login Database & Multi-Role | [login-multi-role](https://github.com/JihaR15/Framework/tree/main/Praktikum_15/login-multi-role) | [Laporan 15](./Laporan%20Praktikum/Laporan_15.md) |
 | 17   | Implementasi Login Google Provider dengan NextAuth.js + Firebase | [login-google](https://github.com/JihaR15/Framework/tree/main/Praktikum_16/login-google) | [Laporan 16](./Laporan%20Praktikum/Laporan_16.md) |
 | 18   | Optimize | [optimize](https://github.com/JihaR15/Framework/tree/main/Praktikum_17/optimize) | [Laporan 17](./Laporan%20Praktikum/Laporan_17.md) |
+| 19   | Unit Testing | [unit-testing](https://github.com/JihaR15/Framework/tree/main/Praktikum_18/unit-testing) | [Laporan 18](./Laporan%20Praktikum/Laporan_18.md) |
