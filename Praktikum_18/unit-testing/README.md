@@ -27,18 +27,8 @@ Buat file: `jest.config.mjs`<br>
 
 ### Langkah 2 – Struktur Folder Testing
 
-Buat folder: `src/__test__/`
-
-Struktur contoh:
-```
-src
-├── pages
-├── components
-├── views
-└── __test__
-   ├── pages
-   └── components
-```
+Buat folder: `src/__test__/`<br>
+![alt text](image-3.png)<br>
 
 ---
 
@@ -48,7 +38,11 @@ src
 
 File: `src/__test__/pages/about.spec.tsx`
 
-Contoh Testing Snapshot. Pada `about.spec.tsx` tambahkan code berikut:
+![alt text](image-4.png)
+
+Contoh Testing Snapshot. Pada `about.spec.tsx` tambahkan code berikut:<br>
+
+![alt text](image-5.png)<br>
 
 **Jalankan Testing**
 
@@ -56,7 +50,9 @@ Contoh Testing Snapshot. Pada `about.spec.tsx` tambahkan code berikut:
 npm run test
 ```
 
-Jika berhasil: `PASS about.spec.tsx`
+Jika berhasil: `PASS about.spec.tsx`<br>
+
+![alt text](image-6.png)<br>
 
 ---
 
@@ -67,9 +63,12 @@ Jalankan:
 npm run test:coverage
 ```
 
-Akan muncul folder: `coverage/`
+Akan muncul folder: `coverage/`<br>
 
-Buka: `coverage/lcov-report/index.html` (buka melalui explorer)
+![alt text](image-7.png)<br>
+
+Buka: `coverage/lcov-report/index.html` (buka melalui explorer)<br>
+![alt text](image-8.png)<br>
 
 **Target perusahaan biasanya:** Minimum 80% coverage
 
