@@ -6,16 +6,16 @@ import Script from "next/dist/client/script";
 const Navbar = () => {
     const {data}:any = useSession();
     return (
-        <div className={styles.navbar}>
-            {/* <div className={styles.navbar__brand}>
+        <div className={styles.navbar} data-testid="navbar">
+            <div className={styles.navbar__brand}>
                 MyApp
-            </div> */}
+            </div>
 
-            <div className={styles.navbar__brand} id="title">
+            {/* <div className={styles.navbar__brand} id="title">
                 <Script id="title-script" strategy="lazyOnload">
                     {`document.getElementById('title').innerHTML = 'MyApp';`}
                 </Script>
-            </div>
+            </div> */}
 
             <div className={styles.navbar__right}>
                 {data ? (
@@ -24,7 +24,7 @@ const Navbar = () => {
                         {data.user.image && (
                             <Image 
                             src={data.user.image} 
-                            alt={data.user.fullName} 
+                            alt={data?.user?.fullName} 
                             className={styles.navbar__user__image} 
                             width={50}
                             height={50}

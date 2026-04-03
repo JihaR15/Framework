@@ -130,18 +130,18 @@ Melakukan testing pada halaman produk.
 
 ### Langkah 8 – Menangani Undefined Data
 
-Jalankan `npm run test:coverage`
-![alt text](image-26.png)
-![alt text](image-23.png)
+Jalankan `npm run test:coverage`<br>
+![alt text](image-26.png)<br>
+![alt text](image-23.png)<br>
 
-Jika muncul error `Cannot read properties of undefined`, perbaiki di komponen pada file `index.tsx` pada folder `pages/produk`
-![alt text](image-24.png)
-![alt text](image-25.png)
-**Note:** Pastikan comment pada code yang ditunjukkan di 2 code testing
-![alt text](image-27.png)
+Jika muncul error `Cannot read properties of undefined`, perbaiki di komponen pada file `index.tsx` pada folder `pages/produk`<br>
+![alt text](image-24.png)<br>
+![alt text](image-25.png)<br>
+**Note:** Pastikan comment pada code yang ditunjukkan di 2 code testing<br>
+![alt text](image-27.png)<br>
 
-**Analisis Coverage**
-![alt text](image-22.png)
+**Analisis Coverage**<br>
+![alt text](image-22.png)<br>
 
 Perhatikan bagian:
 - Statement
@@ -172,35 +172,61 @@ Branch biasanya paling sulit karena perlu menguji kondisi if/else.
 ### Tugas Praktikum
 
 1. Buat unit test untuk:
-   - Halaman Product
-   - 1 Komponen
+   - Halaman Product <br>
+   > Sudah pada Praktikum 7
+   - 1 Komponen<br>
+      - buat file `src/__test__/components/footer.spec.tsx`<br>
+      ![alt text](image-30.png)<br>
+      ![alt text](image-29.png)<br>
+      - Modifikasi index.tsx pada folder `component/layouts/footer` untuk menambahkan `data-testid="footer"`<br>
+      ![alt text](image-31.png)<br>
+      - hasil:<br>
+      ![alt text](image-32.png)<br>
 
 2. Gunakan minimal:
    - 1 Snapshot test
    - 1 toBe()
    - 1 getByTestId()
 
+   > Semua sudah diterapkan pada About dan Product
+
 3. Buat coverage minimal 50%
+   - file unit test yang sudah dibuat agar coverage diatas 50%<br>
+   ![alt text](image-34.png)<br>
+   ![alt text](image-35.png)<br>
+   - pada index.html coverage<br>
+   ![alt text](image-33.png)<br>
 
 4. Lakukan mocking untuk router
+   > sudah dilakukan pada praktikum 7
 
 5. Dokumentasikan hasil coverage
+   > Yang dilakukan pada Praktikum ini merupakan dokumentasi dari hasil coverage
 
 ---
 
 ### Diskusi & Refleksi
 
-1. Mengapa unit testing penting sebelum production?
-2. Mengapa branch coverage sulit mencapai 100%?
-3. Apa itu mocking?
-4. Kapan snapshot test digunakan?
-5. Apakah semua file harus dites?
+1. Mengapa unit testing penting sebelum production?  
+   > Unit testing membantu menemukan bug lebih awal, mencegah regresi saat ada perubahan kode, dan meningkatkan kepercayaan bahwa fitur berjalan sesuai kebutuhan sebelum dirilis.
+
+2. Mengapa branch coverage sulit mencapai 100%?  
+   > Karena setiap kemungkinan jalur logika (if/else, switch, error handling, edge case) harus diuji, termasuk kondisi langka yang tidak selalu mudah direproduksi.
+
+3. Apa itu mocking?  
+   > Mocking adalah teknik mengganti dependensi asli (misalnya router, API, database) dengan versi tiruan saat testing agar pengujian terkontrol, cepat, dan tidak bergantung sistem eksternal.
+
+4. Kapan snapshot test digunakan?  
+   > Snapshot test digunakan saat ingin memverifikasi output UI tetap konsisten dari waktu ke waktu, terutama untuk mendeteksi perubahan tampilan yang tidak disengaja.
+
+5. Apakah semua file harus dites?  
+   > Tidak harus semua file, tetapi file yang berisi logika penting, fitur kritikal, dan area berisiko tinggi wajib diprioritaskan untuk diuji.
 
 ---
 
 ### Kesimpulan
 
-Dalam praktikum ini mahasiswa telah:
+Dalam praktikum ini saya telah:
 
 - Menginstal dan mengkonfigurasi Jest
 - Menggunakan React Testing Library

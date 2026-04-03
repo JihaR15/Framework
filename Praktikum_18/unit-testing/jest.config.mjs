@@ -5,9 +5,10 @@ const createJestConfig = nextJest({
 })
 
 const config = {
-    // coverageProvider: 'v8',
+    coverageProvider: 'v8',
     testEnvironment: 'jsdom',
     modulePaths: ['<rootDir>/src/'],
+    setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
     collectCoverage: true,
     collectCoverageFrom: [
         '**/*.{ts,tsx}',
@@ -15,11 +16,22 @@ const config = {
         '!**/node_modules/**',
         '!**/.next/**',
         '!**/coverage/**',
+        '!**/*.d.ts',
+        '!src/pages/_app.tsx',
+        '!src/pages/_document.tsx',
         '!**/jest.config.mjs',
         '!**/next.config.mjs',
+        '!**/next.config.ts',
         '!**/types/**',
         '!**/views/**',
-        '!**/pages/api/** '
+        '!**/pages/api/**',
+        '!**/middleware.ts',
+        '!**/middleware/**',
+        '!**/utils/**',
+        '!src/component/layouts/Appshell/**',
+        '!src/pages/produk/server.tsx',
+        '!src/pages/produk/static.tsx',
+        '!src/pages/produk/*copy.tsx',
     ],
 }
 
