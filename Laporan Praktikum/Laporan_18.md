@@ -11,24 +11,24 @@ npm install jest jest-environment-jsdom @testing-library/react @testing-library/
 
 <br>
 
-![alt text](img/image.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image.png)<br>
 
 **Buat File Konfigurasi**
 
 Dokumentasi: https://nextjs.org/docs/pages/guides/testing/jest
 
 Buat file: `jest.config.mjs`<br>
-![alt text](img/image-1.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-1.png)<br>
 
 **Tambahkan Script di package.json**<br>
-![alt text](img/image-2.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-2.png)<br>
 
 ---
 
 ### Langkah 2 – Struktur Folder Testing
 
 Buat folder: `src/__test__/`<br>
-![alt text](img/image-3.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-3.png)<br>
 
 ---
 
@@ -38,11 +38,11 @@ Buat folder: `src/__test__/`<br>
 
 File: `src/__test__/pages/about.spec.tsx`
 
-![alt text](img/image-4.png)
+![alt text](../Praktikum_18/unit-testing/img/image-4.png)
 
 Contoh Testing Snapshot. Pada `about.spec.tsx` tambahkan code berikut:<br>
 
-![alt text](img/image-5.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-5.png)<br>
 
 **Jalankan Testing**
 
@@ -52,7 +52,7 @@ npm run test
 
 Jika berhasil: `PASS about.spec.tsx`<br>
 
-![alt text](img/image-6.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-6.png)<br>
 
 ---
 
@@ -65,10 +65,10 @@ npm run test:coverage
 
 Akan muncul folder: `coverage/`<br>
 
-![alt text](img/image-7.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-7.png)<br>
 
 Buka: `coverage/lcov-report/index.html` (buka melalui explorer)<br>
-![alt text](img/image-8.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-8.png)<br>
 
 **Target perusahaan biasanya:** Minimum 80% coverage
 
@@ -78,14 +78,14 @@ Buka: `coverage/lcov-report/index.html` (buka melalui explorer)<br>
 
 Update `jest.config.mjs`<br>
 
-![alt text](img/image-12.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-12.png)<br>
 
 Jalankan `npm run test:coverage`<br>
 
-![alt text](img/image-9.png)<br>
-![alt text](img/image-10.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-9.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-10.png)<br>
 
-![alt text](img/image-11.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-11.png)<br>
 
 ---
 
@@ -97,21 +97,21 @@ Jalankan `npm run test:coverage`<br>
 ```
 <br>
 
-![alt text](img/image-14.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-14.png)<br>
 
 2. Update Testing pada `about.spec.tsx`<br>
-![alt text](img/image-13.png)<br>
-![alt text](img/image-15.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-13.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-15.png)<br>
 
 3. Coba jika dibuat salah (ubah menjadi `toBe("About")`):<br>
-![alt text](img/image-16.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-16.png)<br>
 ```
 FAIL
 Expected: "About"
 Received: "About Me"
 ```
-![alt text](img/image-17.png)<br>
-![alt text](img/image-18.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-17.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-18.png)<br>
 ---
 
 ### Langkah 7 – Testing Page dengan Router (Mocking)
@@ -119,30 +119,30 @@ Received: "About Me"
 Melakukan testing pada halaman produk.
 
 1. Buat file `product.spec.tsx`<br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-20.png)<br>
 
 2. Ketika testing halaman Product, sering muncul error: `NextRouter was not mounted`<br>
-![alt text](img/image-19.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-19.png)<br>
 
 **Solusi:** Mock Next Router dengan menambahkan kode di file `product.spec.tsx`<br>
 
-![alt text](img/image-28.png)
+![alt text](../Praktikum_18/unit-testing/img/image-28.png)
 ---
 
 ### Langkah 8 – Menangani Undefined Data
 
 Jalankan `npm run test:coverage`<br>
-![alt text](img/image-26.png)<br>
-![alt text](img/image-23.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-26.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-23.png)<br>
 
 Jika muncul error `Cannot read properties of undefined`, perbaiki di komponen pada file `index.tsx` pada folder `pages/produk`<br>
-![alt text](img/image-24.png)<br>
-![alt text](img/image-25.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-24.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-25.png)<br>
 **Note:** Pastikan comment pada code yang ditunjukkan di 2 code testing<br>
-![alt text](img/image-27.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-27.png)<br>
 
 **Analisis Coverage**<br>
-![alt text](img/image-22.png)<br>
+![alt text](../Praktikum_18/unit-testing/img/image-22.png)<br>
 
 Perhatikan bagian:
 - Statement
@@ -177,12 +177,12 @@ Branch biasanya paling sulit karena perlu menguji kondisi if/else.
    > Sudah pada Praktikum 7
    - 1 Komponen<br>
       - buat file `src/__test__/components/footer.spec.tsx`<br>
-      ![alt text](img/image-30.png)<br>
-      ![alt text](img/image-29.png)<br>
+      ![alt text](../Praktikum_18/unit-testing/img/image-30.png)<br>
+      ![alt text](../Praktikum_18/unit-testing/img/image-29.png)<br>
       - Modifikasi index.tsx pada folder `component/layouts/footer` untuk menambahkan `data-testid="footer"`<br>
-      ![alt text](img/image-31.png)<br>
+      ![alt text](../Praktikum_18/unit-testing/img/image-31.png)<br>
       - hasil:<br>
-      ![alt text](img/image-32.png)<br>
+      ![alt text](../Praktikum_18/unit-testing/img/image-32.png)<br>
 
 2. Gunakan minimal:
    - 1 Snapshot test
@@ -193,10 +193,10 @@ Branch biasanya paling sulit karena perlu menguji kondisi if/else.
 
 3. Buat coverage minimal 50%
    - file unit test yang sudah dibuat agar coverage diatas 50%<br>
-   ![alt text](img/image-34.png)<br>
-   ![alt text](img/image-35.png)<br>
+   ![alt text](../Praktikum_18/unit-testing/img/image-34.png)<br>
+   ![alt text](../Praktikum_18/unit-testing/img/image-35.png)<br>
    - pada index.html coverage<br>
-   ![alt text](img/image-33.png)<br>
+   ![alt text](../Praktikum_18/unit-testing/img/image-33.png)<br>
 
 4. Lakukan mocking untuk router
    > sudah dilakukan pada praktikum 7
