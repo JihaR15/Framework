@@ -9,13 +9,19 @@ Jalankan:
 npm install jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom --save-dev --force
 ```
 
+<br>
+
+![alt text](image.png)<br>
+
 **Buat File Konfigurasi**
 
 Dokumentasi: https://nextjs.org/docs/pages/guides/testing/jest
 
-Buat file: `jest.config.mjs`
+Buat file: `jest.config.mjs`<br>
+![alt text](image-1.png)<br>
 
-**Tambahkan Script di package.json**
+**Tambahkan Script di package.json**<br>
+![alt text](image-2.png)<br>
 
 ---
 
