@@ -76,9 +76,16 @@ Buka: `coverage/lcov-report/index.html` (buka melalui explorer)<br>
 
 ### Langkah 5 – Konfigurasi Coverage Lengkap
 
-Update `jest.config.mjs`
+Update `jest.config.mjs`<br>
 
-Jalankan `npm run test:coverage`
+![alt text](image-12.png)<br>
+
+Jalankan `npm run test:coverage`<br>
+
+![alt text](image-9.png)<br>
+![alt text](image-10.png)<br>
+
+![alt text](image-11.png)<br>
 
 ---
 
