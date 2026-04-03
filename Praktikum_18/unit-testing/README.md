@@ -118,23 +118,30 @@ Received: "About Page"
 
 Melakukan testing pada halaman produk.
 
-1. Buat file `product.spec.tsx`
+1. Buat file `product.spec.tsx`<br>
+![alt text](image-20.png)<br>
 
-2. Ketika testing halaman Product, sering muncul error: `NextRouter was not mounted`
+2. Ketika testing halaman Product, sering muncul error: `NextRouter was not mounted`<br>
+![alt text](image-19.png)<br>
 
-**Solusi:** Mock Next Router dengan menambahkan kode di file `product.spec.tsx`
-
+**Solusi:** Mock Next Router dengan menambahkan kode di file `product.spec.tsx`<br>
+![alt text](image-28.png)
 ---
 
 ### Langkah 8 – Menangani Undefined Data
 
 Jalankan `npm run test:coverage`
+![alt text](image-26.png)
+![alt text](image-23.png)
 
 Jika muncul error `Cannot read properties of undefined`, perbaiki di komponen pada file `index.tsx` pada folder `pages/produk`
-
+![alt text](image-24.png)
+![alt text](image-25.png)
 **Note:** Pastikan comment pada code yang ditunjukkan di 2 code testing
+![alt text](image-27.png)
 
 **Analisis Coverage**
+![alt text](image-22.png)
 
 Perhatikan bagian:
 - Statement
