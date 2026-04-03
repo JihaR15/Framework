@@ -7,9 +7,11 @@
    - Mengganti tag `<img>` pada halaman 404 dengan `next/image`.
 - Langkah:
    - Buka file `src/pages/404.tsx`.
-   - Modifikasi line 7 menjadi line 8–11.
+   - Modifikasi seperti berikut:<br>
+   ![alt text](image.png)<br>
 
-**Hasil:**
+**Hasil:**<br>
+![alt text](image-1.png)
 - Warning hilang
 - Image dioptimasi otomatis
 - Mengurangi bandwidth
@@ -17,12 +19,15 @@
 
 #### B. Optimasi Gambar Remote (External URL)
 - Buka file `views/product/index.tsx`.
-- Modifikasi file `index.tsx`.
+- Modifikasi file `index.tsx`.<br>
+![alt text](image-3.png)<br>
+![alt text](image-4.png)<br>
+**Note:** Dikarenakan gambar diambil dari URL tertentu maka konfigurasi berbeda.<br>
+- Buka file `next.config.js`.<br>
+![alt text](image-5.png)<br>
 
-**Note:** Dikarenakan gambar diambil dari URL tertentu maka konfigurasi berbeda.
-- Buka file `next.config.js`.
-
-**Hasil:**
+**Hasil:**<br>
+![alt text](image-2.png)
 - Gambar di-proxy melalui `/_next/image`
 - Performa lebih optimal
 - Kompresi otomatis
@@ -31,10 +36,12 @@
 
 #### A. Menggunakan `next/font`
 - Buka file `index.tsx` pada folder `Appshell/index.tsx` dan modifikasi.
+![alt text](image-7.png)
 - Jalankan browser `localhost:3000/produk`, maka font akan berubah menjadi Roboto.
 - Untuk mengecek font, bisa menggunakan extension FontFinder.
 
 **Hasil:**
+![alt text](image-6.png)
 - Tidak perlu load dari CDN manual
 - Tidak blocking render
 - Performance meningkat

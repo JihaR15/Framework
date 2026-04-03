@@ -6,7 +6,21 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains: ["lh3.googleusercontent.com", "avatars.githubusercontent.com"],
+    domains: [
+      "lh3.googleusercontent.com",
+      "avatars.githubusercontent.com",
+      "assets.adidas.com",
+      "kasogishoes.com",
+      "brushme.com",
+    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "assets.adidas.com",
+    //     port: "",
+    //     pathname: "/**",
+    //   },
+    // ],
   },
 };
 
