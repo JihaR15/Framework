@@ -99,20 +99,45 @@ b. **Line 14–18:** Memiliki risiko keamanan lebih tinggi karena menggunakan `.
 
 ### Tugas Praktikum
 1. Optimasi semua image di project menggunakan `next/image`.
+ > Sudah diterapkan di halaman 404, produk dan navbar (avatar).
 2. Gunakan minimal 1 font dari `next/font`.
+ > Sudah diterapkan pada file `Appshell/index.tsx` dengan font Roboto.
 3. Tambahkan script Google Analytics menggunakan `next/script`.
+ - index.tsx pada folder `Appshell/index.tsx`<br>
+ ![alt text](image-12.png)<br>
+ > diterapkan strategy afterInteractive untuk memastikan script GA tidak menghambat rendering utama.
 4. Terapkan dynamic import pada minimal 1 komponen.
+   - Pada file `Appshell/index.tsx`, komponen Footer di-load secara dinamis dengan `next/dynamic`.<br>
+   ![alt text](image-13.png)
+   > Dengan opsi `ssr: false` untuk memastikan Footer hanya di-render di sisi klien, dan menambahkan fallback loading untuk pengalaman pengguna yang lebih baik.
 5. Dokumentasikan perubahan performa (screenshot Lighthouse).
+   - localhost:3000<br>
+   ![alt text](image-14.png)
+   - localhost:3000/produk<br>
+   ![alt text](image-15.png)
+   - localhost:3000/produk/static<br>
+   ![alt text](image-16.png)
+   - localhost:3000/404<br>
+   ![alt text](image-17.png)
 
 ### Refleksi & Diskusi
-1. Mengapa `<img>` biasa tidak optimal?
-2. Apa perbedaan font CDN dan `next/font`?
-3. Mengapa script bisa membuat website lambat?
-4. Kapan harus menggunakan dynamic import?
-5. Apa dampak bundle size terhadap UX?
+1. Mengapa `<img>` biasa tidak optimal?  
+   > Karena `<img>` memuat gambar apa adanya tanpa optimasi otomatis. Akibatnya ukuran file bisa besar, loading lebih lama, dan boros kuota/bandwidth. Di Next.js, `next/image` bisa otomatis kompres, resize sesuai perangkat, dan lazy load, jadi halaman terasa lebih cepat.
+
+2. Apa perbedaan font CDN dan `next/font`?  
+   > Font CDN diambil dari server luar saat halaman dibuka, jadi tergantung koneksi ke pihak ketiga dan bisa menambah waktu loading. `next/font` mengelola font langsung di aplikasi (self-hosted), sehingga lebih stabil, lebih cepat, dan mengurangi efek teks “kedip” saat font belum siap.
+
+3. Mengapa script bisa membuat website lambat?  
+   > Karena browser harus download, baca, lalu jalankan script. Jika script terlalu banyak atau dijalankan terlalu awal, proses tampilnya halaman bisa tertunda. Itulah kenapa strategi seperti `afterInteractive` atau `lazyOnload` dipakai agar script tidak mengganggu tampilan utama.
+
+4. Kapan harus menggunakan dynamic import?  
+   > Gunakan saat komponen tidak harus tampil di awal, misalnya chart, map, editor, atau widget tambahan. Dengan dynamic import, komponen dimuat saat dibutuhkan saja, sehingga loading awal halaman lebih ringan dan cepat.
+
+5. Apa dampak bundle size terhadap UX?  
+   > Bundle size adalah total ukuran JavaScript/CSS yang dikirim ke browser. Jika terlalu besar, halaman lebih lama muncul, terasa berat, dan pengguna lebih cepat meninggalkan situs. Bundle yang kecil biasanya memberi pengalaman lebih responsif dan nyaman.
 
 ### Kesimpulan
-Dalam praktikum ini mahasiswa telah mempelajari:
+Dalam praktikum ini saya telah mempelajari:
 - Image Optimization
 - Remote Image Configuration
 - Font Optimization
