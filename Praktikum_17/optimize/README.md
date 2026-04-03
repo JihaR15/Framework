@@ -35,13 +35,13 @@
 ### Langkah 2 – Font Optimization
 
 #### A. Menggunakan `next/font`
-- Buka file `index.tsx` pada folder `Appshell/index.tsx` dan modifikasi.
-![alt text](image-7.png)
+- Buka file `index.tsx` pada folder `Appshell/index.tsx` dan modifikasi.<br>
+![alt text](image-7.png)<br>
 - Jalankan browser `localhost:3000/produk`, maka font akan berubah menjadi Roboto.
 - Untuk mengecek font, bisa menggunakan extension FontFinder.
 
-**Hasil:**
-![alt text](image-6.png)
+**Hasil:**<br>
+![alt text](image-6.png)<br>
 - Tidak perlu load dari CDN manual
 - Tidak blocking render
 - Performance meningkat
@@ -50,28 +50,30 @@
 ### Langkah 3 – Script Optimization
 
 #### B. Menggunakan `next/script`
-- Buka file `index.tsx` pada folder `layouts/Navbar` dan modifikasi.
-- Pada kasus di atas, kita mengubah line 11 menggunakan model TypeScript, dapat terlihat ketika kita refresh web produk tulisan `MyApp` akan terlihat berkedip.
-- Perbedaan mendasar antara line 11–13 dan line 15–18 pada file `index.tsx` Anda terletak pada metode rendering teks dan interaksi dengan DOM (Document Object Model). Berikut adalah rincian perbedaannya:
+- Buka file `index.tsx` pada folder `layouts/Navbar` dan modifikasi.<br>
+![alt text](image-8.png)<br>
+- Pada kasus di atas, kita mengubah line 10 menggunakan model TypeScript, dapat terlihat ketika kita refresh web produk tulisan `MyApp` akan terlihat berkedip.<br>
+![alt text](lazyonload.gif)<br>
+- Perbedaan mendasar antara line 10–12 dan line 14–18 pada file `index.tsx` Anda terletak pada metode rendering teks dan interaksi dengan DOM (Document Object Model). Berikut adalah rincian perbedaannya:
 
 **I. Metode Rendering**
-a. **Line 11–13 (Standard React/JSX):** Ini adalah cara standar React.  
+a. **Line 10–12 (Standard React/JSX):** Ini adalah cara standar React.  
 Teks `"MyApp"` ditulis langsung di dalam tag `div`. React akan langsung merender teks ini ke dalam HTML saat komponen dimuat.  
 
-b. **Line 15–18 (Next.js Script & Manual DOM):** Menggunakan komponen `<Script>` dari Next.js dengan strategi `lazyOnload`.  
+b. **Line 14–18 (Next.js Script & Manual DOM):** Menggunakan komponen `<Script>` dari Next.js dengan strategi `lazyOnload`.  
 Teks tidak ada di dalam HTML saat awal dimuat, melainkan baru “disuntikkan” secara manual menggunakan perintah JavaScript:  
 `document.getElementById('title').innerHTML = 'MyApp';`  
 setelah script tersebut diunduh di latar belakang.
 
 **II. Performa dan SEO**
-a. **Line 11–13:** Sangat baik untuk SEO karena teks `"MyApp"` langsung terbaca oleh robot pencari (crawler) dalam kode sumber HTML.  
+a. **Line 10–12:** Sangat baik untuk SEO karena teks `"MyApp"` langsung terbaca oleh robot pencari (crawler) dalam kode sumber HTML.  
 
-b. **Line 15–18:** Kurang baik untuk SEO untuk konten penting karena teks baru muncul setelah JavaScript dijalankan. Strategi `lazyOnload` berarti script ini dijalankan paling akhir setelah semua sumber daya utama selesai dimuat, sehingga mungkin ada jeda waktu (delay) sebelum teks muncul di layar.
+b. **Line 14–18:** Kurang baik untuk SEO untuk konten penting karena teks baru muncul setelah JavaScript dijalankan. Strategi `lazyOnload` berarti script ini dijalankan paling akhir setelah semua sumber daya utama selesai dimuat, sehingga mungkin ada jeda waktu (delay) sebelum teks muncul di layar.
 
 **III. Keamanan (XSS)**
-a. **Line 11–13:** Aman karena React secara otomatis melakukan escape pada string untuk mencegah serangan Cross-Site Scripting (XSS).  
+a. **Line 10–12:** Aman karena React secara otomatis melakukan escape pada string untuk mencegah serangan Cross-Site Scripting (XSS).  
 
-b. **Line 15–18:** Memiliki risiko keamanan lebih tinggi karena menggunakan `.innerHTML`. Jika data yang dimasukkan berasal dari input user, ini bisa dimanfaatkan untuk menyuntikkan skrip berbahaya.
+b. **Line 14–18:** Memiliki risiko keamanan lebih tinggi karena menggunakan `.innerHTML`. Jika data yang dimasukkan berasal dari input user, ini bisa dimanfaatkan untuk menyuntikkan skrip berbahaya.
 
 #### C. Strategi Script
 
@@ -89,8 +91,11 @@ b. **Line 15–18:** Memiliki risiko keamanan lebih tinggi karena menggunakan `.
 
 ### Langkah 4 – Optimasi Avatar dengan `next/image`
 
-- Buka file `index.tsx` pada folder `layouts/navbar` dan modifikasi.
-- Tambahkan hostname Google.
+- Buka file `index.tsx` pada folder `layouts/navbar` dan modifikasi.<br>
+![alt text](image-9.png)<br>
+![alt text](image-10.png)<br>
+- Tambahkan hostname Google.<br>
+![alt text](image-11.png)<br>
 
 ### Tugas Praktikum
 1. Optimasi semua image di project menggunakan `next/image`.
