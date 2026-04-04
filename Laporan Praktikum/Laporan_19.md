@@ -7,7 +7,7 @@
 **Import Project**
 > Disini saya sudah menghubungkan project dengan GitHub, jadi tinggal import saja.
 1. Klik **Import**.<br>
-![alt text](img/image.png)<br>
+![alt text](../Praktikum_19/deploy/img/image.png)<br>
 
 **Catatan**
 - Sebelum di-import, lakukan konfigurasi terlebih dahulu.
@@ -18,12 +18,12 @@
 **Masalah: Static Site Generation Gagal**
 - Hapus file `static.tsx`.
 - Comment pada line 46 pada file `[produk].tsx` yang berhubungan dengan static-site generation.<br>
-![alt text](img/image-1.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-1.png)<br>
 
 **Solusi**
 1. Gunakan SSR (Server Side Rendering).
     - SSR yang sebelumnya di-comment dibuka comment-nya pada file `[produk].tsx`.<br>
-    ![alt text](img/image-2.png)<br>
+    ![alt text](../Praktikum_19/deploy/img/image-2.png)<br>
 
 2. Gunakan Environment Variable
     - Buat di `.env.local`:
@@ -39,29 +39,29 @@
         fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/product`)
         ```
     - Terapkan pada file `[produk].tsx` dan `server.tsx`.<br>
-    ![alt text](img/image-3.png)<br>
-    ![alt text](img/image-4.png)<br>
+    ![alt text](../Praktikum_19/deploy/img/image-3.png)<br>
+    ![alt text](../Praktikum_19/deploy/img/image-4.png)<br>
 
 3. Commit dan push kembali.<br>
-![alt text](img/image-5.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-5.png)<br>
 
 4. Selanjutnya import dan lakukan pengaturan sesuai kebutuhan.<br>
-![alt text](img/image-6.png)<br>
-![alt text](img/image-7.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-6.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-7.png)<br>
 
 5. Setelah itu klik **Deploy**. Jika berhasil, hasilnya akan muncul.<br>
-![alt text](img/image-9.png)<br>
-![alt text](img/image-10.png)<br>
-![alt text](img/image-11.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-9.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-10.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-11.png)<br>
 
 ### Langkah 3 – Menambahkan Environment Variable di Vercel
 
 **Buka Project di Vercel**<br>
 - Masuk ke **Settings → Environment Variables**.<br>
-![alt text](img/image-12.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-12.png)<br>
 
 **Import dari `.env.local`**<br>
-![alt text](img/image-13.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-13.png)<br>
 - Klik **Import .env** dan sesuaikan `NEXT_PUBLIC_API_URL` dengan URL project Vercel.<br>
 - Atau isi manual:
     ```env
@@ -69,14 +69,14 @@
     ```
     <br>
 
-    ![alt text](img/image-14.png)
+    ![alt text](../Praktikum_19/deploy/img/image-14.png)
 
 **Catatan**
 - Tanpa tanda `/` di belakang URL.
 
 **Redeploy**
 - Deployment → **Redeploy**.<br>
-![alt text](img/image-15.png)
+![alt text](../Praktikum_19/deploy/img/image-15.png)
 
 
 ### Langkah 4 – Konfigurasi Google OAuth Production
@@ -88,7 +88,7 @@
 
 **Tambahkan Authorized Origins**
 - Tambahkan **Redirect URI**.<br>
-![alt text](img/image-16.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-16.png)<br>
 
 **Simpan perubahan.**
 
@@ -97,17 +97,17 @@
 
 Coba akses:
 - `/`<br>
-![alt text](img/image-17.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-17.png)<br>
 - `/about`<br>
-![alt text](img/image-18.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-18.png)<br>
 - `/produk`<br>
-![alt text](img/image-19.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-19.png)<br>
 - `/profile`<br>
-![alt text](img/image-20.png)<br>
+![alt text](../Praktikum_19/deploy/img/image-20.png)<br>
 - Login Google<br>
-![alt text](img/logingoogle.gif)<br>
+![alt text](../Praktikum_19/deploy/img/logingoogle.gif)<br>
 - Login credential biasa<br>
-![alt text](img/logincredential.gif)<br>
+![alt text](../Praktikum_19/deploy/img/logincredential.gif)<br>
 
 Pastikan:
 - SSR berjalan
