@@ -1,46 +1,13 @@
 ## Praktikum 19 - Deploy
 
-### Langkah 1 – Membuat Repository GitHub
+> Disini saya menggunakan Repo yang sudah dibuat saja, tanpa membuat Repo baru.
 
-**Buat Repository Baru**
-1. Login ke GitHub.
-2. Klik **New Repository**.
-3. Beri nama repository.
-4. Pilih **Private/Public**.
-5. Klik **Create Repository**.
-
-**Hubungkan Project Lokal ke GitHub**
-- Cek konfigurasi Git:
-    ```bash
-    git config --global user.name
-    git config --global user.email
-    ```
-- Jika belum ada:
-    ```bash
-    git config --global user.name "username_github"
-    git config --global user.email "email_github"
-    ```
-
-**Tambahkan Remote Repository**
-```bash
-git remote add origin https://github.com/username/repository.git
-git add .
-git commit -m "Initial deployment"
-git push origin main
-```
-
-- Pastikan repository di GitHub sudah terisi file project.
-
-### Langkah 2 – Deployment ke Vercel
-
-**Login ke Vercel**
-- Buka: https://vercel.com
-- Login menggunakan GitHub. Jika belum punya akun, buat terlebih dahulu.
+### Langkah 1 – Deployment ke Vercel
 
 **Import Project**
-1. Klik **Add New Project**.
-2. Install terlebih dahulu GitHub-nya.
-3. Klik **Import**.
+> Disini saya sudah menghubungkan project dengan GitHub, jadi tinggal import saja.
+1. Klik **Import**.
+![alt text](image.png)
 
 **Catatan**
 - Sebelum di-import, lakukan konfigurasi terlebih dahulu.
@@ -51,10 +18,12 @@ git push origin main
 **Masalah: Static Site Generation Gagal**
 - Hapus file `static.tsx`.
 - Comment pada line 46 pada file `[produk].tsx` yang berhubungan dengan static-site generation.
+![alt text](image-1.png)
 
 **Solusi**
 1. Gunakan SSR (Server Side Rendering).
      - SSR yang sebelumnya di-comment dibuka comment-nya pada file `[produk].tsx`.
+     ![alt text](image-2.png)
 
 2. Gunakan Environment Variable
      - Buat di `.env.local`:
@@ -70,8 +39,11 @@ git push origin main
          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/product`)
          ```
      - Terapkan pada file `[produk].tsx` dan `server.tsx`.
+     ![alt text](image-3.png)
+     ![alt text](image-4.png)
 
 3. Commit dan push kembali.
+
 
 4. Selanjutnya import dan lakukan pengaturan sesuai kebutuhan.
 
