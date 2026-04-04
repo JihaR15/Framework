@@ -1,5 +1,18 @@
 ## Praktikum 08 - Server-Side Rendering
 
+- **Nama:** Jiha Ramdhan
+- **NIM:** 2341720043
+- **Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Setup Halaman SSR](#langkah-1--setup-halaman-ssr)
+2. [Langkah 2 – Implementasi getServerSideProps](#langkah-2--implementasi-getserversideprops)
+3. [Langkah 3 – Refactor Type](#langkah-3--refactor-type)
+4. [Langkah 4 – Uji Perbedaan SSR vs CSR](#langkah-4--uji-perbedaan-ssr-vs-csr)
+5. [E. Studi Analisis](#e-studi-analisis)
+
+
+
 ### Langkah 1 – Setup Halaman SSR
 1. Buat file baru pada `pages/products/server.tsx`<br>
 ![alt text](../Praktikum_08/server-side-rendering/img/image.png)<br>

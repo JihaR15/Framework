@@ -1,5 +1,18 @@
 ## Praktikum 14 - Implementasi Sistem Registrasi (Database Integration)
 
+- **Nama**: Jiha Ramdhan
+- **NIM**: 2341720043
+- **Kelas**: TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Membuat Register View](#langkah-1--membuat-register-view)
+2. [Langkah 2 – Membuat API Register](#langkah-2--membuat-api-register)
+3. [Langkah 3 – Install bcrypt](#langkah-3--install-bcrypt)
+4. [Langkah 4 – Pengujian](#langkah-4--pengujian)
+5. [Tugas Praktikum](#tugas-praktikum)
+6. [Pertanyaan Analisis](#pertanyaan-analisis)
+
+
 ### Langkah 1 – Membuat Register View
 - Buat folder pada views/auth dengan nama register dan tambahkan 2 file yaitu index.tsx dan register.module.scss<br>
 ![alt text](../Praktikum_14/auth-register/img/image.png)<br>

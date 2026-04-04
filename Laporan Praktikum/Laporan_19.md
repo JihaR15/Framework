@@ -1,5 +1,20 @@
 ## Praktikum 19 - Deploy
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Deployment ke Vercel](#langkah-1--deployment-ke-vercel)
+2. [Langkah 2 – Mengatasi Error Saat Deployment](#langkah-2--mengatasi-error-saat-deployment)
+3. [Langkah 3 – Menambahkan Environment Variable di Vercel](#langkah-3--menambahkan-environment-variable-di-vercel)
+4. [Langkah 4 – Konfigurasi Google OAuth Production](#langkah-4--konfigurasi-google-oauth-production)
+5. [Langkah 5 – Pengujian Setelah Deployment](#langkah-5--pengujian-setelah-deployment)
+6. [Analisis Konsep](#analisis-konsep)
+7. [Refleksi & Diskusi](#refleksi--diskusi)
+8. [Kesimpulan](#kesimpulan)
+
+
 > Disini saya menggunakan Repo yang sudah dibuat saja, tanpa membuat Repo baru.
 
 ### Langkah 1 – Deployment ke Vercel
@@ -12,7 +27,7 @@
 **Catatan**
 - Sebelum di-import, lakukan konfigurasi terlebih dahulu.
 
-### C. Mengatasi Error Saat Deployment
+### Langkah 2 – Mengatasi Error Saat Deployment
 - Dikarenakan pada code masih terdapat code static-site generation.
 
 **Masalah: Static Site Generation Gagal**

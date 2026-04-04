@@ -1,5 +1,18 @@
 ## Praktikum 07 - Client-Side Rendering
 
+- **Nama**: Jiha Ramdhan
+- **NIM**: 2341720043
+- **Kelas**: TI-3D
+
+## Daftar Isi
+1. [Langkah 1: Setup Data Produk](#langkah-1-setup-data-produk)
+2. [Langkah 2: Implementasi CSR dengan useEffect](#langkah-2-implementasi-csr-dengan-useeffect)
+3. [Langkah 3: Implementasi Skeleton Loading](#langkah-3-implementasi-skeleton-loading)
+4. [Langkah 5: Implementasi SWR](#langkah-5-implementasi-swr)
+5. [Hasil & Perbandingan](#hasil--perbandingan)
+6. [Tugas Praktikum](#tugas-praktikum)
+
+
 ### Langkah 1: Setup Data Produk
 1. Siapkan project Next.js
 2. Buat endpoint API `/api/produk`

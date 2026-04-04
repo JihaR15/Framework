@@ -1,5 +1,22 @@
 ## Praktikum 15 - Implementasi Login Database & Multi-Role
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Custom Login Page](#langkah-1--custom-login-page)
+2. [Langkah 2 – Handle Login di Frontend](#langkah-2--handle-login-di-frontend)
+3. [Langkah 3 – Authorize di NextAuth (Database Login)](#langkah-3--authorize-di-nextauth-database-login)
+4. [Langkah 4 – Tambahkan Role ke Token](#langkah-4--tambahkan-role-ke-token)
+5. [Langkah 5 – Callback URL Logic](#langkah-5--callback-url-logic)
+6. [Langkah 6 – Membuat Halaman Admin dan Authorisasi](#langkah-6--membuat-halaman-admin-dan-authorisasi)
+7. [Pengujian](#pengujian)
+8. [Struktur Database Users](#struktur-database-users)
+9. [Perbandingan Sistem](#perbandingan-sistem)
+10. [Pertanyaan Analisis](#pertanyaan-analisis)
+
+
 ### Langkah 1 – Custom Login Page
 - Tambahkan custom page di NextAuth line 51-53<br>
 ![alt text](../Praktikum_15/login-multi-role/img/image-1.png)<br>

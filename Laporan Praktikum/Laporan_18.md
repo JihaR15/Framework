@@ -1,5 +1,23 @@
 ## Praktikum 18 - Unit Testing
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Setup Jest di Next.js](#langkah-1--setup-jest-di-nextjs)
+2. [Langkah 2 – Struktur Folder Testing](#langkah-2--struktur-folder-testing)
+3. [Langkah 3 – Testing Halaman About](#langkah-3--testing-halaman-about)
+4. [Langkah 4 – Coverage Report](#langkah-4--coverage-report)
+5. [Langkah 5 – Konfigurasi Coverage Lengkap](#langkah-5--konfigurasi-coverage-lengkap)
+6. [Langkah 6 – Testing dengan getByTestId](#langkah-6--testing-dengan-gettestid)
+7. [Langkah 7 – Testing Page dengan Router (Mocking)](#langkah-7--testing-page-dengan-router-mocking)
+8. [Langkah 8 – Menangani Undefined Data](#langkah-8--menangani-undefined-data)
+9. [Standar Industri](#standar-industri)
+10. [Tugas Praktikum](#tugas-praktikum)
+11. [Diskusi & Refleksi](#diskusi--refleksi)
+12. [Kesimpulan](#kesimpulan)
+
 ### Langkah 1 – Setup Jest di Next.js
 
 **Install Dependencies**

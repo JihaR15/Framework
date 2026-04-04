@@ -1,5 +1,16 @@
 ## Praktikum 09 - Static Side Generation
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Setup Halaman Static](#langkah-1--setup-halaman-static)
+2. [Langkah 3 – Build Production Mode](#langkah-3--build-production-mode)
+3. [Langkah 4 – Pengujian Perubahan Data](#langkah-4--pengujian-perubahan-data)
+4. [Studi Analisis](#studi-analisis)
+
+
 ### Langkah 1 – Setup Halaman Static
 1. Buat file baru pada `pages/products/static.tsx`<br>
 ![alt text](../Praktikum_09/static-side-generation/img/image.png)<br>

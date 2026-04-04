@@ -1,5 +1,26 @@
 ## Praktikum 02 - Next Routing  
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D  
+
+## Daftar Isi
+- [Praktikum 02 - Next Routing](#praktikum-02---next-routing)
+    - [1. Routing Dasar (Static Routing)](#1-routing-dasar-static-routing)
+    - [2. Routing Menggunakan Folder](#2-routing-menggunakan-folder)
+    - [3. Nested Routing](#3-nested-routing)
+    - [4. Dynamic Routing](#4-dynamic-routing)
+    - [5. Membuat Component Navbar](#5-membuat-component-navbar)
+    - [6. Membuat Layout Global (App Shell)](#6-membuat-layout-global-app-shell)
+    - [7. Implementasi Layout di _app.tsx](#7-implementasi-layout-di-_apptsx)
+- [Tugas Praktikum](#tugas-praktikum)
+    - [Tugas 1 - Routing](#tugas-1---routing)
+    - [Tugas 2 - Dynamic Routing](#tugas-2---dynamic-routing)
+    - [Tugas 3 - Layout](#tugas-3---layout)
+- [Pertanyaan Refleksi](#pertanyaan-refleksi)
+
+---
+
 ### 1. Routing Dasar (Static Routing)
 - membuat File baru about.tsx di dalam folder pages <br>
 ![alt text](../Praktikum_02/next-routing/img/image-2.png) <br>

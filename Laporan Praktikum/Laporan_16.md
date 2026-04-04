@@ -1,5 +1,25 @@
 ## Praktikum 16 - Implementasi Login Google Provider dengan NextAuth.js + Firebase
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Masuk ke Google Cloud Console](#langkah-1--masuk-ke-google-cloud-console)
+2. [Langkah 2 – Buat Project Baru](#langkah-2--buat-project-baru)
+3. [Langkah 3 – Konfigurasi OAuth Consent Screen](#langkah-3--konfigurasi-oauth-consent-screen)
+4. [Langkah 4 – Buat OAuth Credentials](#langkah-4--buat-oauth-credentials)
+5. [Langkah 5 – Tambahkan Environment Variables](#langkah-5--tambahkan-environment-variables)
+6. [Langkah 6 – Konfigurasi Google Provider di NextAuth](#langkah-6--konfigurasi-google-provider-di-nextauth-dan-handle-callback-jwt--session)
+7. [Langkah 7 – Tambahkan Button Login Google](#langkah-7--tambahkan-button-login-google)
+8. [Langkah 8 – Menampilkan Image dari Google](#langkah-8--menampilkan-image-dari-google)
+9. [Langkah 9 – Simpan Data Google ke Database](#langkah-9--simpan-data-google-ke-database)
+10. [Langkah 10 – Pengujian](#langkah-10--pengujian)
+11. [Analisis & Diskusi](#analisis--diskusi)
+12. [Tugas Mandiri](#tugas-mandiri)
+13. [Kesimpulan](#kesimpulan)
+
+
 ### Langkah 1 – Masuk ke Google Cloud Console
 - Buka: https://console.cloud.google.com/apis/credentials
 

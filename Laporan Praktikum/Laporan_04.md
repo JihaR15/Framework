@@ -1,5 +1,26 @@
 ## Praktikum 04 - Styling  
 
+- Nama: Jiha Ramdhan
+- NIM: 2341720043
+- Kelas: TI-3D
+
+## Daftar Isi
+1. [Praktikum 04 - Styling](#praktikum-04---styling)
+    - [Global CSS](#1-global-css)
+    - [CSS Module (Local Scope)](#2-css-module-local-scope)
+    - [Styling Untuk Pages (CSS Module)](#3-styling-untuk-pages-css-module)
+    - [Conditional Rendering Navbar (Tanpa Navbar di Login)](#4-conditional-rendering-navbar-tanpa-navbar-di-login)
+    - [Refactoring Struktur Project (Best Practice)](#5-refactoring-struktur-project-best-practice)
+    - [Inline Styling (CSS-in-js)](#6-inline-styling-css-in-js)
+    - [Kombinasi Global CSS + CSS Module](#7-kombinasi-global-css--css-module)
+    - [SCSS (SASS)](#8-scss-sass)
+    - [Tailwind CSS](#9-tailwind-css)
+2. [Tugas Praktikum](#tugas-praktikum)
+    - [Tugas 1](#tugas-1)
+    - [Tugas 2](#tugas-2)
+    - [Tugas 3](#tugas-3)
+3. [F. Pertanyaan Refleksi](#f-pertanyaan-refleksi)
+
 ### 1. Global CSS
 - `styles/globals.css` <br>
 ![alt text](../Praktikum_04/styling/img/image.png) <br>

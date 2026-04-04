@@ -1,4 +1,20 @@
 ## Praktikum 10 - Dynamic Routing
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Membuat Dynamic Route](#langkah-1--membuat-dynamic-route)
+2. [Langkah 2 – Implementasi CSR (Client-Side Rendering)](#langkah-2--implementasi-csr-client-side-rendering)
+3. [Langkah 3 – Implementasi SSR (Server-Side Rendering)](#langkah-3--implementasi-ssr-server-side-rendering)
+4. [Langkah 4 – Implementasi SSG (Static Site Generation)](#langkah-4--implementasi-ssg-static-site-generation)
+5. [Pengujian](#pengujian)
+6. [Tugas Praktikum](#tugas-praktikum)
+7. [Implementasi dan Dokumentasi](#implementasi-dan-dokumentasi)
+8. [Tabel Perbandingan](#tabel-perbandingan)
+9. [Pertanyaan Analisis](#pertanyaan-analisis)
+
+
 
 ### Langkah 1 – Membuat Dynamic Route
 1. Buka file `pages/products/[product].tsx` dan modifikasi sesuai (line 20)<br>

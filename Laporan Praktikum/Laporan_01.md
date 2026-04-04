@@ -1,5 +1,22 @@
 ## Praktikum 01 - My-app  
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D  
+
+### Daftar Isi
+- [1. Pengecekan Lingkungan](#1-pengecekan-lingkungan)
+- [2. Membuat Project Next.JS](#2-membuat-project-nextjs)
+- [3. Menjalankan Server Development](#3-menjalankan-server-development)
+- [4. Struktur Folder](#4-struktur-folder)
+- [5. Modifikasi Halaman Utama](#5-modifikasi-halaman-utama)
+- [6. Modifikasi API](#6-modifikasi-api)
+- [7. Modifikasi Background](#7-modifikasi-background)
+- [Tugas Praktikum](#tugas-praktikum)
+   - [1. Wajib](#1-wajib)
+   - [2. Pengayaan](#2-pengayaan)
+- [Pertanyaan](#pertanyaan)
+
 ### 1. Pengecekan Lingkungan
 ![alt text](../Praktikum_01/img/image.png)
 

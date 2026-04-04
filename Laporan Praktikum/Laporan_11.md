@@ -1,5 +1,20 @@
 ## Praktikum 11 - Incremental Static Regeneration (ISR)
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D  
+
+## Daftar Isi
+- [Langkah 1: Tambahkan Revalidate](#langkah-1-tambahkan-revalidate)
+    - [1.1 Buka halaman static.tsx](#11-buka-halaman-statictsx)
+    - [1.2 Pengujian ISR](#12-pengujian-isr)
+- [Langkah 2: On-Demand Revalidation](#langkah-2-on-demand-revalidation)
+    - [2.1 Buat API Revalidate](#21-buat-api-revalidate)
+    - [2.2 Tambahkan Parameter Data](#22-tambahkan-parameter-data)
+    - [2.3 Tambahkan Token Security](#23-tambahkan-token-security)
+- [Langkah 3: Pengujian Manual](#langkah-3-pengujian-manual)
+- [Pertanyaan Analisis](#pertanyaan-analisis)
+
 ### Langkah 1: Tambahkan Revalidate
 
 **1.1 Buka halaman static.tsx**

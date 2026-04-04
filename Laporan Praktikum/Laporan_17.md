@@ -1,5 +1,24 @@
 ## Praktikum 17 - Optimize
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+1. [Langkah 1 – Image Optimization](#langkah-1--image-optimization)
+   - A. Optimasi Gambar Lokal (Public Folder)
+   - B. Optimasi Gambar Remote (External URL)
+2. [Langkah 2 – Font Optimization](#langkah-2--font-optimization)
+   - A. Menggunakan `next/font`
+3. [Langkah 3 – Script Optimization](#langkah-3--script-optimization)
+   - B. Menggunakan `next/script`
+   - C. Strategi Script
+4. [Langkah 4 – Optimasi Avatar dengan `next/image`](#langkah-4--optimasi-avatar-dengan-nextimage)
+5. [Tugas Praktikum](#tugas-praktikum)
+6. [Refleksi & Diskusi](#refleksi--diskusi)
+7. [Kesimpulan](#kesimpulan)
+
+
 ### Langkah 1 – Image Optimization
 
 #### A. Optimasi Gambar Lokal (Public Folder)

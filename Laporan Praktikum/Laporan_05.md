@@ -1,5 +1,19 @@
 ## Praktikum 05 - Custom Error & Document
 
+- Nama: Jiha Ramdhan
+- NIM: 2341720043
+- Kelas: TI-3D
+
+## Daftar Isi
+- [1. Menjalankan Project](#1-menjalankan-project)
+- [2. Membuat Custom Document](#2-membuat-custom-document)
+- [3. Pengaturan Title per Halaman](#3-pengaturan-title-per-halaman)
+- [4. Membuat Custom Error Page (404)](#4-membuat-custom-error-page-404)
+- [5. Styling Halaman 404](#5-styling-halaman-404)
+- [6. Menampilkan Gambar dari Folder Public](#6-menampilkan-gambar-dari-folder-public)
+- [E. Tugas Praktikum](#e-tugas-praktikum)
+- [F. Pertanyaan Evaluasi](#f-pertanyaan-evaluasi)
+
 ### 1. Menjalankan Project
 1. Buka folder project
 2. Jalankan: `npm run dev`
@@ -50,7 +64,7 @@ hasil: <br>
 
 ### 6. Menampilkan Gambar dari Folder Public
 1. Download gambar 404 dari https://undraw.co/<br>
-![alt text](../Praktikum_05/custom-error/img/page-not-found.png)<br>
+![alt text](../Praktikum_05/custom-error/public/page-not-found.png)<br>
 2. Simpan sebagai `public/page-not-found.png`<br>
 ![alt text](../Praktikum_05/custom-error/img/image-15.png)<br>
 3. Modifikasi `404.tsx`: `<img src="/page-not-found.png" alt="404" className={styles.error__image} />`<br>

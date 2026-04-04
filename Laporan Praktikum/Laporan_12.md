@@ -1,5 +1,20 @@
 ## Praktikum 12 - Middleware & Route Protection
 
+- **Nama:** Jiha Ramdhan  
+- **NIM:** 2341720043  
+- **Kelas:** TI-3D  
+
+## Daftar Isi
+1. [Langkah 1 – Membuat Middleware](#langkah-1--membuat-middleware)  
+2. [Langkah 2 – Struktur Dasar Middleware](#langkah-2--struktur-dasar-middleware)  
+3. [Langkah 3 – Redirect Sederhana](#langkah-3--redirect-sederhana)  
+4. [Langkah 4 – Batasi Route Tertentu](#langkah-4--batasi-route-tertentu)  
+5. [Langkah 5 – Simulasi Sistem Login](#langkah-5--simulasi-sistem-login)  
+6. [Langkah 6 – Pengujian](#langkah-6--pengujian)  
+7. [Analisis Perbandingan](#analisis-perbandingan)  
+8. [Pertanyaan Analisis](#pertanyaan-analisis)
+
+
 ### Langkah 1 – Membuat Middleware
 - Modifikasi file `index.tsx` pada folder `src/pages/produk`<br>
 ![alt text](../Praktikum_12/middleware-route-protection/img/image.png)<br>

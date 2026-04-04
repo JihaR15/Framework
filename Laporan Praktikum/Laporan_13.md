@@ -1,5 +1,23 @@
 ## Praktikum 13 - Sistem Autentikasi & Proteksi Route
 
+- **Nama**: Jiha Ramdhan  
+- **NIM**: 2341720043  
+- **Kelas**: TI-3D  
+
+## Daftar Isi
+1. [Langkah 1 – Install NextAuth](#langkah-1--install-nextauth)  
+2. [Langkah 2 – Konfigurasi API Auth](#langkah-2--konfigurasi-api-auth)  
+3. [Langkah 3 – Tambahkan Secret](#langkah-3--tambahkan-secret)  
+4. [Langkah 4 – Tambahkan SessionProvider](#langkah-4--tambahkan-sessionprovider)  
+5. [Langkah 5 – Tambahkan Tombol Login & Logout](#langkah-5--tambahkan-tombol-login--logout)  
+6. [Langkah 6 – Menambahkan Data Tambahan (Full Name)](#langkah-6--menambahkan-data-tambahan-full-name)  
+7. [Langkah 7 – Proteksi Halaman Profile](#langkah-7--proteksi-halaman-profile)  
+8. [Pengujian](#pengujian)  
+9. [Alur Login NextAuth](#alur-login-nextauth)  
+10. [Pertanyaan Analisis](#pertanyaan-analisis)  
+
+---
+
 ### Langkah 1 – Install NextAuth
 1. Jalankan command: `npm install next-auth --force`<br>
 ![alt text](../Praktikum_13/next-auth/img/image.png)<br>

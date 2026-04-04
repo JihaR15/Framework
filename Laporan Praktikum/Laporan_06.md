@@ -1,5 +1,27 @@
 ## Praktikum 06 - API Routes
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D
+
+## Daftar Isi
+- [Praktikum 06 - API Routes](#praktikum-06---api-routes)
+    - [Langkah 1 – Menjalankan Project](#langkah-1--menjalankan-project)
+    - [Langkah 2 – Membuat API Produk](#langkah-2--membuat-api-produk)
+    - [Langkah 3 – Fetch Data API di Frontend](#langkah-3--fetch-data-api-di-frontend)
+- [Integrasi Firebase](#integrasi-firebase)
+    - [Langkah 5 – Setup Firebase](#langkah-5--setup-firebase)
+    - [Langkah 6 – Install Firebase](#langkah-6--install-firebase)
+    - [Langkah 7 – Konfigurasi Environment Variable](#langkah-7--konfigurasi-environment-variable)
+    - [Langkah 8 – Konfigurasi Firebase](#langkah-8--konfigurasi-firebase)
+    - [Langkah 9 – Ambil Data dari Firestore](#langkah-9--ambil-data-dari-firestore)
+    - [Langkah 10 – API Mengambil Data Firebase](#langkah-10--api-mengambil-data-firebase)
+- [E. Tugas Praktikum](#e-tugas-praktikum)
+    - [Tugas 1 (Wajib)](#tugas-1-wajib)
+    - [Tugas 2 (Wajib)](#tugas-2-wajib)
+    - [Tugas 3 (Pengayaan)](#tugas-3-pengayaan)
+- [F. Pertanyaan Evaluasi](#f-pertanyaan-evaluasi)
+
 ### Langkah 1 – Menjalankan Project
 - `npm run dev`
 - Akses: http://localhost:3000<br>

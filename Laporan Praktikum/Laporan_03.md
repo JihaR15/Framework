@@ -1,5 +1,26 @@
 ## Praktikum 03 - Link Navigation  
 
+**Nama:** Jiha Ramdhan  
+**NIM:** 2341720043  
+**Kelas:** TI-3D  
+
+## Daftar Isi
+- [1. Test Run Project](#1-test-run-project)
+- [2. Membuat Catch-All Route](#2-membuat-catch-all-route)
+- [3. Pengujian Catch-All Route](#3--pengujian-catch-all-route)
+- [4. Optional Catch-All Route](#4-optional-catch-all-route)
+- [5. Validasi Parameter](#5-validasi-parameter)
+- [6. Membuat Halaman Login \& Register](#6-membuat-halaman-login--register)
+- [7. Navigasi Imperatif (router.push)](#7-navigasi-imperatif-routerpush)
+- [8. Simulasi Redirect (Belum Login)](#8-simulasi-redirect-belum-login)
+- [Tugas Praktikum](#tugas-praktikum)
+    - [Tugas 1 (Wajib)](#tugas-1-wajib)
+    - [Tugas 2 (Wajib)](#tugas-2-wajib)
+    - [Tugas 3 (Pengayaan)](#tugas-3-pengayaan)
+- [Pertanyaan Refleksi](#pertanyaan-refleksi)
+
+---
+
 ### 1. Test Run Project
 ![alt text](../Praktikum_03/link-navigation/img/image.png) <br>
 ![alt text](../Praktikum_03/link-navigation/img/image-1.png) <br>
