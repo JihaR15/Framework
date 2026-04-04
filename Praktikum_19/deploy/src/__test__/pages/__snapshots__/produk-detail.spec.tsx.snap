@@ -6,42 +6,87 @@ exports[`Halaman Detail Produk renders komponen HalamanProduk correctly 1`] = `
   "baseElement": <body>
     <div>
       <div>
-        <h1
-          class="title"
-        >
-          Detail Produk
-        </h1>
         <div
-          class="produkdetail"
+          class="wrapper"
         >
-          <div
-            class="produkdetail__image"
+          <button
+            class="backButton"
+            type="button"
           >
-            <img
-              src="/dummy-image.png"
-            />
-          </div>
+            <svg
+              fill="none"
+              height="20"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="20"
+            >
+              <line
+                x1="19"
+                x2="5"
+                y1="12"
+                y2="12"
+              />
+              <polyline
+                points="12 19 5 12 12 5"
+              />
+            </svg>
+            Kembali ke Daftar Produk
+          </button>
           <div
-            class="produkdetail__info"
+            class="detailCard"
           >
-            <button
-              class="produkdetail__button"
-              type="button"
+            <div
+              class="detailCard__imageWrapper"
             >
-              &lt; 
-              Kembali ke Daftar Produk
-            </button>
-            <h1
-              class="produkdetail__name"
-            />
-            <p
-              class="produkdetail__category"
-            />
-            <p
-              class="produkdetail__price"
+              <img
+                alt="Sepatu Baru"
+                class="detailCard__image"
+                data-nimg="fill"
+                decoding="async"
+                src="/dummy-image.png"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+              />
+            </div>
+            <div
+              class="detailCard__info"
             >
-              Rp 
-            </p>
+              <span
+                class="detailCard__category"
+              >
+                Shoes
+              </span>
+              <h1
+                class="detailCard__name"
+              >
+                Sepatu Baru
+              </h1>
+              <p
+                class="detailCard__price"
+              >
+                Rp 
+                100.000
+              </p>
+              <div
+                class="detailCard__divider"
+              />
+              <div
+                class="detailCard__description"
+              >
+                <h3>
+                  Deskripsi Produk
+                </h3>
+                <p>
+                  Ini adalah detail dari 
+                  <strong>
+                    Sepatu Baru
+                  </strong>
+                  . Dirancang dengan kualitas terbaik untuk memenuhi kebutuhan Anda sehari-hari. Material premium memastikan produk ini awet dan nyaman digunakan.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -49,42 +94,87 @@ exports[`Halaman Detail Produk renders komponen HalamanProduk correctly 1`] = `
   </body>,
   "container": <div>
     <div>
-      <h1
-        class="title"
-      >
-        Detail Produk
-      </h1>
       <div
-        class="produkdetail"
+        class="wrapper"
       >
-        <div
-          class="produkdetail__image"
+        <button
+          class="backButton"
+          type="button"
         >
-          <img
-            src="/dummy-image.png"
-          />
-        </div>
+          <svg
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="20"
+          >
+            <line
+              x1="19"
+              x2="5"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 19 5 12 12 5"
+            />
+          </svg>
+          Kembali ke Daftar Produk
+        </button>
         <div
-          class="produkdetail__info"
+          class="detailCard"
         >
-          <button
-            class="produkdetail__button"
-            type="button"
+          <div
+            class="detailCard__imageWrapper"
           >
-            &lt; 
-            Kembali ke Daftar Produk
-          </button>
-          <h1
-            class="produkdetail__name"
-          />
-          <p
-            class="produkdetail__category"
-          />
-          <p
-            class="produkdetail__price"
+            <img
+              alt="Sepatu Baru"
+              class="detailCard__image"
+              data-nimg="fill"
+              decoding="async"
+              src="/dummy-image.png"
+              style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; color: transparent;"
+            />
+          </div>
+          <div
+            class="detailCard__info"
           >
-            Rp 
-          </p>
+            <span
+              class="detailCard__category"
+            >
+              Shoes
+            </span>
+            <h1
+              class="detailCard__name"
+            >
+              Sepatu Baru
+            </h1>
+            <p
+              class="detailCard__price"
+            >
+              Rp 
+              100.000
+            </p>
+            <div
+              class="detailCard__divider"
+            />
+            <div
+              class="detailCard__description"
+            >
+              <h3>
+                Deskripsi Produk
+              </h3>
+              <p>
+                Ini adalah detail dari 
+                <strong>
+                  Sepatu Baru
+                </strong>
+                . Dirancang dengan kualitas terbaik untuk memenuhi kebutuhan Anda sehari-hari. Material premium memastikan produk ini awet dan nyaman digunakan.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

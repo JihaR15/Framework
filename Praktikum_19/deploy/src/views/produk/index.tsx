@@ -13,45 +13,57 @@ type ProductType = {
 const TampilanProduk = ({ products }: { products: ProductType[] }) => {
   return (
     <div className={styles.produk}>
-      <h1 className={styles.produk__title}>Daftar Produk</h1>
+      <div className={styles.produk__header}>
+        <h1 className={styles.produk__title}>Katalog Produk</h1>
+        <p className={styles.produk__subtitle}>Temukan koleksi terbaik kami</p>
+      </div>
+
       <div className={styles.produk__content}>
         {products?.length > 0 ? (
           <>
-            {products?.map((products: ProductType) => (
+            {products.map((product: ProductType) => (
               <Link
-                href={`/produk/${products.id}`}
-                key={products.id}
+                href={`/produk/${product.id}`}
+                key={product.id}
                 className={styles.produk__content__item}
               >
                 <div className={styles.produk__content__item__image}>
                   <Image
-                    src={products.image}
-                    alt={products.nama}
-                    width={200}
-                    height={200}
+                    src={product.image}
+                    alt={product.nama}
+                    width={300}
+                    height={300}
                     priority
                     unoptimized
                   />
                 </div>
-                <h4 className={styles.produk__content__item__name}>
-                  {products.nama}
-                </h4>
-                <p className={styles.produk__content__item__category}>
-                  {products.kategori}
-                </p>
-                <p className={styles.produk__content__item__price}>
-                  Rp {products.harga.toLocaleString()}
-                </p>
+                <div className={styles.produk__content__item__info}>
+                  <p className={styles.produk__content__item__category}>
+                    {product.kategori}
+                  </p>
+                  <h4 className={styles.produk__content__item__name}>
+                    {product.nama}
+                  </h4>
+                  <p className={styles.produk__content__item__price}>
+                    Rp {product.harga.toLocaleString("id-ID")}
+                  </p>
+                </div>
               </Link>
             ))}
           </>
         ) : (
-          <div className={styles.produk__content__skeleton}>
-            <div className={styles.produk__content__skeleton__image}></div>
-            <div className={styles.produk__content__skeleton__name}></div>
-            <div className={styles.produk__content__skeleton__category}></div>
-            <div className={styles.produk__content__skeleton__price}></div>
-          </div>
+          <>
+            {Array.from({ length: 4 }).map((_, index) => (
+              <div key={index} className={styles.produk__content__skeleton}>
+                <div className={styles.produk__content__skeleton__image}></div>
+                <div className={styles.produk__content__skeleton__info}>
+                  <div className={styles.produk__content__skeleton__category}></div>
+                  <div className={styles.produk__content__skeleton__name}></div>
+                  <div className={styles.produk__content__skeleton__price}></div>
+                </div>
+              </div>
+            ))}
+          </>
         )}
       </div>
     </div>

@@ -41,10 +41,7 @@ jest.mock("next/router", () => ({
 describe("404 Page", () => {
   it("renders 404 page correctly", () => {
     const page = render(<Custom404 />);
-    expect(
-      screen.getByRole("heading", { level: 1 }).textContent
-    ).toContain("404");
-    expect(screen.getByText(/Halaman yang anda cari tidak ada/)).toBeTruthy();
+    expect(screen.getByText(/Halaman Tidak Ditemukan/i)).toBeTruthy();
     expect(page).toMatchSnapshot();
   });
 });

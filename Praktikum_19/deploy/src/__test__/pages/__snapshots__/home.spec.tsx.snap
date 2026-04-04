@@ -5,28 +5,684 @@ exports[`Home Page renders home page correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <h1>
-          Praktikum Next.JS Pages Router
-        </h1>
-         
-        <br />
-        <p>
-          Mahasiswa D4 Pengembangan Web
-        </p>
+      <div
+        class="className container"
+      >
+        <header
+          class="header"
+        >
+          <h1
+            class="title"
+          >
+            Praktikum Next.JS Pages Router
+          </h1>
+          <p
+            class="subtitle"
+          >
+            Mahasiswa D4 Teknik Informatika - Politeknik Negeri Malang
+          </p>
+        </header>
+        <main
+          class="main"
+        >
+          <section
+            class="section"
+          >
+            <h2
+              class="sectionTitle"
+            >
+              Main Features
+            </h2>
+            <div
+              class="grid"
+            >
+              <a
+                class="card"
+                href="/produk"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  🛍️
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Katalog Produk
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Lihat daftar semua produk
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card"
+                href="/shop"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  🛒
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Toko / Shop
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Halaman belanja utama
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card"
+                href="/blog/welcome"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  📝
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Blog Artikel
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Baca artikel terbaru
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section
+            class="section"
+          >
+            <h2
+              class="sectionTitle"
+            >
+              Dashboard & Admin
+            </h2>
+            <div
+              class="grid"
+            >
+              <a
+                class="card"
+                href="/admin"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  🛡️
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Admin Panel
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Kelola data sistem
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card"
+                href="/editor"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  ✍️
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Editor Mode
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Tulis dan edit konten
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card"
+                href="/user"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  👥
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Manajemen User
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Daftar pengguna terdaftar
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section
+            class="section"
+          >
+            <h2
+              class="sectionTitle"
+            >
+              Account & Settings
+            </h2>
+            <div
+              class="grid"
+            >
+              <a
+                class="card"
+                href="/profile"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  👤
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Profil Saya
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Lihat detail profil
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card"
+                href="/profile/edit"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  ⚙️
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Edit Profil
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Ubah data diri
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card"
+                href="/setting/app"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  🛠️
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Pengaturan App
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Konfigurasi aplikasi
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section
+            class="section"
+          >
+            <h2
+              class="sectionTitle"
+            >
+              Information
+            </h2>
+            <div
+              class="grid"
+            >
+              <a
+                class="card"
+                href="/about"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  ℹ️
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Tentang Kami
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Info tentang project ini
+                  </p>
+                </div>
+              </a>
+              <a
+                class="card"
+                href="/halaman-ngasal"
+              >
+                <div
+                  class="cardIcon"
+                >
+                  🚧
+                </div>
+                <div
+                  class="cardContent"
+                >
+                  <h3>
+                    Test 404
+                     
+                    <span>
+                      →
+                    </span>
+                  </h3>
+                  <p>
+                    Cek halaman error
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div>
-      <h1>
-        Praktikum Next.JS Pages Router
-      </h1>
-       
-      <br />
-      <p>
-        Mahasiswa D4 Pengembangan Web
-      </p>
+    <div
+      class="className container"
+    >
+      <header
+        class="header"
+      >
+        <h1
+          class="title"
+        >
+          Praktikum Next.JS Pages Router
+        </h1>
+        <p
+          class="subtitle"
+        >
+          Mahasiswa D4 Teknik Informatika - Politeknik Negeri Malang
+        </p>
+      </header>
+      <main
+        class="main"
+      >
+        <section
+          class="section"
+        >
+          <h2
+            class="sectionTitle"
+          >
+            Main Features
+          </h2>
+          <div
+            class="grid"
+          >
+            <a
+              class="card"
+              href="/produk"
+            >
+              <div
+                class="cardIcon"
+              >
+                🛍️
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Katalog Produk
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Lihat daftar semua produk
+                </p>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="/shop"
+            >
+              <div
+                class="cardIcon"
+              >
+                🛒
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Toko / Shop
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Halaman belanja utama
+                </p>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="/blog/welcome"
+            >
+              <div
+                class="cardIcon"
+              >
+                📝
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Blog Artikel
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Baca artikel terbaru
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="section"
+        >
+          <h2
+            class="sectionTitle"
+          >
+            Dashboard & Admin
+          </h2>
+          <div
+            class="grid"
+          >
+            <a
+              class="card"
+              href="/admin"
+            >
+              <div
+                class="cardIcon"
+              >
+                🛡️
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Admin Panel
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Kelola data sistem
+                </p>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="/editor"
+            >
+              <div
+                class="cardIcon"
+              >
+                ✍️
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Editor Mode
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Tulis dan edit konten
+                </p>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="/user"
+            >
+              <div
+                class="cardIcon"
+              >
+                👥
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Manajemen User
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Daftar pengguna terdaftar
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="section"
+        >
+          <h2
+            class="sectionTitle"
+          >
+            Account & Settings
+          </h2>
+          <div
+            class="grid"
+          >
+            <a
+              class="card"
+              href="/profile"
+            >
+              <div
+                class="cardIcon"
+              >
+                👤
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Profil Saya
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Lihat detail profil
+                </p>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="/profile/edit"
+            >
+              <div
+                class="cardIcon"
+              >
+                ⚙️
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Edit Profil
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Ubah data diri
+                </p>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="/setting/app"
+            >
+              <div
+                class="cardIcon"
+              >
+                🛠️
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Pengaturan App
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Konfigurasi aplikasi
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section
+          class="section"
+        >
+          <h2
+            class="sectionTitle"
+          >
+            Information
+          </h2>
+          <div
+            class="grid"
+          >
+            <a
+              class="card"
+              href="/about"
+            >
+              <div
+                class="cardIcon"
+              >
+                ℹ️
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Tentang Kami
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Info tentang project ini
+                </p>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="/halaman-ngasal"
+            >
+              <div
+                class="cardIcon"
+              >
+                🚧
+              </div>
+              <div
+                class="cardContent"
+              >
+                <h3>
+                  Test 404
+                   
+                  <span>
+                    →
+                  </span>
+                </h3>
+                <p>
+                  Cek halaman error
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
     </div>
   </div>,
   "debug": [Function],

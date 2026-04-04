@@ -1,6 +1,3 @@
-// ======================================================
-// 🎨 VARIABLES
-// ======================================================
 $bg-main: #f0f4f8;          
 $card-bg: #ffffff;
 $primary: #2563eb;          
@@ -10,9 +7,6 @@ $text-gray: #64748b;
 $input-bg: #f8fafc;
 $island-bg: #1e293b;
 
-// ======================================================
-// 📱 LAYOUT UTAMA
-// ======================================================
 .wrapper {
   min-height: 100vh;
   width: 100%;
@@ -39,9 +33,6 @@ $island-bg: #1e293b;
   overflow: hidden;   
 }
 
-// ======================================================
-// 📱 KOLOM KIRI (SEKARANG FORM REGISTER)
-// ======================================================
 .formPanel {
   flex: 1;
   display: flex;
@@ -207,9 +198,6 @@ $island-bg: #1e293b;
   }
 }
 
-// ======================================================
-// 📱 KOLOM KANAN (SEKARANG PATTERN)
-// ======================================================
 .patternPanel {
   flex: 1;
   background-color: $primary;
@@ -230,7 +218,7 @@ $island-bg: #1e293b;
   &__content {
     z-index: 2;
     margin-top: 20px;
-    text-align: right; // Teks saya buat rata kanan karena sekarang ada di panel kanan
+    text-align: right;
 
     h2 {
       font-size: 32px;
@@ -246,9 +234,6 @@ $island-bg: #1e293b;
   }
 }
 
-// ======================================================
-// 💊 DYNAMIC ISLAND NOTIFICATION
-// ======================================================
 .dynamicIsland {
   position: absolute;
   top: 24px;
@@ -278,9 +263,6 @@ $island-bg: #1e293b;
   pointer-events: auto;
 }
 
-// ======================================================
-// 📱 RESPONSIVE (MOBILE)
-// ======================================================
 @media (max-width: 768px) {
   .wrapper {
     padding: 20px 16px;
@@ -293,12 +275,12 @@ $island-bg: #1e293b;
   }
 
   .patternPanel {
-    display: none; // Pattern tetap disembunyikan di HP
+    display: none;
   }
 
   .formPanel {
     padding: 30px 20px;
-    order: 1; // Memastikan form tetap di urutan pertama saat di HP
+    order: 1;
   }
   
   .dynamicIsland {

@@ -6,55 +6,115 @@ exports[`404 Page renders 404 page correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="error"
+        class="wrapper"
       >
-        <img
-          alt="404"
-          class="_image"
-          height="200"
-          src="/page-not-found.png"
-          width="400"
-        />
-        <h1
-          class="_text_red"
+        <div
+          class="content"
         >
-          404 - Halaman Tidak Ditemukan
-        </h1>
-        <p>
-          Maaf, Halaman yang anda cari tidak ada.
-        </p>
-        <a
-          href="/"
-        >
-          Kembali ke Beranda
-        </a>
+          <div
+            class="imageContainer"
+          >
+            <img
+              alt="Ilustrasi 404"
+              class="image"
+              height="300"
+              src="/page-not-found.png"
+              width="400"
+            />
+          </div>
+          <h2
+            class="subtitle"
+          >
+            404, Halaman Tidak Ditemukan
+          </h2>
+          <p
+            class="description"
+          >
+            Maaf, halaman yang Anda cari mungkin telah dihapus, diubah namanya, atau tidak pernah ada.
+          </p>
+          <a
+            href="/"
+          >
+            <svg
+              fill="none"
+              height="20"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="20"
+            >
+              <line
+                x1="19"
+                x2="5"
+                y1="12"
+                y2="12"
+              />
+              <polyline
+                points="12 19 5 12 12 5"
+              />
+            </svg>
+            Kembali ke Beranda
+          </a>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="error"
+      class="wrapper"
     >
-      <img
-        alt="404"
-        class="_image"
-        height="200"
-        src="/page-not-found.png"
-        width="400"
-      />
-      <h1
-        class="_text_red"
+      <div
+        class="content"
       >
-        404 - Halaman Tidak Ditemukan
-      </h1>
-      <p>
-        Maaf, Halaman yang anda cari tidak ada.
-      </p>
-      <a
-        href="/"
-      >
-        Kembali ke Beranda
-      </a>
+        <div
+          class="imageContainer"
+        >
+          <img
+            alt="Ilustrasi 404"
+            class="image"
+            height="300"
+            src="/page-not-found.png"
+            width="400"
+          />
+        </div>
+        <h2
+          class="subtitle"
+        >
+          404, Halaman Tidak Ditemukan
+        </h2>
+        <p
+          class="description"
+        >
+          Maaf, halaman yang Anda cari mungkin telah dihapus, diubah namanya, atau tidak pernah ada.
+        </p>
+        <a
+          href="/"
+        >
+          <svg
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="20"
+          >
+            <line
+              x1="19"
+              x2="5"
+              y1="12"
+              y2="12"
+            />
+            <polyline
+              points="12 19 5 12 12 5"
+            />
+          </svg>
+          Kembali ke Beranda
+        </a>
+      </div>
     </div>
   </div>,
   "debug": [Function],

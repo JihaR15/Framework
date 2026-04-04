@@ -1,6 +1,3 @@
-// ======================================================
-// 🎨 VARIABLES
-// ======================================================
 $bg-main: #f0f4f8;          
 $card-bg: #ffffff;
 $primary: #2563eb;          
@@ -10,19 +7,16 @@ $text-gray: #64748b;
 $input-bg: #f8fafc;
 $island-bg: #1e293b;
 
-// ======================================================
-// 📱 LAYOUT UTAMA (BISA SCROLL DI LAYAR KECIL)
-// ======================================================
 .wrapper {
-  min-height: 100vh;  // Menggunakan min-height agar bisa melar jika konten lebih panjang
+  min-height: 100vh;
   width: 100%;
-  overflow-x: hidden; // Hanya mematikan scroll menyamping
-  overflow-y: auto;   // Mengizinkan scroll ke bawah jika layar sempit
+  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $bg-main;
-  padding: 40px 20px; // Padding atas bawah ditambah agar saat discroll tidak terlalu mepet
+  padding: 40px 20px;
   box-sizing: border-box;
   font-family: 'Inter', 'Segoe UI', sans-serif;
   position: relative;
@@ -32,16 +26,13 @@ $island-bg: #1e293b;
   display: flex;
   width: 100%;
   max-width: 1024px;
-  min-height: 620px;  // Menggunakan min-height untuk card
+  min-height: 620px;
   background: $card-bg;
   border-radius: 24px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   overflow: hidden;   
 }
 
-// ======================================================
-// 📱 KOLOM KIRI (PATTERN BACKGROUND)
-// ======================================================
 .leftPanel {
   flex: 1;
   background-color: $primary;
@@ -77,9 +68,6 @@ $island-bg: #1e293b;
   }
 }
 
-// ======================================================
-// 📱 KOLOM KANAN (FORM LOGIN)
-// ======================================================
 .rightPanel {
   flex: 1;
   display: flex;
@@ -255,9 +243,6 @@ $island-bg: #1e293b;
   }
 }
 
-// ======================================================
-// 💊 DYNAMIC ISLAND NOTIFICATION
-// ======================================================
 .dynamicIsland {
   position: absolute;
   top: 24px;
@@ -287,18 +272,15 @@ $island-bg: #1e293b;
   pointer-events: auto;
 }
 
-// ======================================================
-// 📱 RESPONSIVE (MOBILE)
-// ======================================================
 @media (max-width: 768px) {
   .wrapper {
     padding: 20px 16px;
-    height: auto; // Membiarkan wrapper memanjang ke bawah
+    height: auto;
   }
   
   .card {
     flex-direction: column;
-    min-height: auto; // Card menyesuaikan isi form
+    min-height: auto;
   }
 
   .leftPanel {
@@ -309,12 +291,11 @@ $island-bg: #1e293b;
     padding: 30px 20px;
   }
   
-  // Penyesuaian notifikasi error di layar kecil
   .dynamicIsland {
     width: 90%;
     max-width: 350px;
     justify-content: center;
-    position: fixed; // Agar tetap melayang di layar meski di-scroll
+    position: fixed;
     top: 16px;
   }
 }

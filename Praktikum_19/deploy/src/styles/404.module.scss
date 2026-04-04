@@ -1,32 +1,122 @@
-.error {
+$bg-main: #ffffff;
+$primary: #2563eb;
+$primary-hover: #1d4ed8;
+$text-dark: #0f172a;
+$text-gray: #64748b;
+
+.wrapper {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $bg-main;
+    background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+    background-size: 20px 20px;
+    padding: 20px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.content {
+    text-align: center;
+    display: flex;
     flex-direction: column;
-    // background-color: black;
-    // color: white; 
+    align-items: center;
+    max-width: 500px;
+    animation: fadeInUp 0.6s ease-out forwards;
 }
 
-._text_red {
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
+.imageContainer {
+    margin-bottom: 24px;
+    animation: floating 3s ease-in-out infinite;
 }
 
-._button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-._image {
-    width: 300px;
+.image {
+    width: 100%;
+    max-width: 350px;
     height: auto;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 900;
+    color: $primary;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 4px 4px 0px rgba(37, 99, 235, 0.1);
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: $text-dark;
+    margin: 16px 0 8px 0;
+}
+
+.description {
+    font-size: 15px;
+    color: $text-gray;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background-color: $primary;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+
+    &:hover {
+        background-color: $primary-hover;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    }
+
+    svg {
+        transition: transform 0.3s ease;
+    }
+
+    &:hover svg {
+        transform: translateX(-4px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .image {
+        max-width: 250px;
+    }
 }
