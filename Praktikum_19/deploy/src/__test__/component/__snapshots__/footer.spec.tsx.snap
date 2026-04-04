@@ -5,33 +5,63 @@ exports[`Footer Component renders footer correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
+      <footer
         class="footer"
         data-testid="footer"
       >
         <div
-          class="text-4xl font-bold"
+          class="footer__content"
         >
-          <h1>
-            Footer
-          </h1>
+          <p
+            class="footer__text"
+          >
+            © 
+            2026
+             
+            <strong>
+              MyApp
+            </strong>
+            . Jiha Ramdhan / 2341720043 / TI-3D
+          </p>
+          <div
+            class="footer__right"
+          >
+            <span>
+              Politeknik Negeri Malang
+            </span>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>,
   "container": <div>
-    <div
+    <footer
       class="footer"
       data-testid="footer"
     >
       <div
-        class="text-4xl font-bold"
+        class="footer__content"
       >
-        <h1>
-          Footer
-        </h1>
+        <p
+          class="footer__text"
+        >
+          © 
+          2026
+           
+          <strong>
+            MyApp
+          </strong>
+          . Jiha Ramdhan / 2341720043 / TI-3D
+        </p>
+        <div
+          class="footer__right"
+        >
+          <span>
+            Politeknik Negeri Malang
+          </span>
+        </div>
       </div>
-    </div>
+    </footer>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
