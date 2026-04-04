@@ -6,8 +6,8 @@
 
 **Import Project**
 > Disini saya sudah menghubungkan project dengan GitHub, jadi tinggal import saja.
-1. Klik **Import**.
-![alt text](image.png)
+1. Klik **Import**.<br>
+![alt text](image.png)<br>
 
 **Catatan**
 - Sebelum di-import, lakukan konfigurasi terlebih dahulu.
@@ -17,13 +17,13 @@
 
 **Masalah: Static Site Generation Gagal**
 - Hapus file `static.tsx`.
-- Comment pada line 46 pada file `[produk].tsx` yang berhubungan dengan static-site generation.
-![alt text](image-1.png)
+- Comment pada line 46 pada file `[produk].tsx` yang berhubungan dengan static-site generation.<br>
+![alt text](image-1.png)<br>
 
 **Solusi**
 1. Gunakan SSR (Server Side Rendering).
-     - SSR yang sebelumnya di-comment dibuka comment-nya pada file `[produk].tsx`.
-     ![alt text](image-2.png)
+     - SSR yang sebelumnya di-comment dibuka comment-nya pada file `[produk].tsx`.<br>
+     ![alt text](image-2.png)<br>
 
 2. Gunakan Environment Variable
      - Buat di `.env.local`:
@@ -38,34 +38,46 @@
          ```bash
          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/product`)
          ```
-     - Terapkan pada file `[produk].tsx` dan `server.tsx`.
-     ![alt text](image-3.png)
-     ![alt text](image-4.png)
+     - Terapkan pada file `[produk].tsx` dan `server.tsx`.<br>
+     ![alt text](image-3.png)<br>
+     ![alt text](image-4.png)<br>
 
-3. Commit dan push kembali.
+3. Commit dan push kembali.<br>
+![alt text](image-5.png)<br>
 
+4. Selanjutnya import dan lakukan pengaturan sesuai kebutuhan.<br>
+![alt text](image-6.png)<br>
+![alt text](image-7.png)<br>
 
-4. Selanjutnya import dan lakukan pengaturan sesuai kebutuhan.
-
-5. Setelah itu klik **Deploy**. Jika berhasil, hasilnya akan muncul.
+5. Setelah itu klik **Deploy**. Jika berhasil, hasilnya akan muncul.<br>
+![alt text](image-9.png)<br>
+![alt text](image-10.png)<br>
+![alt text](image-11.png)<br>
 
 ### Langkah 3 – Menambahkan Environment Variable di Vercel
 
-**Buka Project di Vercel**
-- Masuk ke **Settings → Environment Variables**.
+**Buka Project di Vercel**<br>
+- Masuk ke **Settings → Environment Variables**.<br>
+![alt text](image-12.png)<br>
 
-**Import dari `.env.local`**
-- Klik **Import .env** dan sesuaikan `NEXT_PUBLIC_API_URL` dengan URL project Vercel.
+**Import dari `.env.local`**<br>
+![alt text](image-13.png)<br>
+- Klik **Import .env** dan sesuaikan `NEXT_PUBLIC_API_URL` dengan URL project Vercel.<br>
 - Atau isi manual:
     ```env
     NEXT_PUBLIC_API_URL=https://namaproject.vercel.app
     ```
+    <br>
+
+    ![alt text](image-14.png)
 
 **Catatan**
 - Tanpa tanda `/` di belakang URL.
 
 **Redeploy**
-- Deployment → **Redeploy**.
+- Deployment → **Redeploy**.<br>
+![alt text](image-15.png)
+
 
 ### Langkah 4 – Konfigurasi Google OAuth Production
 
@@ -75,26 +87,27 @@
 - Pilih **OAuth Client**.
 
 **Tambahkan Authorized Origins**
-- Tambahkan **Redirect URI**.
+- Tambahkan **Redirect URI**.<br>
+![alt text](image-16.png)<br>
 
 **Simpan perubahan.**
 
-**Catatan**
-- Ada kesalahan pada code `index.tsx` di folder `views/auth/login`.
-- Code sebelumnya dimodifikasi.
-
-**Redeploy Vercel**
-- Agar environment terbaru terbaca.
 
 ### Langkah 5 – Pengujian Setelah Deployment
 
 Coba akses:
-- `/`
-- `/about`
-- `/product`
-- `/profile`
-- Login Google
-- Login credential biasa
+- `/`<br>
+![alt text](image-17.png)<br>
+- `/about`<br>
+![alt text](image-18.png)<br>
+- `/produk`<br>
+![alt text](image-19.png)<br>
+- `/profile`<br>
+![alt text](image-20.png)<br>
+- Login Google<br>
+![alt text](logingoogle.gif)<br>
+- Login credential biasa<br>
+![alt text](logincredential.gif)<br>
 
 Pastikan:
 - SSR berjalan
@@ -113,25 +126,24 @@ Pastikan:
 | Redeploy | Build ulang setelah perubahan |
 | OAuth Production | Harus update origin & callback |
 
-### Tugas Praktikum
-1. Deploy project Next.js ke Vercel.
-2. Pastikan API tidak menggunakan `localhost`.
-3. Konfigurasikan Google OAuth production.
-4. Lakukan minimal 1 redeploy.
-5. Dokumentasikan:
-     - Screenshot dashboard Vercel
-     - URL hasil deployment
-     - Screenshot login Google berhasil
-
 ### Refleksi & Diskusi
-1. Mengapa `localhost` tidak boleh digunakan di production?
-2. Mengapa SSG bisa gagal saat build?
-3. Apa perbedaan SSR dan SSG saat deployment?
-4. Mengapa perlu redeploy setelah menambahkan environment?
-5. Apa fungsi redirect URI pada OAuth?
+1. Mengapa `localhost` tidak boleh digunakan di production?  
+    > Karena `localhost` hanya menunjuk ke komputer/server lokal. Di production, aplikasi harus mengakses URL publik agar bisa diakses pengguna dan layanan lain.
+
+2. Mengapa SSG bisa gagal saat build?  
+    > SSG mengambil data saat proses build. Jika API belum tersedia, URL salah, butuh autentikasi, atau terjadi error jaringan, maka build bisa gagal.
+
+3. Apa perbedaan SSR dan SSG saat deployment?  
+    > SSG membuat halaman saat build (cepat saat diakses, tapi data bisa tidak terbaru). SSR membuat halaman saat request (data lebih fresh, tetapi ada beban server tiap request).
+
+4. Mengapa perlu redeploy setelah menambahkan environment?  
+    > Karena environment variable dibaca saat proses build/runtime tertentu. Redeploy diperlukan agar konfigurasi baru ikut diterapkan ke deployment.
+
+5. Apa fungsi redirect URI pada OAuth?  
+    > Redirect URI adalah alamat tujuan setelah login OAuth berhasil. URI ini memvalidasi callback agar hanya diarahkan ke endpoint aplikasi yang sah dan aman.
 
 ### Kesimpulan
-Pada praktikum ini mahasiswa telah:
+Pada praktikum ini Saya telah:
 - Menghubungkan project dengan GitHub
 - Melakukan deployment ke Vercel
 - Mengelola environment variable
