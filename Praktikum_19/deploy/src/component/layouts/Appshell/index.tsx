@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Navbar from "../navbar";
 // import Footer from "../footer";
 import dynamic from "next/dynamic";
-import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import style from "./AppShell.module.css";
 
@@ -17,7 +17,7 @@ const Footer = dynamic(() => import("../footer"), {
     loading: () => <p>Loading...</p>,
 });
 
-const roboto = Roboto({
+const inter = Inter({
     subsets: ["latin"],
     weight: ["400", "500", "700"],
 });
@@ -40,7 +40,7 @@ const AppShell = (props:AppShellProps) => {
             `}
         </Script>
 
-        <main className={`${roboto.className} ${style.mainContainer}`} >
+        <main className={`${inter.className} ${style.mainContainer}`} >
             {!disableLayout.includes(pathname) && <Navbar />}
             <div className={style.contentWrapper}>
                 {children}

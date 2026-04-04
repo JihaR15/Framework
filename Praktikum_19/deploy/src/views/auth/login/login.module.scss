@@ -1,102 +1,320 @@
-.login {
-  min-height: 100vh;
+// ======================================================
+// 🎨 VARIABLES
+// ======================================================
+$bg-main: #f0f4f8;          
+$card-bg: #ffffff;
+$primary: #2563eb;          
+$primary-hover: #1d4ed8;    
+$text-dark: #0f172a;
+$text-gray: #64748b;
+$input-bg: #f8fafc;
+$island-bg: #1e293b;
+
+// ======================================================
+// 📱 LAYOUT UTAMA (BISA SCROLL DI LAYAR KECIL)
+// ======================================================
+.wrapper {
+  min-height: 100vh;  // Menggunakan min-height agar bisa melar jika konten lebih panjang
+  width: 100%;
+  overflow-x: hidden; // Hanya mematikan scroll menyamping
+  overflow-y: auto;   // Mengizinkan scroll ke bawah jika layar sempit
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  padding: 20px;
+  background-color: $bg-main;
+  padding: 40px 20px; // Padding atas bawah ditambah agar saat discroll tidak terlalu mepet
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  position: relative;
+}
 
-  &__title {
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
+.card {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  min-height: 620px;  // Menggunakan min-height untuk card
+  background: $card-bg;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;   
+}
+
+// ======================================================
+// 📱 KOLOM KIRI (PATTERN BACKGROUND)
+// ======================================================
+.leftPanel {
+  flex: 1;
+  background-color: $primary;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.15) 2px, transparent 2px),
+    linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  background-size: 24px 24px, 100% 100%;
+  background-position: 0 0, 0 0;
+  
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  border-radius: 20px;
+  margin: 12px;
+  
+  &__content {
+    z-index: 2;
+    margin-top: 20px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+  }
+}
+
+// ======================================================
+// 📱 KOLOM KANAN (FORM LOGIN)
+// ======================================================
+.rightPanel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 360px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+
+  .logo {
+    font-size: 18px;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 40px;
+    color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
   }
 
-  &__form {
-    background: #ffffff;
-    width: 100%;
-    max-width: 420px;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    
-    &__item {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
+  .title {
+    font-size: 26px;
+    font-weight: 700;
+    color: $text-dark;
+    margin-bottom: 6px;
+  }
 
-      &__label {
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 8px;
-        color: #333;
+  .subtitle {
+    font-size: 13px;
+    color: $text-gray;
+  }
+}
+
+.form {
+  .inputGroup {
+    margin-bottom: 14px;
+
+    label { display: none; }
+
+    input {
+      width: 100%;
+      padding: 14px 18px;
+      background-color: $input-bg;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 12px;
+      font-size: 14px;
+      color: $text-dark;
+      transition: all 0.3s;
+      box-sizing: border-box;
+
+      &::placeholder {
+        color: #94a3b8;
       }
 
-      &__input {
-        padding: 12px 14px;
-        border-radius: 10px;
-        border: 1px solid #ddd;
-        font-size: 14px;
-        transition: all 0.3s ease;
-
-        &:focus {
-          outline: none;
-          border-color: #2a5298;
-          box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
-        }
+      &:focus {
+        outline: none;
+        background-color: white;
+        border-color: $primary;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
       }
     }
   }
+
+  .forgotPassword {
+    text-align: right;
+    margin-bottom: 20px;
+    
+    a {
+      font-size: 13px;
+      color: $text-gray;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.btnPrimary {
+  width: 100%;
+  padding: 14px;
+  background-color: $primary;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+
+  &:hover:not(:disabled) {
+    background-color: $primary-hover;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+  color: #94a3b8;
+  font-size: 12px;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  &::before { margin-right: 12px; }
+  &::after { margin-left: 12px; }
+}
+
+.socialGroup {
+  display: flex;
+  gap: 12px;
 
   button {
-    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background: #2a5298;
-    color: #fff;
+    background: white;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 13px;
     font-weight: 600;
+    color: $text-dark;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: all 0.2s;
 
     &:hover {
-      background-color: #1e3c72;
-      transform: translateY(-2px);
+      background: $input-bg;
+      border-color: #cbd5e1;
     }
   }
+}
 
-  &__error {
-    color: red;
-    font-size: 14px;
-    margin-top: 8px;
+.footerText {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 13px;
+  color: $text-gray;
+
+  a {
+    color: $primary;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
-// animation
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+// ======================================================
+// 💊 DYNAMIC ISLAND NOTIFICATION
+// ======================================================
+.dynamicIsland {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px) scale(0.8);
+  background-color: $island-bg;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.26, 1.55), opacity 0.4s ease;
+
+  svg { color: #ef4444; }
 }
 
-/* Responsive */
+.showIsland {
+  transform: translateX(-50%) translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+// ======================================================
+// 📱 RESPONSIVE (MOBILE)
+// ======================================================
 @media (max-width: 768px) {
-  .login {
-    &__form {
-      padding: 30px 20px;
-    }
+  .wrapper {
+    padding: 20px 16px;
+    height: auto; // Membiarkan wrapper memanjang ke bawah
+  }
+  
+  .card {
+    flex-direction: column;
+    min-height: auto; // Card menyesuaikan isi form
+  }
 
-    &__title {
-      font-size: 26px;
-    }
+  .leftPanel {
+    display: none; 
+  }
+
+  .rightPanel {
+    padding: 30px 20px;
+  }
+  
+  // Penyesuaian notifikasi error di layar kecil
+  .dynamicIsland {
+    width: 90%;
+    max-width: 350px;
+    justify-content: center;
+    position: fixed; // Agar tetap melayang di layar meski di-scroll
+    top: 16px;
   }
 }

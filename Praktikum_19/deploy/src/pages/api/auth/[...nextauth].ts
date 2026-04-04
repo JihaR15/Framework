@@ -19,25 +19,31 @@ export const authOptions: NextAuthOptions = {
                 password: { label: "Password", type: "password" },
             },
             async authorize(credentials) {
-                if (!credentials?.email || !credentials?.password) return null;
+                if (!credentials?.email || !credentials?.password) {
+                    throw new Error("Email dan Password wajib diisi");
+                }
 
                 const user: any = await signIn(credentials.email);
 
-                if (user) {
-                    const  isPasswordValid = await bcrypt.compare(
-                        credentials.password,
-                        user.password
-                    );
-                    if (isPasswordValid) {
-                        return {
-                            id: user.id,
-                            email: user.email,
-                            fullName: user.fullName,
-                            role: user.role,
-                        };
-                    }
+                if (!user) {
+                    throw new Error("Email tidak terdaftar");
                 }
-                return null;
+            
+                const isPasswordValid = await bcrypt.compare(
+                    credentials.password,
+                    user.password
+                );
+            
+                if (!isPasswordValid) {
+                    throw new Error("Password yang Anda masukkan salah");
+                }
+            
+                return {
+                    id: user.id,
+                    email: user.email,
+                    fullName: user.fullName,
+                    role: user.role,
+                };
             },
         }),
         GoogleProvider({

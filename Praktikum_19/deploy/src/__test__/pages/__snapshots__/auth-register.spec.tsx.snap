@@ -6,172 +6,344 @@ exports[`Register Page renders register page correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="register"
+        class="wrapper"
       >
-        <h1
-          class="register__title"
-        >
-          Halaman Register
-        </h1>
         <div
-          class="register__form"
+          class="dynamicIsland "
         >
-          <form>
-            <div
-              class="register__form__item"
-            >
-              <label
-                class="register__form__item__label"
-                for="email"
-              >
-                Email
-              </label>
-              <input
-                class="register__form__item__input"
-                id="email"
-                name="email"
-                placeholder="Email"
-                type="email"
-              />
-            </div>
-            <div
-              class="register__form__item"
-            >
-              <label
-                class="register__form__item__label"
-                for="FullName"
-              >
-                Full Name
-              </label>
-              <input
-                class="register__form__item__input"
-                id="FullName"
-                name="FullName"
-                placeholder="Full Name"
-                type="text"
-              />
-            </div>
-            <div
-              class="register__form__item"
-            >
-              <label
-                class="register__form__item__label"
-                for="Password"
-              >
-                Password
-              </label>
-              <input
-                class="register__form__item__input"
-                id="Password"
-                name="Password"
-                placeholder="Password"
-                type="password"
-              />
-            </div>
-            <button
-              class="register__form__item__button"
-              type="submit"
-            >
-              Register
-            </button>
-          </form>
-          <br />
-          <p
-            class="register__form__item__text"
+          <svg
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="20"
           >
-            Sudah punya akun? 
-            <a
-              href="/auth/login"
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+            />
+            <line
+              x1="12"
+              x2="12"
+              y1="8"
+              y2="12"
+            />
+            <line
+              x1="12"
+              x2="12.01"
+              y1="16"
+              y2="16"
+            />
+          </svg>
+          <span />
+        </div>
+        <div
+          class="card"
+        >
+          <div
+            class="formPanel"
+          >
+            <div
+              class="formContainer"
             >
-              Ke Halaman Login
-            </a>
-          </p>
+              <div
+                class="header"
+              >
+                <div
+                  class="logo"
+                >
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <path
+                      d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    />
+                  </svg>
+                  MyApp
+                </div>
+                <h1
+                  class="title"
+                >
+                  Buat Akun
+                </h1>
+                <p
+                  class="subtitle"
+                >
+                  Silahkan buat akun Anda
+                </p>
+              </div>
+              <form
+                class="form"
+              >
+                <div
+                  class="inputGroup"
+                >
+                  <label
+                    for="FullName"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    id="FullName"
+                    name="FullName"
+                    placeholder="John Doe"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <div
+                  class="inputGroup"
+                >
+                  <label
+                    for="email"
+                  >
+                    Email address
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    placeholder="admin@example.com"
+                    required=""
+                    type="email"
+                  />
+                </div>
+                <div
+                  class="inputGroup"
+                >
+                  <label
+                    for="Password"
+                  >
+                    Password
+                  </label>
+                  <input
+                    id="Password"
+                    minlength="6"
+                    name="Password"
+                    placeholder="••••••••"
+                    required=""
+                    type="password"
+                  />
+                </div>
+                <button
+                  class="btnPrimary"
+                  type="submit"
+                >
+                  Register
+                </button>
+              </form>
+              <p
+                class="footerText"
+              >
+                Sudah punya akun? 
+                <a
+                  href="/auth/login"
+                >
+                  Login di sini
+                </a>
+              </p>
+            </div>
+          </div>
+          <div
+            class="patternPanel"
+          >
+            <div
+              class="patternPanel__content"
+            >
+              <h2>
+                NextJs.
+              </h2>
+              <p>
+                Selamat Datang di Web Hasil Pembelajaran Mata Kuliah Framework Semester 6 - 2026
+              </p>
+              <br />
+              <h4>
+                Jiha Ramdhan / 2341720043 / TI-3D
+              </h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="register"
+      class="wrapper"
     >
-      <h1
-        class="register__title"
-      >
-        Halaman Register
-      </h1>
       <div
-        class="register__form"
+        class="dynamicIsland "
       >
-        <form>
-          <div
-            class="register__form__item"
-          >
-            <label
-              class="register__form__item__label"
-              for="email"
-            >
-              Email
-            </label>
-            <input
-              class="register__form__item__input"
-              id="email"
-              name="email"
-              placeholder="Email"
-              type="email"
-            />
-          </div>
-          <div
-            class="register__form__item"
-          >
-            <label
-              class="register__form__item__label"
-              for="FullName"
-            >
-              Full Name
-            </label>
-            <input
-              class="register__form__item__input"
-              id="FullName"
-              name="FullName"
-              placeholder="Full Name"
-              type="text"
-            />
-          </div>
-          <div
-            class="register__form__item"
-          >
-            <label
-              class="register__form__item__label"
-              for="Password"
-            >
-              Password
-            </label>
-            <input
-              class="register__form__item__input"
-              id="Password"
-              name="Password"
-              placeholder="Password"
-              type="password"
-            />
-          </div>
-          <button
-            class="register__form__item__button"
-            type="submit"
-          >
-            Register
-          </button>
-        </form>
-        <br />
-        <p
-          class="register__form__item__text"
+        <svg
+          fill="none"
+          height="20"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="20"
         >
-          Sudah punya akun? 
-          <a
-            href="/auth/login"
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+          <line
+            x1="12"
+            x2="12"
+            y1="8"
+            y2="12"
+          />
+          <line
+            x1="12"
+            x2="12.01"
+            y1="16"
+            y2="16"
+          />
+        </svg>
+        <span />
+      </div>
+      <div
+        class="card"
+      >
+        <div
+          class="formPanel"
+        >
+          <div
+            class="formContainer"
           >
-            Ke Halaman Login
-          </a>
-        </p>
+            <div
+              class="header"
+            >
+              <div
+                class="logo"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+                MyApp
+              </div>
+              <h1
+                class="title"
+              >
+                Buat Akun
+              </h1>
+              <p
+                class="subtitle"
+              >
+                Silahkan buat akun Anda
+              </p>
+            </div>
+            <form
+              class="form"
+            >
+              <div
+                class="inputGroup"
+              >
+                <label
+                  for="FullName"
+                >
+                  Full Name
+                </label>
+                <input
+                  id="FullName"
+                  name="FullName"
+                  placeholder="John Doe"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div
+                class="inputGroup"
+              >
+                <label
+                  for="email"
+                >
+                  Email address
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="admin@example.com"
+                  required=""
+                  type="email"
+                />
+              </div>
+              <div
+                class="inputGroup"
+              >
+                <label
+                  for="Password"
+                >
+                  Password
+                </label>
+                <input
+                  id="Password"
+                  minlength="6"
+                  name="Password"
+                  placeholder="••••••••"
+                  required=""
+                  type="password"
+                />
+              </div>
+              <button
+                class="btnPrimary"
+                type="submit"
+              >
+                Register
+              </button>
+            </form>
+            <p
+              class="footerText"
+            >
+              Sudah punya akun? 
+              <a
+                href="/auth/login"
+              >
+                Login di sini
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          class="patternPanel"
+        >
+          <div
+            class="patternPanel__content"
+          >
+            <h2>
+              NextJs.
+            </h2>
+            <p>
+              Selamat Datang di Web Hasil Pembelajaran Mata Kuliah Framework Semester 6 - 2026
+            </p>
+            <br />
+            <h4>
+              Jiha Ramdhan / 2341720043 / TI-3D
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>,

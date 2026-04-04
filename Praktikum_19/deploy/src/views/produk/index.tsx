@@ -30,6 +30,7 @@ const TampilanProduk = ({ products }: { products: ProductType[] }) => {
                     width={200}
                     height={200}
                     priority
+                    unoptimized
                   />
                 </div>
                 <h4 className={styles.produk__content__item__name}>
